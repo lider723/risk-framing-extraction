@@ -1,0 +1,457 @@
+[
+  {
+    "label": "第一对正例：温和、具体且有AI联系",
+    "synthetic": true,
+    "record_id": "SYNTHETIC_PAIR1_POS",
+    "article": {
+      "P001": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."
+    },
+    "input": "RECORD_ID: SYNTHETIC_PAIR1_POS\nCONTEXT_REVIEW_STATUS: complete\nCANDIDATES (each with local context):\n--- C01 ---\nPreceding: \nTarget [P001]: The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks.\nFollowing: \n\nADDITIONAL ARTICLE CONTEXT:\n[P001] The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks.\nThis is the entire synthetic article; no other article text exists.",
+    "output": {
+      "record_id": "SYNTHETIC_PAIR1_POS",
+      "units": [
+        {
+          "unit_id": "U01",
+          "source_candidates": [
+            "C01"
+          ],
+          "confirmed": true,
+          "ambiguity": "none",
+          "resolved_reference": "",
+          "justification": {
+            "consequence": "The company reported fewer customer-service hiring slots this year.",
+            "ai_connection": {
+              "relation": "The company attributes the reduction in hiring slots to AI taking over some customer-service tasks.",
+              "evidence_spans": [
+                {
+                  "paragraph_id": "P001",
+                  "quote": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."
+                }
+              ]
+            },
+            "is_affirmative": true
+          },
+          "risk_claim_spans": [
+            {
+              "paragraph_id": "P001",
+              "quote": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."
+            }
+          ],
+          "necessary_context_spans": []
+        }
+      ],
+      "candidate_decisions": [
+        {
+          "candidate_id": "C01",
+          "proposition": "The company attributes the reduction in hiring slots to AI taking over some customer-service tasks.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01"
+          ],
+          "reason": "The statement identifies reduced hiring slots and explicitly attributes the reduction to AI."
+        }
+      ],
+      "context_requests": []
+    }
+  },
+  {
+    "label": "第一对反例：AI与招聘减少仅仅共现",
+    "synthetic": true,
+    "record_id": "SYNTHETIC_PAIR1_NEG",
+    "article": {
+      "P001": "The company reduced this year's customer-service hiring slots. During the same period, it began testing an AI customer-service tool."
+    },
+    "input": "RECORD_ID: SYNTHETIC_PAIR1_NEG\nCONTEXT_REVIEW_STATUS: complete\nCANDIDATES (each with local context):\n--- C01 ---\nPreceding: \nTarget [P001]: The company reduced this year's customer-service hiring slots.\nFollowing: During the same period, it began testing an AI customer-service tool.\n\nADDITIONAL ARTICLE CONTEXT:\n[P001] The company reduced this year's customer-service hiring slots. During the same period, it began testing an AI customer-service tool.\nThis is the entire synthetic article; no other article text exists.",
+    "output": {
+      "record_id": "SYNTHETIC_PAIR1_NEG",
+      "units": [],
+      "candidate_decisions": [
+        {
+          "candidate_id": "C01",
+          "proposition": "Hiring slots fell while an AI tool was tested.",
+          "decision": "rejected",
+          "unit_ids": [],
+          "reason": "The supplied article reports the two events during the same period but does not connect AI to the reduction in hiring slots."
+        }
+      ],
+      "context_requests": []
+    }
+  },
+  {
+    "label": "第二对正例：具体潜在风险，不要求机制详述",
+    "synthetic": true,
+    "record_id": "SYNTHETIC_PAIR2_POS",
+    "article": {
+      "P001": "Researchers warned that this AI assistant could leak users' private chat content."
+    },
+    "input": "RECORD_ID: SYNTHETIC_PAIR2_POS\nCONTEXT_REVIEW_STATUS: complete\nCANDIDATES (each with local context):\n--- C01 ---\nPreceding: \nTarget [P001]: Researchers warned that this AI assistant could leak users' private chat content.\nFollowing: \n\nADDITIONAL ARTICLE CONTEXT:\n[P001] Researchers warned that this AI assistant could leak users' private chat content.\nThis is the entire synthetic article; no other article text exists.",
+    "output": {
+      "record_id": "SYNTHETIC_PAIR2_POS",
+      "units": [
+        {
+          "unit_id": "U01",
+          "source_candidates": [
+            "C01"
+          ],
+          "confirmed": true,
+          "ambiguity": "none",
+          "resolved_reference": "",
+          "justification": {
+            "consequence": "Researchers warned that users' private chat content could be leaked.",
+            "ai_connection": {
+              "relation": "Researchers warn that this AI assistant could leak users' private chat content; this is an attributed possibility.",
+              "evidence_spans": [
+                {
+                  "paragraph_id": "P001",
+                  "quote": "Researchers warned that this AI assistant could leak users' private chat content."
+                }
+              ]
+            },
+            "is_affirmative": true
+          },
+          "risk_claim_spans": [
+            {
+              "paragraph_id": "P001",
+              "quote": "Researchers warned that this AI assistant could leak users' private chat content."
+            }
+          ],
+          "necessary_context_spans": []
+        }
+      ],
+      "candidate_decisions": [
+        {
+          "candidate_id": "C01",
+          "proposition": "Researchers warn that this AI assistant could leak users' private chat content; this is an attributed possibility.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01"
+          ],
+          "reason": "The attributed warning identifies a specific potential consequence and directly connects it to the AI assistant."
+        }
+      ],
+      "context_requests": []
+    }
+  },
+  {
+    "label": "第二对反例：没有具体后果的泛泛担忧",
+    "synthetic": true,
+    "record_id": "SYNTHETIC_PAIR2_NEG",
+    "article": {
+      "P001": "Researchers warned that this AI assistant could pose risks and should be used cautiously."
+    },
+    "input": "RECORD_ID: SYNTHETIC_PAIR2_NEG\nCONTEXT_REVIEW_STATUS: complete\nCANDIDATES (each with local context):\n--- C01 ---\nPreceding: \nTarget [P001]: Researchers warned that this AI assistant could pose risks and should be used cautiously.\nFollowing: \n\nADDITIONAL ARTICLE CONTEXT:\n[P001] Researchers warned that this AI assistant could pose risks and should be used cautiously.\nThis is the entire synthetic article; no other article text exists.",
+    "output": {
+      "record_id": "SYNTHETIC_PAIR2_NEG",
+      "units": [],
+      "candidate_decisions": [
+        {
+          "candidate_id": "C01",
+          "proposition": "An AI assistant may pose unspecified risks.",
+          "decision": "rejected",
+          "unit_ids": [],
+          "reason": "The warning does not identify any specific adverse consequence."
+        }
+      ],
+      "context_requests": []
+    }
+  },
+  {
+    "label": "Complex synthetic positive; not a corpus quotation",
+    "synthetic": true,
+    "record_id": "SYNTHETIC_OPERATIONS_A",
+    "article": {
+      "P001": "An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission.",
+      "P002": "Two drivers were each charged twice for a single parking violation.",
+      "P003": "Officials called the duplicate charges unacceptable and refunded them.",
+      "P004": "The vendor disputed the privacy finding, saying the addresses had already been publicly available.",
+      "P005": "The city disabled address display while the privacy inquiry continued."
+    },
+    "input": "RECORD_ID: SYNTHETIC_OPERATIONS_A\nCONTEXT_REVIEW_STATUS: complete\nCANDIDATES (each with local context):\n--- C01 ---\nPreceding: \nTarget [P001]: An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission.\nFollowing: \n--- C02 ---\nPreceding: \nTarget [P002]: Two drivers were each charged twice for a single parking violation.\nFollowing: \n--- C03 ---\nPreceding: \nTarget [P003]: Officials called the duplicate charges unacceptable and refunded them.\nFollowing: \n--- C04 ---\nPreceding: \nTarget [P004]: The vendor disputed the privacy finding, saying the addresses had already been publicly available.\nFollowing: \n--- C05 ---\nPreceding: \nTarget [P005]: The city disabled address display while the privacy inquiry continued.\nFollowing: \n\nADDITIONAL ARTICLE CONTEXT:\n[P001] An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission.\n[P002] Two drivers were each charged twice for a single parking violation.\n[P003] Officials called the duplicate charges unacceptable and refunded them.\n[P004] The vendor disputed the privacy finding, saying the addresses had already been publicly available.\n[P005] The city disabled address display while the privacy inquiry continued.\nThis is the entire synthetic article; no other article text exists.",
+    "candidates": [
+      {
+        "candidate_id": "C01",
+        "paragraph_id": "P001",
+        "quote": "An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission.",
+        "proposition": "Synthetic candidate"
+      },
+      {
+        "candidate_id": "C02",
+        "paragraph_id": "P002",
+        "quote": "Two drivers were each charged twice for a single parking violation.",
+        "proposition": "Synthetic candidate"
+      },
+      {
+        "candidate_id": "C03",
+        "paragraph_id": "P003",
+        "quote": "Officials called the duplicate charges unacceptable and refunded them.",
+        "proposition": "Synthetic candidate"
+      },
+      {
+        "candidate_id": "C04",
+        "paragraph_id": "P004",
+        "quote": "The vendor disputed the privacy finding, saying the addresses had already been publicly available.",
+        "proposition": "Synthetic candidate"
+      },
+      {
+        "candidate_id": "C05",
+        "paragraph_id": "P005",
+        "quote": "The city disabled address display while the privacy inquiry continued.",
+        "proposition": "Synthetic candidate"
+      }
+    ],
+    "output": {
+      "record_id": "SYNTHETIC_OPERATIONS_A",
+      "units": [
+        {
+          "unit_id": "U01",
+          "source_candidates": [
+            "C01",
+            "C02",
+            "C03"
+          ],
+          "confirmed": true,
+          "ambiguity": "none",
+          "resolved_reference": "",
+          "justification": {
+            "consequence": "The audit attributes duplicate fines to the AI ticketing system; P002 is an instance and P003 is evaluation and redress of that same financial harm.",
+            "ai_connection": {
+              "relation": "The audit attributes duplicate fines to the AI ticketing system; P002 is an instance and P003 is evaluation and redress of that same financial harm.",
+              "evidence_spans": [
+                {
+                  "paragraph_id": "P001",
+                  "quote": "An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission."
+                }
+              ]
+            },
+            "is_affirmative": true
+          },
+          "risk_claim_spans": [
+            {
+              "paragraph_id": "P001",
+              "quote": "An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission."
+            }
+          ],
+          "necessary_context_spans": [
+            {
+              "paragraph_id": "P002",
+              "quote": "Two drivers were each charged twice for a single parking violation."
+            },
+            {
+              "paragraph_id": "P003",
+              "quote": "Officials called the duplicate charges unacceptable and refunded them."
+            }
+          ]
+        },
+        {
+          "unit_id": "U02",
+          "source_candidates": [
+            "C01",
+            "C04",
+            "C05"
+          ],
+          "confirmed": true,
+          "ambiguity": "none",
+          "resolved_reference": "",
+          "justification": {
+            "consequence": "The audit alleges unauthorized address disclosure by the AI system. The vendor disputes that allegation; the display restriction responds to privacy, not duplicate fines.",
+            "ai_connection": {
+              "relation": "The audit alleges unauthorized address disclosure by the AI system. The vendor disputes that allegation; the display restriction responds to privacy, not duplicate fines.",
+              "evidence_spans": [
+                {
+                  "paragraph_id": "P001",
+                  "quote": "An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission."
+                }
+              ]
+            },
+            "is_affirmative": true
+          },
+          "risk_claim_spans": [
+            {
+              "paragraph_id": "P001",
+              "quote": "An audit found that the city's AI ticketing system issued duplicate fines and published motorists' home addresses without permission."
+            }
+          ],
+          "necessary_context_spans": [
+            {
+              "paragraph_id": "P004",
+              "quote": "The vendor disputed the privacy finding, saying the addresses had already been publicly available."
+            },
+            {
+              "paragraph_id": "P005",
+              "quote": "The city disabled address display while the privacy inquiry continued."
+            }
+          ]
+        }
+      ],
+      "candidate_decisions": [
+        {
+          "candidate_id": "C01",
+          "proposition": "The audit reports two consequences of the AI ticketing system: duplicate fines and unauthorized disclosure of motorists' home addresses.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01",
+            "U02"
+          ],
+          "reason": "The audit links two materially different harms to the system; retain the existing financial and privacy unit mappings."
+        },
+        {
+          "candidate_id": "C02",
+          "proposition": "Two drivers were each charged twice for one parking violation.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01"
+          ],
+          "reason": "This is a concrete instance of the duplicate-fines harm in U01, not another independent harm."
+        },
+        {
+          "candidate_id": "C03",
+          "proposition": "Officials condemned the duplicate charges as unacceptable and refunded them.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01"
+          ],
+          "reason": "The criticism and refunds concern the duplicate-fines harm in U01, not the privacy allegation."
+        },
+        {
+          "candidate_id": "C04",
+          "proposition": "The vendor disputes the audit's privacy finding, claiming the addresses were already public.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U02"
+          ],
+          "reason": "This is the material rebuttal to the address-disclosure allegation in U02; retain its disputed status."
+        },
+        {
+          "candidate_id": "C05",
+          "proposition": "The city disabled address display during the continuing privacy inquiry.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U02"
+          ],
+          "reason": "This response concerns the privacy allegation in U02, not duplicate fines."
+        }
+      ],
+      "context_requests": []
+    }
+  },
+  {
+    "label": "Complex synthetic positive; not a corpus quotation",
+    "synthetic": true,
+    "record_id": "SYNTHETIC_OPERATIONS_B",
+    "article": {
+      "P001": "An AI translation service caused problems during a harbor evacuation, an inquiry reported.",
+      "P002": "Its translated warning reversed the direction of the evacuation route, sending passengers toward the closed pier.",
+      "P003": "One family followed the translated warning to the closed pier.",
+      "P004": "The operator said the original warning was accurate but acknowledged that the AI translation reversed it.",
+      "P005": "After the inquiry, the harbor required a human interpreter to approve translated evacuation warnings."
+    },
+    "input": "RECORD_ID: SYNTHETIC_OPERATIONS_B\nCONTEXT_REVIEW_STATUS: complete\nCANDIDATES (each with local context):\n--- C01 ---\nPreceding: \nTarget [P001]: An AI translation service caused problems during a harbor evacuation, an inquiry reported.\nFollowing: \n--- C02 ---\nPreceding: \nTarget [P002]: Its translated warning reversed the direction of the evacuation route, sending passengers toward the closed pier.\nFollowing: \n--- C03 ---\nPreceding: \nTarget [P003]: One family followed the translated warning to the closed pier.\nFollowing: \n\nADDITIONAL ARTICLE CONTEXT:\n[P001] An AI translation service caused problems during a harbor evacuation, an inquiry reported.\n[P002] Its translated warning reversed the direction of the evacuation route, sending passengers toward the closed pier.\n[P003] One family followed the translated warning to the closed pier.\n[P004] The operator said the original warning was accurate but acknowledged that the AI translation reversed it.\n[P005] After the inquiry, the harbor required a human interpreter to approve translated evacuation warnings.\nThis is the entire synthetic article; no other article text exists.",
+    "candidates": [
+      {
+        "candidate_id": "C01",
+        "paragraph_id": "P001",
+        "quote": "An AI translation service caused problems during a harbor evacuation, an inquiry reported.",
+        "proposition": "Synthetic candidate"
+      },
+      {
+        "candidate_id": "C02",
+        "paragraph_id": "P002",
+        "quote": "Its translated warning reversed the direction of the evacuation route, sending passengers toward the closed pier.",
+        "proposition": "Synthetic candidate"
+      },
+      {
+        "candidate_id": "C03",
+        "paragraph_id": "P003",
+        "quote": "One family followed the translated warning to the closed pier.",
+        "proposition": "Synthetic candidate"
+      }
+    ],
+    "output": {
+      "record_id": "SYNTHETIC_OPERATIONS_B",
+      "units": [
+        {
+          "unit_id": "U01",
+          "source_candidates": [
+            "C01",
+            "C02",
+            "C03"
+          ],
+          "confirmed": true,
+          "ambiguity": "none",
+          "resolved_reference": "",
+          "justification": {
+            "consequence": "The inquiry links the AI translation error to passengers being directed toward a closed pier. The overview, detailed error and family instance express the same consequence, not three risks.",
+            "ai_connection": {
+              "relation": "The inquiry links the AI translation error to passengers being directed toward a closed pier. The overview, detailed error and family instance express the same consequence, not three risks.",
+              "evidence_spans": [
+                {
+                  "paragraph_id": "P001",
+                  "quote": "An AI translation service caused problems during a harbor evacuation, an inquiry reported."
+                },
+                {
+                  "paragraph_id": "P002",
+                  "quote": "Its translated warning reversed the direction of the evacuation route, sending passengers toward the closed pier."
+                }
+              ]
+            },
+            "is_affirmative": true
+          },
+          "risk_claim_spans": [
+            {
+              "paragraph_id": "P001",
+              "quote": "An AI translation service caused problems during a harbor evacuation, an inquiry reported."
+            },
+            {
+              "paragraph_id": "P002",
+              "quote": "Its translated warning reversed the direction of the evacuation route, sending passengers toward the closed pier."
+            }
+          ],
+          "necessary_context_spans": [
+            {
+              "paragraph_id": "P003",
+              "quote": "One family followed the translated warning to the closed pier."
+            },
+            {
+              "paragraph_id": "P004",
+              "quote": "The operator said the original warning was accurate but acknowledged that the AI translation reversed it."
+            },
+            {
+              "paragraph_id": "P005",
+              "quote": "After the inquiry, the harbor required a human interpreter to approve translated evacuation warnings."
+            }
+          ]
+        }
+      ],
+      "candidate_decisions": [
+        {
+          "candidate_id": "C01",
+          "proposition": "An inquiry reported that an AI translation service caused problems during a harbor evacuation.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01"
+          ],
+          "reason": "The overview is specified by the mistranslated route in P002 and maps to that same risk in U01."
+        },
+        {
+          "candidate_id": "C02",
+          "proposition": "The AI-translated warning reversed the evacuation direction and sent passengers toward a closed pier.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01"
+          ],
+          "reason": "P001 identifies the AI referent; this supplies the specific adverse consequence of the overview, not an additional risk."
+        },
+        {
+          "candidate_id": "C03",
+          "proposition": "One family followed the translated warning to the closed pier.",
+          "decision": "confirmed",
+          "unit_ids": [
+            "U01"
+          ],
+          "reason": "This is an instance of the same misdirection consequence in U01, not a separate risk."
+        }
+      ],
+      "context_requests": []
+    }
+  }
+]

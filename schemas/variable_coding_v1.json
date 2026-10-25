@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "risk_frame_coding_output_schema_v1.json",
+  "title": "AI risk frame coding output v1 (MIT 24-subdomain revision 2026-09-25)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "risk_units"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "risk_units": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/riskUnit"}
+    }
+  },
+  "$defs": {
+    "evidenceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["paragraph_id", "quote"],
+      "properties": {
+        "paragraph_id": {"type": "string", "pattern": "^P[0-9]{3,}$"},
+        "quote": {"type": "string", "minLength": 1}
+      }
+    },
+    "codedLabel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "evidence_spans"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "evidence_spans": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceSpan"}
+        }
+      }
+    },
+    "riskSubdomainLabel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "emergent_label", "evidence_spans"],
+      "properties": {
+        "label": {
+          "enum": [
+            "MIT_1_1_UNFAIR_DISCRIMINATION_MISREPRESENTATION",
+            "MIT_1_2_EXPOSURE_TO_TOXIC_CONTENT",
+            "MIT_1_3_UNEQUAL_PERFORMANCE_ACROSS_GROUPS",
+            "MIT_2_1_PRIVACY_COMPROMISE",
+            "MIT_2_2_AI_SYSTEM_SECURITY_VULNERABILITIES_ATTACKS",
+            "MIT_3_1_FALSE_MISLEADING_INFORMATION",
+            "MIT_3_2_INFORMATION_ECOSYSTEM_POLLUTION",
+            "MIT_4_1_DISINFORMATION_SURVEILLANCE_INFLUENCE_SCALE",
+            "MIT_4_2_CYBERATTACKS_WEAPONS_MASS_HARM",
+            "MIT_4_3_FRAUD_SCAMS_TARGETED_MANIPULATION",
+            "MIT_5_1_OVERRELIANCE_UNSAFE_USE",
+            "MIT_5_2_LOSS_HUMAN_AGENCY_AUTONOMY",
+            "MIT_6_1_POWER_CENTRALIZATION_UNFAIR_BENEFITS",
+            "MIT_6_2_INEQUALITY_EMPLOYMENT_QUALITY",
+            "MIT_6_3_DEVALUATION_HUMAN_EFFORT",
+            "MIT_6_4_COMPETITIVE_DYNAMICS",
+            "MIT_6_5_GOVERNANCE_FAILURE",
+            "MIT_6_6_ENVIRONMENTAL_HARM",
+            "MIT_7_1_AI_GOAL_CONFLICT",
+            "MIT_7_2_DANGEROUS_CAPABILITIES",
+            "MIT_7_3_LACK_CAPABILITY_ROBUSTNESS",
+            "MIT_7_4_LACK_TRANSPARENCY_INTERPRETABILITY",
+            "MIT_7_5_AI_WELFARE_RIGHTS",
+            "MIT_7_6_MULTI_AGENT_RISKS",
+            "OTHER_EMERGENT"
+          ]
+        },
+        "emergent_label": {"type": ["string", "null"]},
+        "evidence_spans": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceSpan"}
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"label": {"const": "OTHER_EMERGENT"}},
+            "required": ["label"]
+          },
+          "then": {
+            "properties": {"emergent_label": {"type": "string", "minLength": 1}}
+          },
+          "else": {
+            "properties": {"emergent_label": {"type": "null"}}
+          }
+        }
+      ]
+    },
+    "binaryEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "evidence_spans"],
+      "properties": {
+        "value": {"type": "integer", "enum": [0, 1]},
+        "evidence_spans": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/evidenceSpan"}
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"value": {"const": 1}},
+            "required": ["value"]
+          },
+          "then": {
+            "properties": {"evidence_spans": {"minItems": 1}}
+          }
+        }
+      ]
+    },
+    "mentalisticEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "evidence_spans"],
+      "properties": {
+        "value": {"type": "integer", "enum": [0, 1, 2]},
+        "evidence_spans": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/evidenceSpan"}
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"value": {"enum": [1, 2]}},
+            "required": ["value"]
+          },
+          "then": {
+            "properties": {"evidence_spans": {"minItems": 1}}
+          }
+        }
+      ]
+    },
+    "moralEvaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target", "direction", "evidence_spans"],
+      "properties": {
+        "target": {"type": "string", "minLength": 1},
+        "direction": {"enum": ["NEGATIVE", "POSITIVE", "MIXED"]},
+        "evidence_spans": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceSpan"}
+        }
+      }
+    },
+    "treatmentRecommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["measure_type", "responsible_actors", "evidence_spans"],
+      "properties": {
+        "measure_type": {
+          "enum": [
+            "TECHNICAL_SAFEGUARDS_TESTING",
+            "AUDIT_IMPACT_ASSESSMENT",
+            "TRANSPARENCY_LABELING",
+            "ORGANIZATIONAL_INDUSTRY_STANDARDS",
+            "REGULATION_LEGISLATION",
+            "RESTRICTION_BAN",
+            "EDUCATION_MEDIA_LITERACY",
+            "LICENSING_COMPENSATION_ACCOUNTABILITY",
+            "INTERNATIONAL_COOPERATION",
+            "OTHER"
+          ]
+        },
+        "responsible_actors": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "DEVELOPERS_COMPANIES",
+              "DEPLOYING_ORGANIZATIONS_PLATFORMS",
+              "USERS",
+              "EDUCATIONAL_PROFESSIONAL_INSTITUTIONS",
+              "GOVERNMENT_REGULATORS",
+              "JUDICIARY_LAW_ENFORCEMENT",
+              "INTERNATIONAL_ORGANIZATIONS",
+              "OTHER"
+            ]
+          }
+        },
+        "evidence_spans": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceSpan"}
+        }
+      }
+    },
+    "riskUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_id",
+        "risk_claim_spans",
+        "problem_definition",
+        "ai_actor_construction",
+        "causal_interpretation",
+        "moral_evaluation",
+        "treatment_recommendation"
+      ],
+      "properties": {
+        "unit_id": {"type": "string", "pattern": "^U[0-9]{2,}$"},
+        "risk_claim_spans": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceSpan"}
+        },
+        "problem_definition": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["risk_subdomains", "affected_entities"],
+          "properties": {
+            "risk_subdomains": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"$ref": "#/$defs/riskSubdomainLabel"}
+            },
+            "affected_entities": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {"$ref": "#/$defs/codedLabel"},
+                  {
+                    "properties": {
+                      "label": {
+                        "enum": [
+                          "INDIVIDUAL_USERS_CONSUMERS",
+                          "WORKERS_PROFESSIONALS",
+                          "CREATORS_RIGHTSHOLDERS",
+                          "STUDENTS_EDUCATORS",
+                          "CHILDREN_VULNERABLE_MINORITY_GROUPS",
+                          "ORGANIZATIONS_BUSINESSES",
+                          "PUBLIC_INSTITUTIONS",
+                          "DEMOCRATIC_INSTITUTIONS_PUBLIC_SPHERE",
+                          "SOCIETY_COMMUNITIES",
+                          "ENVIRONMENT",
+                          "HUMANITY_GLOBAL",
+                          "OTHER"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ai_actor_construction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "human_control_visible",
+            "ai_behavioral_agency",
+            "mentalistic_attribution"
+          ],
+          "properties": {
+            "human_control_visible": {"$ref": "#/$defs/binaryEvidence"},
+            "ai_behavioral_agency": {"$ref": "#/$defs/binaryEvidence"},
+            "mentalistic_attribution": {"$ref": "#/$defs/mentalisticEvidence"}
+          }
+        },
+        "causal_interpretation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["causal_actors"],
+          "properties": {
+            "causal_actors": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {"$ref": "#/$defs/codedLabel"},
+                  {
+                    "properties": {
+                      "label": {
+                        "enum": [
+                          "AI_SYSTEM_TECHNICAL_PROPERTIES",
+                          "DEVELOPERS_TECH_COMPANIES",
+                          "DEPLOYING_ORGANIZATIONS_PLATFORMS",
+                          "USERS_OPERATORS",
+                          "MALICIOUS_ACTORS_CRIMINALS",
+                          "DATA_SOCIAL_STRUCTURE_INSTITUTIONAL_ENVIRONMENT",
+                          "GOVERNMENT_REGULATORY_GAPS",
+                          "OTHER"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "moral_evaluation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["moral_evaluations"],
+          "properties": {
+            "moral_evaluations": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/moralEvaluation"}
+            }
+          }
+        },
+        "treatment_recommendation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["treatment_recommendations"],
+          "properties": {
+            "treatment_recommendations": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/treatmentRecommendation"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

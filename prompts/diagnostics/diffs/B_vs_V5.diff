@@ -1,0 +1,13 @@
+--- parent
++++ revised
+@@ -214,6 +214,10 @@
+   article date, or outlet. Audit decisions are processing metadata, not
+   additional annotation variables.
+ 
++EXECUTION CLARIFICATION OF THE EXISTING DEFINITION
++Human use or misuse of AI is an eligible AI-related factor. Do not reject an otherwise supported proposition merely because the immediate actor is a person using AI; autonomous AI action or an inherent model defect is not an additional requirement. The article must still substantively connect that human activity involving AI to the stated adverse consequence, not just mention the two together.
++When the article already identifies a recognizable specific adverse effect and its AI connection, do not demand a second downstream injury, proof of actual occurrence, quantified loss, or further victim evidence. Do not turn a neutral capability into a harm of your own. An attributed or disputed proposition remains attributed or disputed: preserve material qualifications and rebuttals, and never turn a denial-only statement into an affirmative fact.
++
+ SYNTHETIC EXAMPLES: TWO CONTRASTIVE PAIRS
+ These four miniature articles are invented teaching examples, not corpus
+ quotations or empirical results. They illustrate the existing rules;

@@ -1,0 +1,344 @@
+{
+  "version": "collaboration_export_2026-10-25",
+  "scope": "Allowlisted rules/prompts, adapted historical execution, source-linked error cases, synthetic checks, dequoted scoring/recovery and experiment summaries; no corpus/key/full-response export.",
+  "copied_or_extracted_files": {
+    "docs/extraction_manual_frozen.md": {
+      "source": "TDM过程整理/09_风险框架单元提取/人工补标60篇_2026-10-15/manual_frozen.md",
+      "sha256": "1cc2c145e0f7244b7358e0014526deb983a8c87c048547178c2fc79eb3e48af6",
+      "transformation": "byte-identical copy"
+    },
+    "docs/variable_codebook_v2.md": {
+      "source": "TDM过程整理/10_风险框架编码/risk_frame_coding_codebook_v2.md",
+      "sha256": "5ff9961c419f417d5401bd7be1d5779fe7370ea2744aca1055ed289e99668fc9",
+      "transformation": "byte-identical copy"
+    },
+    "schemas/extraction_output_v2.json": {
+      "source": "TDM过程整理/09_风险框架单元提取/risk_claim_output_schema_v2.json",
+      "sha256": "e42684ea7f85160b3f6708d98d8d76eb09ac52790f43020835d8ad28b42abe17",
+      "transformation": "byte-identical copy"
+    },
+    "schemas/confirmation_v5.json": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/schemas.json",
+      "sha256": "3631966854c413ad0bd1cdd6bf2e75e6ee9bf7e5cd6603ce960289d2ba843f7b",
+      "transformation": "byte-identical copy"
+    },
+    "schemas/two_stage.json": {
+      "source": "round2_delivery/schemas/D3.json",
+      "sha256": "52003fb0218f860091d056cb5e01d5faa24ed45251e37315cf7f8a4d7c97adc3",
+      "transformation": "byte-identical copy"
+    },
+    "schemas/variable_coding_v1.json": {
+      "source": "TDM过程整理/10_风险框架编码/risk_frame_coding_output_schema_v1.json",
+      "sha256": "32e3db4902e1650bd3963c53a7b67b5bcc9361da5bd17f998b8a1738d20b762a",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/variable_coding/direct_v3.md": {
+      "source": "TDM过程整理/10_风险框架编码/risk_frame_coding_prompt_direct_v3.md",
+      "sha256": "aa9a43781a9085496091bb669df6f893ff1e7ba27bdcafa50c53b32b65b76bdb",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/variable_coding/anchored_v3.md": {
+      "source": "TDM过程整理/10_风险框架编码/risk_frame_coding_prompt_anchored_v3.md",
+      "sha256": "3124f044397b1934e6d81dd20dedfc4eda9e2380fbe50c05a49fc564649992d9",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/v5_baseline/v5_call3_user.txt": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/prompts/v5_call3_user.txt",
+      "sha256": "e4def5b4e8bcb1f3e539f5b63085ae670720bc6eb8611b0edb6114f6942fef3b",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/v5_baseline/v5_call2_user.txt": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/prompts/v5_call2_user.txt",
+      "sha256": "688eeac72c5e56b9612e627557e34ace0b93e33cca82e908d788d7e2bd7214a9",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/v5_baseline/v5_call3_system.txt": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/prompts/v5_call3_system.txt",
+      "sha256": "2ca07ffd9e26ce39125d1b3792841aaa4c2c52d689c186cb356560755a12d9f7",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/v5_baseline/v5_call1_system.txt": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/prompts/v5_call1_system.txt",
+      "sha256": "1fdddc6bb0a9a0dd5e79a043001086353cb32324de480a8e5330bc73f5882c26",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/v5_baseline/v5_call1_user.txt": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/prompts/v5_call1_user.txt",
+      "sha256": "145f750069837c75bd903ac1057ff2a71f20e7241bfcb89e4a787c5c0e191395",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/v5_baseline/v5_call2_system.txt": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/prompts/v5_call2_system.txt",
+      "sha256": "66aef615637f0be8979531539212f1108a7034c1b2a85126b6056eb5034456a0",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/R2_E0/v5_call3_system.txt": {
+      "source": "round2_delivery/prompts/R2_E0/v5_call3_system.txt",
+      "sha256": "956ac25e5b73468ea09509048a24add0d84f3abccb2400a486057849094b3e78",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/R2_E/v5_call3_system.txt": {
+      "source": "round2_delivery/prompts/R2_E/v5_call3_system.txt",
+      "sha256": "dba7f74e0208d5c13f25c6b3ead6265acb5bf61b96768683215d80728e882753",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/R2_S0/stage1_system.txt": {
+      "source": "round2_delivery/prompts/R2_S0/stage1_system.txt",
+      "sha256": "35386c4fdfc2984543c8a5c1247b4abcf31d84df29599652a5873723f9134343",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/R2_S0/stage2_system.txt": {
+      "source": "round2_delivery/prompts/R2_S0/stage2_system.txt",
+      "sha256": "71f31fc9ffa4dcc49ade519245440d606efe8f5c011def2517e1282ff6b5a99d",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/R2_S/stage1_system.txt": {
+      "source": "round2_delivery/prompts/R2_S/stage1_system.txt",
+      "sha256": "8555eafdfb654bf26b00f175c9a484ceb353d05a7e6990f15d4f6f8f369c4192",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/R2_S/stage2_system.txt": {
+      "source": "round2_delivery/prompts/R2_S/stage2_system.txt",
+      "sha256": "dfbe8a6d337b10ac5d4ae728507622777ea3c92f9437d6e4b42ecbcd56a1fc94",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/R2_B/v5_call3_system.txt": {
+      "source": "round2_delivery/prompts/R2_B/v5_call3_system.txt",
+      "sha256": "f5cf56a23e62346b867f41be875f49f46e4ea08e0aa086a277d5570110ce7347",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/diffs/E_vs_E0.diff": {
+      "source": "round2_delivery/diffs/E_vs_E0.diff",
+      "sha256": "917045282e4aa2e7fc6d8d12be80c3be36e5234b37e320847ba8da1c749d9482",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/diffs/S_stage1_vs_S0.diff": {
+      "source": "round2_delivery/diffs/S_stage1_vs_S0.diff",
+      "sha256": "f11dbe29e4fc568aee693de99a856c36c61c91f332121999b1962f6d43586f9f",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/diffs/S_stage2_vs_S0.diff": {
+      "source": "round2_delivery/diffs/S_stage2_vs_S0.diff",
+      "sha256": "3483d41fec018f59105e783628f0cb24b21250abb61b454a33244d7e03a29a31",
+      "transformation": "byte-identical copy"
+    },
+    "prompts/diagnostics/diffs/B_vs_V5.diff": {
+      "source": "round2_delivery/diffs/B_vs_V5.diff",
+      "sha256": "cce5ef2f02f9e8185a37aa1d054265e7792ae962f0891620254e51e2e6f5b2de",
+      "transformation": "byte-identical copy"
+    },
+    "src/risk_units/common.py": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/run_comparison.py",
+      "sha256": "bf773650f6ed2f8825bfa3de93379860729095c8a345c0decbc73d0e66370d5a",
+      "source_file_sha256": "09d972a5c64b9e8ca6b96878dee496e767c7ffd835f33d255a9da20d8ecff830",
+      "transformation": "AST-selected function/class bodies unchanged; only safe local imports/header adapted; no historical main, transport, credentials or data paths copied",
+      "selected_definitions": [
+        "validate",
+        "sentence_spans",
+        "candidate_context",
+        "local_package"
+      ]
+    },
+    "src/risk_units/contracts.py": {
+      "source": "TDM过程整理/09_风险框架单元提取/实验/v5/run_v5_60.py",
+      "sha256": "eb481ce9f4a9f3efc68e3ff70cb892dd2b8c6c6d8817c6964faec8e224749b07",
+      "source_file_sha256": "e4ea77251044efbc95c7c0ac9ab6c95d3f4cf0d75f045d05b1326d92a9abfb22",
+      "transformation": "AST-selected function/class bodies unchanged; only safe local imports/header adapted; no historical main, transport, credentials or data paths copied",
+      "selected_definitions": [
+        "render",
+        "canonical",
+        "original_slice",
+        "restore_quotes",
+        "candidate_errors",
+        "merge_candidates",
+        "freeze_candidates",
+        "ContextController",
+        "confirmation_errors",
+        "final_projection"
+      ]
+    },
+    "src/risk_units/two_stage.py": {
+      "source": "round2_delivery/scripts/d3_contract.py",
+      "sha256": "f6eb99e2327410a3e57be4ac432ef06e51206c735d04804053f38aded555feb0",
+      "source_file_sha256": "d1a7c72014f2ed14494a8856cdb01c98481a72b314203cc9d195b73d678021b3",
+      "transformation": "AST-selected function/class bodies unchanged; only safe local imports/header adapted; no historical main, transport, credentials or data paths copied",
+      "selected_definitions": [
+        "check1",
+        "flatten",
+        "derive",
+        "check2"
+      ]
+    },
+    "examples/synthetic_cases.json": {
+      "source": "round2_delivery/prompts/R2_V5 and R2_E synthetic_examples.json",
+      "sha256": "a2d89ddf2012d77a6661ff6c17c935f0dead39d8d93e20ff68c20c3df7b20c94",
+      "transformation": "4 original baseline synthetic cases plus 2 field-corrected complex synthetic cases; no corpus examples"
+    },
+    "reports/scoring_replay.json": {
+      "source": [
+        "round1_delivery/reviews/all_arm_evaluation.json",
+        "round1_delivery/reviews/scoring_catalog.json",
+        "round2_delivery/reviews/scoring_catalog.json",
+        "round2_delivery/reviews/per_article_scores.json",
+        "round2_delivery/reviews/condition_recovery_index.json",
+        "round2_delivery/reviews/semantic_annotations.json",
+        "round2_delivery/reviews/pairwise_comparisons.json"
+      ],
+      "source_sha256": {
+        "round1_delivery/reviews/all_arm_evaluation.json": "b7dae2116117286735c0080190d459ee5ee685e5b2092f20ba366af41c72bfdf",
+        "round1_delivery/reviews/scoring_catalog.json": "310a2d9238ba9a4fc0860a89314ea136572ec41bd413d956d6a2d11c05400df8",
+        "round2_delivery/reviews/scoring_catalog.json": "310a2d9238ba9a4fc0860a89314ea136572ec41bd413d956d6a2d11c05400df8",
+        "round2_delivery/reviews/per_article_scores.json": "cdf360e2ac195e54a2b9dedba5ea2ebfff9471110d323ec7f597f12644c8e776",
+        "round2_delivery/reviews/condition_recovery_index.json": "3bb8fa46ce13722ec4e74976fd3686631566d49334053dea53abed3069c1d950",
+        "round2_delivery/reviews/semantic_annotations.json": "d18d883734751debd23d96857c13e265f183bee1fb9b4a79df13742dcd2feb14",
+        "round2_delivery/reviews/pairwise_comparisons.json": "dbac6f373b96cac332d4870cef1edeae602b48d56b75017199b9ac77f626a71b"
+      },
+      "sha256": "3fd3139e77ad8fabe0874c3c8cade97f88cbe56d1f6171ac7a7468762f3ad2dc",
+      "transformation": "Allowlisted judgment/signature/recovery view; removed quotes, free-text notes, original units, raw responses and personal paths; preserved status, all units, signatures, aliases, IDs, original-result hashes and reference denominators. Includes failed and repeated runs; repeat>1 excluded from main summaries."
+    },
+    "examples/case_index.json": {
+      "source": [
+        "round2_delivery/inputs/candidates/3175258011.json",
+        "round2_delivery/runs/predictions/R2_V5/3175258011/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/3175258011/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/3175258011/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/3175258011/repeat1/result.json",
+        "round2_delivery/inputs/candidates/2881368889.json",
+        "round2_delivery/runs/predictions/R2_V5/2881368889/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/2881368889/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/2881368889/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/2881368889/repeat1/result.json",
+        "round2_delivery/inputs/candidates/2891648776.json",
+        "round2_delivery/runs/predictions/R2_V5/2891648776/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/2891648776/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/2891648776/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/2891648776/repeat1/result.json",
+        "round2_delivery/inputs/candidates/3175482871.json",
+        "round2_delivery/runs/predictions/R2_V5/3175482871/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/3175482871/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/3175482871/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/3175482871/repeat1/result.json",
+        "round2_delivery/inputs/candidates/3313656160.json",
+        "round2_delivery/runs/predictions/R2_V5/3313656160/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/3313656160/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/3313656160/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/3313656160/repeat1/result.json",
+        "round2_delivery/inputs/candidates/3182933225.json",
+        "round2_delivery/runs/predictions/R2_V5/3182933225/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/3182933225/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/3182933225/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/3182933225/repeat1/result.json",
+        "round2_delivery/inputs/candidates/3297946987.json",
+        "round2_delivery/runs/predictions/R2_V5/3297946987/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/3297946987/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/3297946987/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/3297946987/repeat1/result.json",
+        "round2_delivery/inputs/candidates/3367280940.json",
+        "round2_delivery/runs/predictions/R2_V5/3367280940/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_E/3367280940/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_S/3367280940/repeat1/result.json",
+        "round2_delivery/runs/predictions/R2_B/3367280940/repeat1/result.json",
+        "round2_delivery/reviews/stability_results.json"
+      ],
+      "source_sha256": {
+        "round2_delivery/inputs/candidates/3175258011.json": "605a9fe7530dc7a985bfae4560b13a36e09f03ebaff20354912587374105c5d3",
+        "round2_delivery/runs/predictions/R2_V5/3175258011/repeat1/result.json": "41b98229c90f1272b722e5c0ce7bd16f45b481bb6fb7872a9486bdb23fba40ef",
+        "round2_delivery/runs/predictions/R2_E/3175258011/repeat1/result.json": "dfe84cb99bc9824b8cbaa6081d4885073222871ad4f265e727dca45f8eecf6ad",
+        "round2_delivery/runs/predictions/R2_S/3175258011/repeat1/result.json": "33ac1d5d86adec671c73fadd664cf8425f4473958db3868841c9a06090935d1a",
+        "round2_delivery/runs/predictions/R2_B/3175258011/repeat1/result.json": "d770315151b0d84d2fcc30e4a2ff2a838fe5374da6300e7bc902cf2a612dc38f",
+        "round2_delivery/inputs/candidates/2881368889.json": "8994d2c4b784512d1b8893f0a3a4a5e77a90203837d54ba438344c8c53bec9c4",
+        "round2_delivery/runs/predictions/R2_V5/2881368889/repeat1/result.json": "700ed53a0bd215c4c0d30b8e1a8324dea97c94863d13d0d282348fcbb26dbde3",
+        "round2_delivery/runs/predictions/R2_E/2881368889/repeat1/result.json": "b8a5e01aeb66c709bd2d8568d49c1be965349f8bf1dbbb138687ebd31af6d10d",
+        "round2_delivery/runs/predictions/R2_S/2881368889/repeat1/result.json": "fe89a3174c4ff0410e192b05643a9a5781828b2fb8e652758316be2a1ca3e2a2",
+        "round2_delivery/runs/predictions/R2_B/2881368889/repeat1/result.json": "571cc641ca26b31e30f9b42a912e1f31062ba9ef9c6d8fb5f87dd30c054bbdf2",
+        "round2_delivery/inputs/candidates/2891648776.json": "258777cf7c635ee1c903bf3bd5f4884919797ea2b13515eb732f4caf18075c4e",
+        "round2_delivery/runs/predictions/R2_V5/2891648776/repeat1/result.json": "2124d11fcb389cd7a2cbbd2caf25f1a967ee7af8aaf3e233a9c55e2c03b67e48",
+        "round2_delivery/runs/predictions/R2_E/2891648776/repeat1/result.json": "435acc745b4eb5d05101168c0c95089a4c319d410c79daed74b503a541926f64",
+        "round2_delivery/runs/predictions/R2_S/2891648776/repeat1/result.json": "10122f9a1af8a6b51b8002e24c6987000c98a638bf106d3cd85ec6f5e62fd90a",
+        "round2_delivery/runs/predictions/R2_B/2891648776/repeat1/result.json": "f99e1daee55f635b26757f0dd36d56978900bd37f0e8594b37203f63f8aa76fd",
+        "round2_delivery/inputs/candidates/3175482871.json": "9fe0cb1238e1fdcaaaf3d8d4ac1d38a3d128b6bec3d3feeea3659f715640219c",
+        "round2_delivery/runs/predictions/R2_V5/3175482871/repeat1/result.json": "81c70aa92dc7e81f7088f031ea27795f655afbe24614d900708a5e057ddf138f",
+        "round2_delivery/runs/predictions/R2_E/3175482871/repeat1/result.json": "7fd4a4b5d293967897ae767304e113fe82fbb5c371c2aa57d106029f5f6a5d9d",
+        "round2_delivery/runs/predictions/R2_S/3175482871/repeat1/result.json": "aa065a56d7455f0f0a6365376a222ea7a4b03f606be662857bb3c96cb2d3b7a7",
+        "round2_delivery/runs/predictions/R2_B/3175482871/repeat1/result.json": "0cd8d02e8016b09c37de52f796c5d74b23ed9c3b80568303139b264e2d5c5359",
+        "round2_delivery/inputs/candidates/3313656160.json": "7e018fca2780557a35fa6a13ee5e655a230bf6f3b9ec360c4a8a4427df8d31fc",
+        "round2_delivery/runs/predictions/R2_V5/3313656160/repeat1/result.json": "2373e4bba260c85b5bf2a1a4ff43142d9efc2c77e833a3122619f75f71ee8984",
+        "round2_delivery/runs/predictions/R2_E/3313656160/repeat1/result.json": "a1dca2b45f0ed0f96574e9c2bbf6639f09cf8c93ffda3ae7c82a166d1a9a77c4",
+        "round2_delivery/runs/predictions/R2_S/3313656160/repeat1/result.json": "63bf89cfecfc88235dbd2adbd25c32d23d1e8d3d66d3849a1c561c7c96e0668a",
+        "round2_delivery/runs/predictions/R2_B/3313656160/repeat1/result.json": "3b45befdff40cba2a6c2db8a2d0e84adeeb16264f89d7a6955fec9bed4ff3ddd",
+        "round2_delivery/inputs/candidates/3182933225.json": "f8b970ad8d6495bd108cda8122d5a4a72bc4218d25bfbaa50373676b3752e0ed",
+        "round2_delivery/runs/predictions/R2_V5/3182933225/repeat1/result.json": "8b6a0c1079ce9789cf954832869c83613d97b7db2a136b62e8185efd6ba56427",
+        "round2_delivery/runs/predictions/R2_E/3182933225/repeat1/result.json": "2773d370821a3bc5acce20fb7fe07517446063da3f846821c82ab630f9e5c5fa",
+        "round2_delivery/runs/predictions/R2_S/3182933225/repeat1/result.json": "7acd3d91bcddc9fe0eec074118d563f21250390a7294f5375f4a831429b16794",
+        "round2_delivery/runs/predictions/R2_B/3182933225/repeat1/result.json": "1bf1c320e5021698eae0c9288d814419edf817b8e5e1352423041f97b33a24b2",
+        "round2_delivery/inputs/candidates/3297946987.json": "a0dce123fd0be7328cfd434f1762e59e52c9f8762a6e4201051a48225e20bcd2",
+        "round2_delivery/runs/predictions/R2_V5/3297946987/repeat1/result.json": "dc41b7025d65b918c6ebc1f6a4872f425adf032ec01cbcb4ae92935dd9554a4e",
+        "round2_delivery/runs/predictions/R2_E/3297946987/repeat1/result.json": "93e16d69abfb4b8251094e7615de9a85b0ca452d363a524b50becc5c2e38c9eb",
+        "round2_delivery/runs/predictions/R2_S/3297946987/repeat1/result.json": "35c93ec1d01557c34210015c6379d46a1780cbbe1f1365f61b7d9dab1a922b52",
+        "round2_delivery/runs/predictions/R2_B/3297946987/repeat1/result.json": "d434a3922a122b064543e982642eefa515fb72fbe02cee5a4ea7cdfeb999efca",
+        "round2_delivery/inputs/candidates/3367280940.json": "3f408baa511619f889e15ae34e927f5f0d3ee9a311f183d19ccc4ce3c927b9fd",
+        "round2_delivery/runs/predictions/R2_V5/3367280940/repeat1/result.json": "574a954a2b50a4490be76fc7a52ac65e71f86501b4ff719d97a4c0d9cc65b9cc",
+        "round2_delivery/runs/predictions/R2_E/3367280940/repeat1/result.json": "e76f38b9696c8d485b72c7b543d3d88a975a82536f2d3565341aa127492a424b",
+        "round2_delivery/runs/predictions/R2_S/3367280940/repeat1/result.json": "f329b6d093da1e56cbfd6f4a7a5a990d3bc2bf965ee08e9200cc5781d53b74bb",
+        "round2_delivery/runs/predictions/R2_B/3367280940/repeat1/result.json": "6b2385527e5e035bf3a97cacc06f5583c6b8c4fd2a559a1ecc067767bce70b2d",
+        "round2_delivery/reviews/stability_results.json": "2cf8023bb1be31841cffffede447b6181ed10a0a16b3eba0e715cfc9cd8204d0"
+      },
+      "sha256": "3db3391fc966ca84896dffa25046411811706e4aecbe5fd95d81bc0c6ac19933",
+      "transformation": "Selected real candidate IDs and output decisions/maps/consequence fragments; omitted all article quotes, complete units and responses. Stable source IDs/hashes retained."
+    },
+    "src/risk_units/prep.py": {
+      "source": [
+        "project/TDM过程整理/09_风险框架单元提取/实验/prepare_comparison.py"
+      ],
+      "source_sha256": {
+        "project/TDM过程整理/09_风险框架单元提取/实验/prepare_comparison.py": "895db2400e702a1f5f4436eecf356a0dd5db68187bdbfe9b61a98b83281e3701"
+      },
+      "sha256": "b89bfec5534d4125e58bdebac13223b969c133dfb038bf45bb34107d09dec025",
+      "transformation": "AST-selected function bodies unchanged; removed historical data paths and preparation main; runner supplies tokenizer."
+    },
+    "src/risk_units/pipeline.py": {
+      "source": [
+        "project/TDM过程整理/09_风险框架单元提取/实验/v5/run_v5_60.py",
+        "project/TDM过程整理/09_风险框架单元提取/实验/v5/run_v5_60_nov.py"
+      ],
+      "source_sha256": {
+        "project/TDM过程整理/09_风险框架单元提取/实验/v5/run_v5_60.py": "e4ea77251044efbc95c7c0ac9ab6c95d3f4cf0d75f045d05b1326d92a9abfb22",
+        "project/TDM过程整理/09_风险框架单元提取/实验/v5/run_v5_60_nov.py": "f8ead413e26614513e52a446b8c15dfe4ba46c2eed3488b48a2f329ad049a4ce"
+      },
+      "sha256": "7aa000aecfa72565ff19b2aa1794d267b6ec6cf8a0adeee77e1265fa1b13d2b1",
+      "transformation": "AST-selected historical execution bodies unchanged except removal of saved temporary-key fallback. Safe imports; November model inherited from wrapper. Historical 60-article/gold-dependent main replaced by explicit local-only runner; no experimental API calls in this export."
+    },
+    "src/risk_units/scoring.py": {
+      "source": [
+        "round2_delivery/scripts/score.py"
+      ],
+      "source_sha256": {
+        "round2_delivery/scripts/score.py": "c00eda77ee5335d288a15d0e2aaae654c78e9b98458b48d5d4ffe036515ece4f"
+      },
+      "sha256": "fa61d4aa7f30ca66b360784b072ad99a16551fc7c0534034d561618c25cece8b",
+      "transformation": "AST-selected functions unchanged; no runtime imports, data reads or semantic classifiers."
+    },
+    "reports/experiment_index.json": {
+      "source": [
+        "round1_delivery/reviews/execution_audit.json",
+        "round1_delivery/baseline_identity.json",
+        "round1_delivery/panels/diagnostic_manifest.json",
+        "round2_delivery/reviews/runtime_and_quotes.json",
+        "round2_delivery/experiment_registration.json",
+        "round2_delivery/panels/diagnostic_manifest.json"
+      ],
+      "source_sha256": {
+        "round1_delivery/reviews/execution_audit.json": "0a1f2971b9fe40050a33ffd2578a44610ffe2b43a70a335b110c0c92b1fa2fcc",
+        "round1_delivery/baseline_identity.json": "fde8135daa4dd102989089690820dcabf087efb06ec74828e5a532a51fde7343",
+        "round1_delivery/panels/diagnostic_manifest.json": "c052dafd20facf257035982f84a46d88155c015f2c07594e1446ec036d314cfc",
+        "round2_delivery/reviews/runtime_and_quotes.json": "d4b6938b36e0de966d7d62686079a9973f2eda0c01c41e76bd47a4a50517b7db",
+        "round2_delivery/experiment_registration.json": "2923bb6199639deacdbc83b3bef177a678add1de26a211d2e56a97c9da7a54e8",
+        "round2_delivery/panels/diagnostic_manifest.json": "91bffd32d45af568f594231c58b452f2b9ae91dffba7ef8feaea953fe88de43a"
+      },
+      "sha256": "49e6b9e57261daf2317870e4ecd447c411406fe9d4fa989b6516e4445778d43f",
+      "transformation": "Allowlisted panel/config/registration/runtime metadata only; no full requests, article bodies, gold quotes or absolute paths."
+    }
+  },
+  "excluded": "Full news, reference quotations, raw API payloads, holdout/test bodies, secrets, notebooks and environments. Judgment signatures and article IDs are exported, not news text.",
+  "baseline": "actual v5 six messages; all diagnostics are unsuccessful experimental conditions, not upgrades"
+}

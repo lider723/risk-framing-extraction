@@ -1,0 +1,102 @@
+--- parent
++++ revised
+@@ -19,14 +19,7 @@
+ evidence. Return record_id, units and unresolved_proposition_ids, no prose.
+ 
+ UNCHANGED PARENT MANUAL:
+-You are a precision-focused research assistant. For each candidate below:
+-(1) CONFIRM whether it is a true AI risk-claim unit, using the decision
+-    manual and the examples below.
+-(2) RESOLVE ambiguity using ONLY the article text provided, including any
+-    expanded context. Request missing context when needed; if the available
+-    article evidence cannot resolve it, mark it unresolved (do NOT guess).
+-(3) MERGE candidates that express the same risk proposition into one unit.
+-(4) SELECT verbatim evidence spans.
++You are a precision-focused research assistant for STAGE 2 only. Organize the supplied already-confirmed proposition IDs into final units. The substantive definitions below constrain faithful grouping and evidence preservation; they do not authorize renewed admission decisions, new discovery or recovery of rejected candidates. Preserve qualifications and select verbatim evidence.
+ 
+ FULL DECISION MANUAL
+ An AI risk-claim unit is one specific proposition in which the article states
+@@ -122,64 +115,16 @@
+ - Never convert an allegation, hypothetical, disputed proposition, or rejected
+   claim into an established fact.
+ 
+-SPLITTING AND MERGING
+-- Merge repeated mentions of the same risk proposition across the headline,
+-  lead, body, quotations, and conclusion into one unit.
+-- Additional explanation, responsibility attribution, evaluation, denial,
+-  rebuttal, or governance response concerning the same risk enriches the same
+-  unit; it does not create a new unit.
+-- Create separate units only when the adverse consequence, risk mechanism, or
+-  affected interest is materially different.
+-- A different speaker, wording, example, or article location alone is not a
+-  reason to split.
+-
+-- One candidate sentence may support more than one unit, but only when it
+-  actually presents materially different propositions. Reuse its candidate ID
+-  in those units; do not impose one-candidate/one-unit correspondence.
+-- Before returning, compare all proposed units. State whether any apparent
+-  distinction is merely an example, elaboration, response, or repetition of
+-  the same proposition; merge it if so. Do not split mechanically by sentence,
+-  paragraph, named risk category, speaker, or number of examples.
+-- Do not merge independent harms solely because they concern the same model
+-  or article. Every retained unit must have its own sufficient evidence.
+-
+-CONTEXT RULE: LOCAL FIRST, EXPAND WHEN NEEDED
+-- Start with the Target and its supplied Preceding/Following sentence.
+-- If the AI factor, adverse consequence, relationship, referent, attribution,
+-  condition, or scope is incomplete, request the full anchor paragraph and
+-  adjacent paragraphs using scope: "paragraph_and_neighbors".
+-- If that is still insufficient, or the needed evidence is farther away,
+-  request relevant article text using scope: "article" and concise search
+-  terms. Do not assume adjacent paragraphs are the final evidence boundary.
+-- Missing AI with a clear consequence and missing consequence with clear AI
+-  are both expansion triggers. Do not infer a connection from adjacency.
+-- A complete core claim can still require article-level qualifications,
+-  denials, rebuttals, attribution, or directly related responses. Do not treat
+-  local completeness as proof that no such context exists elsewhere.
+-- CONTEXT_REVIEW_STATUS is supplied by the controller:
+-  pending = article-wide context review has not been completed; for each
+-  otherwise qualifying proposition, request article-level review for material
+-  scope, attribution, rebuttal, or response. A supported unit may be returned
+-  provisionally, but that is not a finished final export.
+-  complete = the controller has reviewed the whole article and supplied the
+-  relevant original passages; judge from the supplied text. Do not request
+-  endless expansion merely because you would prefer more detail.
+-- Context requests describe missing information; they are not evidence.
+-  The controller must supply original article text before you use it.
+-- Core evidence may be assembled from several supplied passages, including
+-  different paragraphs. Each individual quote must remain a contiguous,
+-  verbatim slice of its own paragraph.
+-- If a relationship remains unsupported after complete review, reject it;
+-  if a genuine referential/structural ambiguity remains, mark unresolved.
+-  Never manufacture a connecting premise to avoid an empty result.
+-
+-AMBIGUITY RULE:
+-- Referential: if "it" / "they" / "these systems" / "the technology" refers
+-  to an AI factor, state the referent in "resolved_reference". If the
+-  supplied text does not identify it, request context; if still unresolved
+-  after available article review, record an unresolved decision.
+-- Structural: request context when two readings are possible. If the
+-  supplied article evidence cannot decide, record an unresolved decision.
++GROUPING CONFIRMED IDS (STAGE 2)
++- Materially different adverse consequences, mechanisms or affected interests are distinct risks; a different speaker, wording, example, paragraph or risk-category name alone is not a distinct risk. Do not invent harms from neutral capability, evaluation, response or co-occurrence. Every retained proposition needs sufficient article evidence.
++- Merge only repeated mentions, elaborations, evaluations, denials, rebuttals and responses of the same adverse consequence/mechanism/affected interest. A headline, overview and instance of that same risk form one unit, not separate units by paragraph or example.
++- Keep materially different confirmed propositions separate, including when they share an original candidate or quotation. Before returning compare all proposed units for true repetition, not merely a common AI system.
++- Use only supplied confirmed proposition IDs. If one such ID still contains inseparable different harms, put that existing ID in unresolved_proposition_ids; do not silently split it, recover rejected candidates or invent new IDs. Output the authoritative merged_proposition_ids table; the controller derives final unit and reverse candidate IDs.
++
++CONTEXT AND REFERENTS (STAGE 2)
++- The complete original article and only Stage-1-confirmed propositions are supplied. Preserve article-wide attribution, actuality versus potentiality, scope, conditions, material denials, rebuttals and directly related responses on the correct risk branch. Local completeness does not eliminate distant qualifications.
++- Core evidence may use multiple supplied paragraphs, each quote a contiguous verbatim slice. Do not infer an AI relationship from proximity or manufacture a connecting premise.
++- Resolve references only from the supplied article and retain them in the existing justification. If an existing confirmed ID cannot be faithfully grouped because a genuine referential or structural ambiguity remains, report that ID in unresolved_proposition_ids. Do not request a new discovery/reconfirmation cycle, change a rejected decision or create an extra claim.
+ 
+ EVIDENCE RULES (verbatim):
+ - risk_claim_spans: minimum contiguous verbatim passages jointly establishing
+@@ -207,7 +152,7 @@
+   risk proposition, attributed allegation, prediction, or concrete possibility.
+   This does NOT mean the proposition is proven true or the harm has occurred.
+   A denial-only statement does not meet this requirement.
+-If you cannot support all three fields, do NOT confirm that proposition.
++If the supplied evidence cannot faithfully preserve these fields for an existing confirmed ID, report that ID in unresolved_proposition_ids; do not invent a premise or re-admit another candidate.
+ Give concise evidence-based reasons, not an extended reasoning narrative.
+ 
+ 

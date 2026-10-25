@@ -1,0 +1,17 @@
+Extract candidate AI risk-claim sentences from the article below.
+
+RECORD_ID: {record_id}
+TITLE: [P000] {title}
+ARTICLE: {paragraph_numbered_article}
+
+Return JSON exactly:
+{
+  "record_id": "{record_id}",
+  "candidates": [
+    {"candidate_id": "C01",
+     "paragraph_id": "P002",
+     "quote": "exact verbatim sentence",
+     "proposition": "one-sentence restatement, <= 20 words"}
+  ]
+}
+Rules: quote copied EXACTLY, no editing. Article order. Empty list if none.

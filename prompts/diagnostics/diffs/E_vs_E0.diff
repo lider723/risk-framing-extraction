@@ -1,0 +1,99 @@
+--- parent
++++ revised
+@@ -338,49 +338,49 @@
+   "candidate_decisions": [
+     {
+       "candidate_id": "C01",
+-      "proposition": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines.",
++      "proposition": "The audit reports two consequences of the AI ticketing system: duplicate fines and unauthorized disclosure of motorists' home addresses.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U01",
+         "U02"
+       ],
+-      "reason": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines."
++      "reason": "The audit links two materially different harms to the system; retain the existing financial and privacy unit mappings."
+     },
+     {
+       "candidate_id": "C02",
+-      "proposition": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines.",
++      "proposition": "Two drivers were each charged twice for one parking violation.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U01"
+       ],
+-      "reason": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines."
++      "reason": "This is a concrete instance of the duplicate-fines harm in U01, not another independent harm."
+     },
+     {
+       "candidate_id": "C03",
+-      "proposition": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines.",
++      "proposition": "Officials condemned the duplicate charges as unacceptable and refunded them.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U01"
+       ],
+-      "reason": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines."
++      "reason": "The criticism and refunds concern the duplicate-fines harm in U01, not the privacy allegation."
+     },
+     {
+       "candidate_id": "C04",
+-      "proposition": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines.",
++      "proposition": "The vendor disputes the audit's privacy finding, claiming the addresses were already public.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U02"
+       ],
+-      "reason": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines."
++      "reason": "This is the material rebuttal to the address-disclosure allegation in U02; retain its disputed status."
+     },
+     {
+       "candidate_id": "C05",
+-      "proposition": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines.",
++      "proposition": "The city disabled address display during the continuing privacy inquiry.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U02"
+       ],
+-      "reason": "C01 contains two independent harms. Instances and responses enrich their respective harm; they are not additional harms. Preserve the privacy rebuttal without attaching it to the fines."
++      "reason": "This response concerns the privacy allegation in U02, not duplicate fines."
+     }
+   ],
+   "context_requests": []
+@@ -500,30 +500,30 @@
+   "candidate_decisions": [
+     {
+       "candidate_id": "C01",
+-      "proposition": "Full context identifies the AI referent in P002. Merge the overview and instance. The operator distinguishes the accurate source warning from the faulty translation; human approval addresses this translation risk.",
++      "proposition": "An inquiry reported that an AI translation service caused problems during a harbor evacuation.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U01"
+       ],
+-      "reason": "Full context identifies the AI referent in P002. Merge the overview and instance. The operator distinguishes the accurate source warning from the faulty translation; human approval addresses this translation risk."
++      "reason": "The overview is specified by the mistranslated route in P002 and maps to that same risk in U01."
+     },
+     {
+       "candidate_id": "C02",
+-      "proposition": "Full context identifies the AI referent in P002. Merge the overview and instance. The operator distinguishes the accurate source warning from the faulty translation; human approval addresses this translation risk.",
++      "proposition": "The AI-translated warning reversed the evacuation direction and sent passengers toward a closed pier.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U01"
+       ],
+-      "reason": "Full context identifies the AI referent in P002. Merge the overview and instance. The operator distinguishes the accurate source warning from the faulty translation; human approval addresses this translation risk."
++      "reason": "P001 identifies the AI referent; this supplies the specific adverse consequence of the overview, not an additional risk."
+     },
+     {
+       "candidate_id": "C03",
+-      "proposition": "Full context identifies the AI referent in P002. Merge the overview and instance. The operator distinguishes the accurate source warning from the faulty translation; human approval addresses this translation risk.",
++      "proposition": "One family followed the translated warning to the closed pier.",
+       "decision": "confirmed",
+       "unit_ids": [
+         "U01"
+       ],
+-      "reason": "Full context identifies the AI referent in P002. Merge the overview and instance. The operator distinguishes the accurate source warning from the faulty translation; human approval addresses this translation risk."
++      "reason": "This is an instance of the same misdirection consequence in U01, not a separate risk."
+     }
+   ],
+   "context_requests": []

@@ -1,0 +1,1047 @@
+{
+  "mainline": "risk-unit extraction only; downstream coding paused; v5 is a development baseline, not production approval",
+  "baseline_identity": {
+    "baseline": "v5 November actual templates",
+    "original_prompt_sha256": {
+      "call1_system": "1fdddc6bb0a9a0dd5e79a043001086353cb32324de480a8e5330bc73f5882c26",
+      "call1_user": "145f750069837c75bd903ac1057ff2a71f20e7241bfcb89e4a787c5c0e191395",
+      "call2_system": "66aef615637f0be8979531539212f1108a7034c1b2a85126b6056eb5034456a0",
+      "call2_user": "688eeac72c5e56b9612e627557e34ace0b93e33cca82e908d788d7e2bd7214a9",
+      "call3_system": "2ca07ffd9e26ce39125d1b3792841aaa4c2c52d689c186cb356560755a12d9f7",
+      "call3_user": "e4def5b4e8bcb1f3e539f5b63085ae670720bc6eb8611b0edb6114f6942fef3b"
+    },
+    "six_templates_match_historical_manifest": true,
+    "model": "gpt-4o-2024-11-20",
+    "endpoint": "https://api.vveai.com/v1",
+    "temperature": 0,
+    "schema_sha256": "3631966854c413ad0bd1cdd6bf2e75e6ee9bf7e5cd6603ce960289d2ba843f7b",
+    "controller_sha256": "e4ea77251044efbc95c7c0ac9ab6c95d3f4cf0d75f045d05b1326d92a9abfb22",
+    "wrapper_sha256": "f8ead413e26614513e52a446b8c15dfe4ba46c2eed3488b48a2f329ad049a4ce",
+    "chunking": "o200k_base, approx 800 tokens; intact paragraphs; overlap one paragraph; same v5 pure functions",
+    "context_full_pipeline": "local -> requested paragraph neighbors/article -> mandatory full-article successful review -> complete final round; maximum6",
+    "diagnostic_context": "full article from first confirmation request, complete; not a historical full-pipeline F1 comparison",
+    "D1_contract_fix": "none unless offline checker identifies a hard contract failure; baseline remains byte-identical",
+    "transport_difference_from_historical": "bounded3 rather than historical4 total transport attempts; max2 rather than historical1 contract repair, common to D0/D1/D2; SDK retries0; no v6 quote/merge rules",
+    "four_original_examples_sha256": "0f53483d889a9f5322bb3cb0b1d5e80fb27939a6e95be1d924b4e5f3e2ffecb6"
+  },
+  "round1": {
+    "panel": [
+      {
+        "record_id": "3182334861",
+        "annotation_order": 2,
+        "reason": "reference and v5 negative; human medical bias is not AI harm",
+        "article_sha256": "c52679749c3a8f7144d75b4e4e431b32548c2eeba5b9a0e5cd920af6a9ffd4e0",
+        "candidate_sha256": "4c311d721af9b53e38464de521d4f4165c9d4b3958154b802158b642b577df60",
+        "candidate_count": 5,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3255564008",
+        "annotation_order": 3,
+        "reason": "optional technical contrast: candidate/unit mapping failure",
+        "article_sha256": "ee337bae98273ab5e4cf4aaedac594a99c110cc21a7f033d59ba89919b5a306d",
+        "candidate_sha256": "c6581d37d9dfa11e27283909b8dfde3b0fe8c1445bd26b4647f80384edbadf2e",
+        "candidate_count": 11,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3173716637",
+        "annotation_order": 4,
+        "reason": "correct positive: future employment risk",
+        "article_sha256": "e06a41916ed6d88c6efc4a5191fbc464eecf4afa94574fce18ed6adc59f39348",
+        "candidate_sha256": "7695f0c22cee528b9ff5f7054e6326fc1121aa97670235d26c7c9fd5499a1202",
+        "candidate_count": 2,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "2763593998",
+        "annotation_order": 5,
+        "reason": "correct positive: generated-image bias",
+        "article_sha256": "a2e544eb0940f4e172413bd9dafb38b0b89f22f2b167effc26a0898153656765",
+        "candidate_sha256": "903fd0ca908cbf0e0b01cfafa005ffd83d7aff112eda07e66ba92c381efee777",
+        "candidate_count": 4,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3367280940",
+        "annotation_order": 8,
+        "reason": "correct positive: artistic opportunities",
+        "article_sha256": "a6102e4813a4e15703b543fc51bbd0a00a657935b9d23ab026fc29dbc7d2b472",
+        "candidate_sha256": "3f408baa511619f889e15ae34e927f5f0d3ee9a311f183d19ccc4ce3c927b9fd",
+        "candidate_count": 2,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3182933225",
+        "annotation_order": 11,
+        "reason": "reference and v5 negative governance article",
+        "article_sha256": "c495eefec30b08415601c51c0f898bd7e3a60c9971f5e55780f6631cc7b7b1d7",
+        "candidate_sha256": "f8b970ad8d6495bd108cda8122d5a4a72bc4218d25bfbaa50373676b3752e0ed",
+        "candidate_count": 3,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3297946987",
+        "annotation_order": 14,
+        "reason": "v5 actual stock loss discovery miss, capacity context duplication",
+        "article_sha256": "53e0cf073ef9c97ab07ffe39f797efbef29517402be33673be8f1d5be53e9a6e",
+        "candidate_sha256": "a0dce123fd0be7328cfd434f1762e59e52c9f8762a6e4201051a48225e20bcd2",
+        "candidate_count": 4,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3175258011",
+        "annotation_order": 23,
+        "reason": "v5 C05 creativity confirmation reject",
+        "article_sha256": "eae02a25c8ff577194d9e7a69fd2dbac865307719d18d9ed67876d2eb3fbda2b",
+        "candidate_sha256": "605a9fe7530dc7a985bfae4560b13a36e09f03ebaff20354912587374105c5d3",
+        "candidate_count": 5,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "2881368889",
+        "annotation_order": 24,
+        "reason": "v5 C02 multiple misuse harms rejected",
+        "article_sha256": "fcf89638bd00f4b8d0587f6db1df41946cb6359336671cd488a02cef1325f196",
+        "candidate_sha256": "8994d2c4b784512d1b8893f0a3a4a5e77a90203837d54ba438344c8c53bec9c4",
+        "candidate_count": 4,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3175482871",
+        "annotation_order": 25,
+        "reason": "v5 advertising black-box duplication",
+        "article_sha256": "2f57dae6e2c7e79c5d6445b9f992b58a968b0de1bfb34dd0cc762ee0f407e1dc",
+        "candidate_sha256": "9fe0cb1238e1fdcaaaf3d8d4ac1d38a3d128b6bec3d3feeea3659f715640219c",
+        "candidate_count": 11,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3076798484",
+        "annotation_order": 28,
+        "reason": "v5 paperclip target absent from discovery; ethical/addiction duplicates",
+        "article_sha256": "f9ed4f5118f670a6430720361c6b1e5777f117f93649885695887b206b954769",
+        "candidate_sha256": "413bbb77d8713ab922040eb88f4587cefaed21deadb6e326d696ceb504fd3d9d",
+        "candidate_count": 16,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3176421865",
+        "annotation_order": 32,
+        "reason": "v5 harassment C07 rejected while suspension confirmed",
+        "article_sha256": "eec2dc1815a4735b29964c45f8a344fedacf5fbb3507174f76c55dcfa6d99dfa",
+        "candidate_sha256": "fe0a2c8af99f826c6101bbce52331c1ce272afe02e1edb2e86b11d0f76678fdf",
+        "candidate_count": 7,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "2891648776",
+        "annotation_order": 35,
+        "reason": "v5 C03 employment and warfare mixed",
+        "article_sha256": "d0ae5ed8ae8181ebb4c317f9dc69bbd084463fcb1a3f4375d2e79d2edcb705d0",
+        "candidate_sha256": "258777cf7c635ee1c903bf3bd5f4884919797ea2b13515eb732f4caf18075c4e",
+        "candidate_count": 3,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3313656160",
+        "annotation_order": 40,
+        "reason": "v5 overview, instances and evaluations counted separately",
+        "article_sha256": "326837eba01986f0b9ce60ef48955fdf24ec9afbc21c8609d55def0e10b50a42",
+        "candidate_sha256": "7e018fca2780557a35fa6a13ee5e655a230bf6f3b9ec360c4a8a4427df8d31fc",
+        "candidate_count": 13,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3182336378",
+        "annotation_order": 42,
+        "reason": "optional historical difference/boundary: financing condition not AI risk",
+        "article_sha256": "ca2eca366ac931c181057bf83698460f5c26ea231b33d916857d14d833f4a1e0",
+        "candidate_sha256": "81d5e0e8bd7ec52aa7c3bf858f6e5fbc405f386d405ebe7106ec06a49518862f",
+        "candidate_count": 5,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      },
+      {
+        "record_id": "3334079418",
+        "annotation_order": 55,
+        "reason": "correct positive: companion manipulation/dependence",
+        "article_sha256": "59358676ac91842a5d78e60077003b11fbd0e058c55d1f92832a47b9a36882e4",
+        "candidate_sha256": "b57bc97b75235e22b3fc4b3f3eea76e56bb606477504c700464b2b363461e979",
+        "candidate_count": 3,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions"
+      }
+    ],
+    "execution": {
+      "actual_requests": 105,
+      "returned_total_tokens": 846788,
+      "usage_missing_requests": 0,
+      "groups": {
+        "panel/D0": {
+          "requests": 20,
+          "returned_total_tokens": 139435,
+          "usage_missing_requests": 0,
+          "transport_retries": 0,
+          "contract_repair_requests": 4,
+          "summed_request_elapsed_seconds": 137.86,
+          "response_models": {
+            "gpt-4o-2024-11-20": 20
+          }
+        },
+        "panel/D1": {
+          "requests": 18,
+          "returned_total_tokens": 138229,
+          "usage_missing_requests": 0,
+          "transport_retries": 0,
+          "contract_repair_requests": 2,
+          "summed_request_elapsed_seconds": 130.911,
+          "response_models": {
+            "gpt-4o-2024-11-20": 18
+          }
+        },
+        "panel/D2": {
+          "requests": 21,
+          "returned_total_tokens": 217998,
+          "usage_missing_requests": 0,
+          "transport_retries": 0,
+          "contract_repair_requests": 5,
+          "summed_request_elapsed_seconds": 172.822,
+          "response_models": {
+            "gpt-4o-2024-11-20": 21
+          }
+        },
+        "panel/D3": {
+          "requests": 32,
+          "returned_total_tokens": 250875,
+          "usage_missing_requests": 0,
+          "transport_retries": 0,
+          "contract_repair_requests": 1,
+          "summed_request_elapsed_seconds": 250.737,
+          "response_models": {
+            "gpt-4o-2024-11-20": 32
+          }
+        },
+        "stability/D1": {
+          "requests": 14,
+          "returned_total_tokens": 100251,
+          "usage_missing_requests": 0,
+          "transport_retries": 0,
+          "contract_repair_requests": 2,
+          "summed_request_elapsed_seconds": 52.526,
+          "response_models": {
+            "gpt-4o-2024-11-20": 14
+          }
+        }
+      },
+      "statuses": {
+        "D0": {
+          "OK": 16
+        },
+        "D1": {
+          "OK": 16
+        },
+        "D2": {
+          "OK": 15,
+          "VALIDATION_ERROR": 1
+        },
+        "D3": {
+          "OK": 15,
+          "PARTIAL": 1
+        }
+      },
+      "response_models": {
+        "gpt-4o-2024-11-20": 105
+      },
+      "stage_calls_before_contract_repairs": 91,
+      "stage_first_response_not_fully_acceptable": 13,
+      "stage_final_failure_after_allowed_repairs": 2,
+      "first_response_quote_checks_including_repeated_justification_quotes": 499,
+      "first_response_verbatim": 499,
+      "final_export_quote_count": 186,
+      "final_export_verbatim": 186
+    }
+  },
+  "round2": {
+    "panel": [
+      {
+        "record_id": "3175258011",
+        "annotation_order": 23,
+        "reason": "v5 C05 creativity confirmation reject",
+        "article_sha256": "eae02a25c8ff577194d9e7a69fd2dbac865307719d18d9ed67876d2eb3fbda2b",
+        "candidate_sha256": "605a9fe7530dc7a985bfae4560b13a36e09f03ebaff20354912587374105c5d3",
+        "candidate_count": 5,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "creativity C05: no extra downstream harm requirement"
+      },
+      {
+        "record_id": "2881368889",
+        "annotation_order": 24,
+        "reason": "v5 C02 multiple misuse harms rejected",
+        "article_sha256": "fcf89638bd00f4b8d0587f6db1df41946cb6359336671cd488a02cef1325f196",
+        "candidate_sha256": "8994d2c4b784512d1b8893f0a3a4a5e77a90203837d54ba438344c8c53bec9c4",
+        "candidate_count": 4,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "C02 misuse: retain both plagiarism and false news independently"
+      },
+      {
+        "record_id": "2891648776",
+        "annotation_order": 35,
+        "reason": "v5 C03 employment and warfare mixed",
+        "article_sha256": "d0ae5ed8ae8181ebb4c317f9dc69bbd084463fcb1a3f4375d2e79d2edcb705d0",
+        "candidate_sha256": "258777cf7c635ee1c903bf3bd5f4884919797ea2b13515eb732f4caf18075c4e",
+        "candidate_count": 3,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "C03: separate employment and autonomous warfare"
+      },
+      {
+        "record_id": "3175482871",
+        "annotation_order": 25,
+        "reason": "v5 advertising black-box duplication",
+        "article_sha256": "2f57dae6e2c7e79c5d6445b9f992b58a968b0de1bfb34dd0cc762ee0f407e1dc",
+        "candidate_sha256": "9fe0cb1238e1fdcaaaf3d8d4ac1d38a3d128b6bec3d3feeea3659f715640219c",
+        "candidate_count": 11,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "deduplicate advertising overview/examples"
+      },
+      {
+        "record_id": "3313656160",
+        "annotation_order": 40,
+        "reason": "v5 overview, instances and evaluations counted separately",
+        "article_sha256": "326837eba01986f0b9ce60ef48955fdf24ec9afbc21c8609d55def0e10b50a42",
+        "candidate_sha256": "7e018fca2780557a35fa6a13ee5e655a230bf6f3b9ec360c4a8a4427df8d31fc",
+        "candidate_count": 13,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "overview/instances/evaluation; observe mapping failures"
+      },
+      {
+        "record_id": "3297946987",
+        "annotation_order": 14,
+        "reason": "v5 actual stock loss discovery miss, capacity context duplication",
+        "article_sha256": "53e0cf073ef9c97ab07ffe39f797efbef29517402be33673be8f1d5be53e9a6e",
+        "candidate_sha256": "a0dce123fd0be7328cfd434f1762e59e52c9f8762a6e4201051a48225e20bcd2",
+        "candidate_count": 4,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "observe truncation/capacity duplicates; stock loss missing at discovery is separate"
+      },
+      {
+        "record_id": "3173716637",
+        "annotation_order": 4,
+        "reason": "correct positive: future employment risk",
+        "article_sha256": "e06a41916ed6d88c6efc4a5191fbc464eecf4afa94574fce18ed6adc59f39348",
+        "candidate_sha256": "7695f0c22cee528b9ff5f7054e6326fc1121aa97670235d26c7c9fd5499a1202",
+        "candidate_count": 2,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "regression: future employment"
+      },
+      {
+        "record_id": "2763593998",
+        "annotation_order": 5,
+        "reason": "correct positive: generated-image bias",
+        "article_sha256": "a2e544eb0940f4e172413bd9dafb38b0b89f22f2b167effc26a0898153656765",
+        "candidate_sha256": "903fd0ca908cbf0e0b01cfafa005ffd83d7aff112eda07e66ba92c381efee777",
+        "candidate_count": 4,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "regression: generated-image bias"
+      },
+      {
+        "record_id": "3367280940",
+        "annotation_order": 8,
+        "reason": "correct positive: artistic opportunities",
+        "article_sha256": "a6102e4813a4e15703b543fc51bbd0a00a657935b9d23ab026fc29dbc7d2b472",
+        "candidate_sha256": "3f408baa511619f889e15ae34e927f5f0d3ee9a311f183d19ccc4ce3c927b9fd",
+        "candidate_count": 2,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "regression: artistic opportunities"
+      },
+      {
+        "record_id": "3334079418",
+        "annotation_order": 55,
+        "reason": "correct positive: companion manipulation/dependence",
+        "article_sha256": "59358676ac91842a5d78e60077003b11fbd0e058c55d1f92832a47b9a36882e4",
+        "candidate_sha256": "b57bc97b75235e22b3fc4b3f3eea76e56bb606477504c700464b2b363461e979",
+        "candidate_count": 3,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "regression: companion manipulation/dependence"
+      },
+      {
+        "record_id": "3182334861",
+        "annotation_order": 2,
+        "reason": "reference and v5 negative; human medical bias is not AI harm",
+        "article_sha256": "c52679749c3a8f7144d75b4e4e431b32548c2eeba5b9a0e5cd920af6a9ffd4e0",
+        "candidate_sha256": "4c311d721af9b53e38464de521d4f4165c9d4b3958154b802158b642b577df60",
+        "candidate_count": 5,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "negative: traditional medical bias is not AI harm"
+      },
+      {
+        "record_id": "3182933225",
+        "annotation_order": 11,
+        "reason": "reference and v5 negative governance article",
+        "article_sha256": "c495eefec30b08415601c51c0f898bd7e3a60c9971f5e55780f6631cc7b7b1d7",
+        "candidate_sha256": "f8b970ad8d6495bd108cda8122d5a4a72bc4218d25bfbaa50373676b3752e0ed",
+        "candidate_count": 3,
+        "context": "all original paragraphs; status complete; clean request; same for all conditions",
+        "round2_purpose": "negative: neutral government plan is not AI harm"
+      }
+    ],
+    "registration": {
+      "frozen_at": "2026-10-25T06:03:11.893974+00:00",
+      "seed": 2026102502,
+      "conditions": [
+        "R2_V5",
+        "R2_E0",
+        "R2_E",
+        "R2_S0",
+        "R2_S",
+        "R2_B"
+      ],
+      "main_schedule": [
+        {
+          "record_id": "3175482871",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175482871",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175482871",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175482871",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175482871",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "2763593998",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "2763593998",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "2763593998",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "2763593998",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "2763593998",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3367280940",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3367280940",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3367280940",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3367280940",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3367280940",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3173716637",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3173716637",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3173716637",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3173716637",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3173716637",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182334861",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182334861",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182334861",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182334861",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182334861",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3313656160",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3313656160",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3313656160",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3313656160",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3313656160",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "2891648776",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "2891648776",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "2891648776",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "2891648776",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "2891648776",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182933225",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182933225",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182933225",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182933225",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3182933225",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3334079418",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3334079418",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3334079418",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3334079418",
+          "condition": "R2_S",
+          "repeat": 1
+        },
+        {
+          "record_id": "3334079418",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3297946987",
+          "condition": "R2_E0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3297946987",
+          "condition": "R2_S0",
+          "repeat": 1
+        },
+        {
+          "record_id": "3297946987",
+          "condition": "R2_E",
+          "repeat": 1
+        },
+        {
+          "record_id": "3297946987",
+          "condition": "R2_V5",
+          "repeat": 1
+        },
+        {
+          "record_id": "3297946987",
+          "condition": "R2_S",
+          "repeat": 1
+        }
+      ],
+      "repeat_schedule": [
+        {
+          "record_id": "2881368889",
+          "condition": "R2_B",
+          "repeat": 2
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_B",
+          "repeat": 3
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_V5",
+          "repeat": 2
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_B",
+          "repeat": 3
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_V5",
+          "repeat": 2
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_V5",
+          "repeat": 3
+        },
+        {
+          "record_id": "2881368889",
+          "condition": "R2_V5",
+          "repeat": 3
+        },
+        {
+          "record_id": "3175258011",
+          "condition": "R2_B",
+          "repeat": 2
+        }
+      ],
+      "budget": {
+        "max_requests": 160,
+        "max_returned_total_tokens": 1500000,
+        "max_stage_output_tokens": 16384,
+        "timeout_seconds": 120,
+        "transport_total_attempts": 2,
+        "contract_repairs_per_stage": 1,
+        "sdk_retries": 0,
+        "concurrency": 1
+      }
+    },
+    "runtime_and_quotes": {
+      "runtime": [
+        {
+          "condition": "R2_V5",
+          "requests": 20,
+          "returned_total_tokens": 145067,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 120.114,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_E0",
+          "requests": 12,
+          "returned_total_tokens": 107573,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 76.838,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "requests": 13,
+          "returned_total_tokens": 111855,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 71.511,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_S0",
+          "requests": 25,
+          "returned_total_tokens": 171809,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 132.835,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_S",
+          "requests": 31,
+          "returned_total_tokens": 210647,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 188.606,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "requests": 17,
+          "returned_total_tokens": 125570,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 91.981,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        }
+      ],
+      "quote_compliance": [
+        {
+          "condition": "R2_V5",
+          "first_quote_pass": 55,
+          "first_quote_total": 55,
+          "final_quote_pass": 55,
+          "final_quote_total": 55,
+          "deterministic_repairs": 0,
+          "stages": 16,
+          "first_contract_pass": 12,
+          "final_contract_pass": 16
+        },
+        {
+          "condition": "R2_E0",
+          "first_quote_pass": 63,
+          "first_quote_total": 63,
+          "final_quote_pass": 63,
+          "final_quote_total": 63,
+          "deterministic_repairs": 0,
+          "stages": 12,
+          "first_contract_pass": 12,
+          "final_contract_pass": 12
+        },
+        {
+          "condition": "R2_E",
+          "first_quote_pass": 31,
+          "first_quote_total": 31,
+          "final_quote_pass": 31,
+          "final_quote_total": 31,
+          "deterministic_repairs": 0,
+          "stages": 12,
+          "first_contract_pass": 11,
+          "final_contract_pass": 12
+        },
+        {
+          "condition": "R2_S0",
+          "first_quote_pass": 136,
+          "first_quote_total": 136,
+          "final_quote_pass": 136,
+          "final_quote_total": 136,
+          "deterministic_repairs": 0,
+          "stages": 24,
+          "first_contract_pass": 23,
+          "final_contract_pass": 24
+        },
+        {
+          "condition": "R2_S",
+          "first_quote_pass": 144,
+          "first_quote_total": 150,
+          "final_quote_pass": 150,
+          "final_quote_total": 150,
+          "deterministic_repairs": 0,
+          "stages": 24,
+          "first_contract_pass": 17,
+          "final_contract_pass": 24
+        },
+        {
+          "condition": "R2_B",
+          "first_quote_pass": 52,
+          "first_quote_total": 52,
+          "final_quote_pass": 52,
+          "final_quote_total": 52,
+          "deterministic_repairs": 0,
+          "stages": 16,
+          "first_contract_pass": 15,
+          "final_contract_pass": 16
+        }
+      ],
+      "panel_runtime": [
+        {
+          "condition": "R2_V5",
+          "requests": 15,
+          "returned_total_tokens": 107964,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 101.309,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_E0",
+          "requests": 12,
+          "returned_total_tokens": 107573,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 76.838,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "requests": 13,
+          "returned_total_tokens": 111855,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 71.511,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_S0",
+          "requests": 25,
+          "returned_total_tokens": 171809,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 132.835,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_S",
+          "requests": 31,
+          "returned_total_tokens": 210647,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 188.606,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "requests": 12,
+          "returned_total_tokens": 87822,
+          "usage_missing": 0,
+          "elapsed_api_seconds": 69.641,
+          "response_models": [
+            "gpt-4o-2024-11-20"
+          ]
+        }
+      ],
+      "panel_quote_compliance": [
+        {
+          "condition": "R2_V5",
+          "first_quote_pass": 53,
+          "first_quote_total": 53,
+          "final_quote_pass": 53,
+          "final_quote_total": 53,
+          "deterministic_repairs": 0,
+          "stages": 12,
+          "first_contract_pass": 9,
+          "final_contract_pass": 12
+        },
+        {
+          "condition": "R2_E0",
+          "first_quote_pass": 63,
+          "first_quote_total": 63,
+          "final_quote_pass": 63,
+          "final_quote_total": 63,
+          "deterministic_repairs": 0,
+          "stages": 12,
+          "first_contract_pass": 12,
+          "final_contract_pass": 12
+        },
+        {
+          "condition": "R2_E",
+          "first_quote_pass": 31,
+          "first_quote_total": 31,
+          "final_quote_pass": 31,
+          "final_quote_total": 31,
+          "deterministic_repairs": 0,
+          "stages": 12,
+          "first_contract_pass": 11,
+          "final_contract_pass": 12
+        },
+        {
+          "condition": "R2_S0",
+          "first_quote_pass": 136,
+          "first_quote_total": 136,
+          "final_quote_pass": 136,
+          "final_quote_total": 136,
+          "deterministic_repairs": 0,
+          "stages": 24,
+          "first_contract_pass": 23,
+          "final_contract_pass": 24
+        },
+        {
+          "condition": "R2_S",
+          "first_quote_pass": 144,
+          "first_quote_total": 150,
+          "final_quote_pass": 150,
+          "final_quote_total": 150,
+          "deterministic_repairs": 0,
+          "stages": 24,
+          "first_contract_pass": 17,
+          "final_contract_pass": 24
+        },
+        {
+          "condition": "R2_B",
+          "first_quote_pass": 50,
+          "first_quote_total": 50,
+          "final_quote_pass": 50,
+          "final_quote_total": 50,
+          "deterministic_repairs": 0,
+          "stages": 12,
+          "first_contract_pass": 12,
+          "final_contract_pass": 12
+        }
+      ],
+      "raw_vs_repaired_note": "Quote observations include repeated audit quotations. Final raw response plus deterministic repair separately logged; repair must not hide an original failure."
+    }
+  },
+  "lineage": {
+    "D0": "D1 minus original 4 synthetic examples",
+    "D1": "v5 Call3 + fixed historical candidates + full article; baseline original examples",
+    "D2=R2_E0": "D1 replace two positive examples with complex examples",
+    "D3=R2_S0": "D1 two-stage confirmation/grouping; originals mechanically adapted",
+    "R2_V5": "contemporaneous D1 baseline",
+    "R2_E": "R2_E0 only example claim/reason fields corrected",
+    "R2_S": "R2_S0 only stage operation conflicts cleared",
+    "R2_B": "R2_V5 only inclusion threshold clarified"
+  },
+  "portable_runner": {
+    "scope": "Historical complete v5 discovery/supplement/context controller, path/credential adapted; not a replay of fixed-candidate diagnostic runtime",
+    "model": "gpt-4o-2024-11-20",
+    "historical_endpoint": "https://api.vveai.com/v1",
+    "temperature": 0,
+    "candidate_max_tokens": 4096,
+    "confirmation_max_tokens": 16384,
+    "max_context_rounds": 6,
+    "max_transport_attempts_per_stage": 4,
+    "retry_delays_seconds": [
+      2,
+      5,
+      15
+    ],
+    "timeout_seconds": 120,
+    "contract_repairs_per_stage": 1,
+    "default_api_enabled": false,
+    "default_max_api_calls": 0,
+    "identity": "request JSON hash for each stage; portable run manifest also hashes selected inputs, six templates, schemas, source and run configuration",
+    "budget_note": "Original full v5 runner caps attempted requests, not returned tokens. Round2 diagnostic budget was a separate implementation, not silently claimed for this portable runner."
+  }
+}

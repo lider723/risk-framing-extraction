@@ -218,3 +218,35 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI risk extraction collaboration sharing rules
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+private_data/
+local_only/
+data/
+inputs/
+gold/
+references_private/
+runs/
+results/
+exports/
+cache/
+tokenizer_cache/
+*.ipynb
+*.xlsx
+*.xls
+*.pdf
+*.zip
+*.log

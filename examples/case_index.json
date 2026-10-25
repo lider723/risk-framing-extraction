@@ -1,0 +1,1416 @@
+{
+  "kind": "real_development_cases_not_synthetic",
+  "copyright_scope": "Researcher synopsis in docs/ERROR_CASES.md; paragraph locations, minimal model-authored judgment fields and hashes here; full news and evidence quotes excluded.",
+  "cases": [
+    {
+      "record_id": "3175258011",
+      "paragraph_ids": [
+        "P022"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C05",
+          "paragraph_id": "P022"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/3175258011.json",
+      "candidate_source_sha256": "605a9fe7530dc7a985bfae4560b13a36e09f03ebaff20354912587374105c5d3",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_V5/3175258011/repeat1/result.json",
+          "sha256": "41b98229c90f1272b722e5c0ce7bd16f45b481bb6fb7872a9486bdb23fba40ef",
+          "unit_candidate_map": {},
+          "actual_target_decision": {
+            "candidate_id": "C05",
+            "proposition": "Bong Joon Ho views AI as a source of creative material rather than a threat.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement reflects Bong Joon Ho's perspective on AI as a creative tool, not as a source of specific adverse consequences."
+          }
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_E/3175258011/repeat1/result.json",
+          "sha256": "dfe84cb99bc9824b8cbaa6081d4885073222871ad4f265e727dca45f8eecf6ad",
+          "unit_candidate_map": {},
+          "actual_target_decision": {
+            "candidate_id": "C05",
+            "proposition": "Bong Joon Ho views AI as a source of material for storytelling, not as a threat to human creativity.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The perspective on AI as a storytelling material does not establish a specific AI-related factor causing a negative consequence."
+          }
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_S/3175258011/repeat1/result.json",
+          "sha256": "33ac1d5d86adec671c73fadd664cf8425f4473958db3868841c9a06090935d1a",
+          "unit_candidate_map": {},
+          "actual_target_decision": {
+            "candidate_id": "C05",
+            "proposition": "AI is viewed as a source of material for creativity in Hollywood.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement about AI as a source of material does not establish a specific adverse consequence."
+          }
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_B/3175258011/repeat1/result.json",
+          "sha256": "d770315151b0d84d2fcc30e4a2ff2a838fe5374da6300e7bc902cf2a612dc38f",
+          "unit_candidate_map": {},
+          "actual_target_decision": {
+            "candidate_id": "C05",
+            "proposition": "AI is seen as a source of material for storytelling, not a threat.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement reflects an opinion on AI's role in creativity but does not establish a specific AI-related risk or adverse consequence."
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "2881368889",
+      "paragraph_ids": [
+        "P017"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C01",
+          "paragraph_id": "P017"
+        },
+        {
+          "candidate_id": "C02",
+          "paragraph_id": "P017"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/2881368889.json",
+      "candidate_source_sha256": "8994d2c4b784512d1b8893f0a3a4a5e77a90203837d54ba438344c8c53bec9c4",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 1,
+          "source": "round2_delivery/runs/predictions/R2_V5/2881368889/repeat1/result.json",
+          "sha256": "700ed53a0bd215c4c0d30b8e1a8324dea97c94863d13d0d282348fcbb26dbde3",
+          "unit_candidate_map": {
+            "U01": [
+              "C02"
+            ]
+          },
+          "actual_target_decision": {
+            "candidate_id": "C02",
+            "decision": "confirmed",
+            "proposition": "AI systems are used for dubious purposes, such as generating plagiarized papers, mediocre science fiction, and fake news.",
+            "reason": "The article explicitly mentions the use of ChatGPT for these purposes, establishing a direct connection between the AI system and the adverse consequences.",
+            "unit_ids": [
+              "U01"
+            ]
+          }
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_E/2881368889/repeat1/result.json",
+          "sha256": "b8a5e01aeb66c709bd2d8568d49c1be965349f8bf1dbbb138687ebd31af6d10d",
+          "unit_candidate_map": {},
+          "actual_target_decision": {
+            "candidate_id": "C02",
+            "proposition": "ChatGPT has been used for dubious purposes such as plagiarized papers, mediocre science fiction, and fake news.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The article lists these as examples of uses but does not explicitly connect them to specific adverse consequences or harms."
+          }
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_S/2881368889/repeat1/result.json",
+          "sha256": "fe89a3174c4ff0410e192b05643a9a5781828b2fb8e652758316be2a1ca3e2a2",
+          "unit_candidate_map": {},
+          "actual_target_decision": {
+            "candidate_id": "C02",
+            "proposition": "ChatGPT has been used for dubious purposes such as plagiarized papers, mediocre science fiction, and fake news.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement lists uses of ChatGPT but does not establish these as specific adverse consequences or risks."
+          }
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 1,
+          "source": "round2_delivery/runs/predictions/R2_B/2881368889/repeat1/result.json",
+          "sha256": "571cc641ca26b31e30f9b42a912e1f31062ba9ef9c6d8fb5f87dd30c054bbdf2",
+          "unit_candidate_map": {
+            "U01": [
+              "C02"
+            ]
+          },
+          "actual_target_decision": {
+            "candidate_id": "C02",
+            "proposition": "ChatGPT has been used for dubious purposes such as plagiarized papers, mediocre science fiction submissions, and fake news on content farms.",
+            "decision": "confirmed",
+            "unit_ids": [
+              "U01"
+            ],
+            "reason": "The article explicitly states these uses of ChatGPT as dubious, connecting them to the AI system."
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "2891648776",
+      "paragraph_ids": [
+        "P006",
+        "P008"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C01",
+          "paragraph_id": "P006"
+        },
+        {
+          "candidate_id": "C02",
+          "paragraph_id": "P006"
+        },
+        {
+          "candidate_id": "C03",
+          "paragraph_id": "P008"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/2891648776.json",
+      "candidate_source_sha256": "258777cf7c635ee1c903bf3bd5f4884919797ea2b13515eb732f4caf18075c4e",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 2,
+          "source": "round2_delivery/runs/predictions/R2_V5/2891648776/repeat1/result.json",
+          "sha256": "2124d11fcb389cd7a2cbbd2caf25f1a967ee7af8aaf3e233a9c55e2c03b67e48",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C03"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Concerns about the dangers of AI development being overlooked."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Potential risks such as job automation and autonomous warfare."
+            }
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 3,
+          "source": "round2_delivery/runs/predictions/R2_E/2891648776/repeat1/result.json",
+          "sha256": "435acc745b4eb5d05101168c0c95089a4c319d410c79daed74b503a541926f64",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ],
+            "U03": [
+              "C03"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "A division in the AI community regarding the pace of AI development and its potential dangers."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Potential neglect of AI safety considerations in favor of business growth."
+            }
+          ]
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 3,
+          "source": "round2_delivery/runs/predictions/R2_S/2891648776/repeat1/result.json",
+          "sha256": "10122f9a1af8a6b51b8002e24c6987000c98a638bf106d3cd85ec6f5e62fd90a",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ],
+            "U03": [
+              "C03"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Concerns about the dangers of rapid AI development within the AI community."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Potential neglect of addressing AI-related dangers due to prioritizing business interests."
+            }
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 2,
+          "source": "round2_delivery/runs/predictions/R2_B/2891648776/repeat1/result.json",
+          "sha256": "f99e1daee55f635b26757f0dd36d56978900bd37f0e8594b37203f63f8aa76fd",
+          "unit_candidate_map": {
+            "U01": [
+              "C01",
+              "C02"
+            ],
+            "U02": [
+              "C03"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Concerns about insufficient attention to AI dangers during its development."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Potential risks of AI include job automation and autonomous warfare."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "3175482871",
+      "paragraph_ids": [
+        "P007",
+        "P009",
+        "P014",
+        "P015",
+        "P017",
+        "P018",
+        "P019",
+        "P020",
+        "P027",
+        "P033"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C01",
+          "paragraph_id": "P007"
+        },
+        {
+          "candidate_id": "C02",
+          "paragraph_id": "P009"
+        },
+        {
+          "candidate_id": "C03",
+          "paragraph_id": "P014"
+        },
+        {
+          "candidate_id": "C04",
+          "paragraph_id": "P015"
+        },
+        {
+          "candidate_id": "C05",
+          "paragraph_id": "P017"
+        },
+        {
+          "candidate_id": "C06",
+          "paragraph_id": "P018"
+        },
+        {
+          "candidate_id": "C07",
+          "paragraph_id": "P019"
+        },
+        {
+          "candidate_id": "C08",
+          "paragraph_id": "P020"
+        },
+        {
+          "candidate_id": "C09",
+          "paragraph_id": "P020"
+        },
+        {
+          "candidate_id": "C10",
+          "paragraph_id": "P027"
+        },
+        {
+          "candidate_id": "C11",
+          "paragraph_id": "P033"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/3175482871.json",
+      "candidate_source_sha256": "9fe0cb1238e1fdcaaaf3d8d4ac1d38a3d128b6bec3d3feeea3659f715640219c",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 9,
+          "source": "round2_delivery/runs/predictions/R2_V5/3175482871/repeat1/result.json",
+          "sha256": "81c70aa92dc7e81f7088f031ea27795f655afbe24614d900708a5e057ddf138f",
+          "unit_candidate_map": {
+            "U01": [
+              "C02"
+            ],
+            "U02": [
+              "C03"
+            ],
+            "U03": [
+              "C04"
+            ],
+            "U04": [
+              "C05"
+            ],
+            "U05": [
+              "C06"
+            ],
+            "U06": [
+              "C07"
+            ],
+            "U07": [
+              "C08"
+            ],
+            "U08": [
+              "C09"
+            ],
+            "U09": [
+              "C10"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Lalo's team cannot determine if their ads reached their target audience or actively target specific websites and apps."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Marketers may not control key factors such as consumer targeting, ad placement, and ad appearance."
+            }
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 1,
+          "source": "round2_delivery/runs/predictions/R2_E/3175482871/repeat1/result.json",
+          "sha256": "7fd4a4b5d293967897ae767304e113fe82fbb5c371c2aa57d106029f5f6a5d9d",
+          "unit_candidate_map": {
+            "U01": [
+              "C01",
+              "C03",
+              "C05",
+              "C07",
+              "C09"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Marketers experience a lack of control over ad targeting, placement, and appearance when using AI-driven advertising tools."
+            }
+          ]
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 10,
+          "source": "round2_delivery/runs/predictions/R2_S/3175482871/repeat1/result.json",
+          "sha256": "aa065a56d7455f0f0a6365376a222ea7a4b03f606be662857bb3c96cb2d3b7a7",
+          "unit_candidate_map": {
+            "U01": [
+              "C02"
+            ],
+            "U02": [
+              "C03"
+            ],
+            "U03": [
+              "C04"
+            ],
+            "U04": [
+              "C05"
+            ],
+            "U05": [
+              "C06"
+            ],
+            "U06": [
+              "C07"
+            ],
+            "U07": [
+              "C08"
+            ],
+            "U08": [
+              "C09"
+            ],
+            "U09": [
+              "C10"
+            ],
+            "U10": [
+              "C11"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Lalo's team cannot determine if their ads reached their core audience or actively target specific websites and apps."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Marketers experience a lack of control over targeting, platforms, and ad appearance."
+            }
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 10,
+          "source": "round2_delivery/runs/predictions/R2_B/3175482871/repeat1/result.json",
+          "sha256": "0cd8d02e8016b09c37de52f796c5d74b23ed9c3b80568303139b264e2d5c5359",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ],
+            "U03": [
+              "C03"
+            ],
+            "U04": [
+              "C04"
+            ],
+            "U05": [
+              "C05"
+            ],
+            "U06": [
+              "C06"
+            ],
+            "U07": [
+              "C07"
+            ],
+            "U08": [
+              "C08",
+              "C09"
+            ],
+            "U09": [
+              "C10"
+            ],
+            "U10": [
+              "C11"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Advertisers experience discomfort due to the lack of control over AI-driven advertising tools."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Lalo's team cannot determine if their ads reached the intended audience or target specific platforms."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "3313656160",
+      "paragraph_ids": [
+        "P007",
+        "P008",
+        "P011",
+        "P012",
+        "P013",
+        "P025",
+        "P026",
+        "P027",
+        "P028",
+        "P030"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C02",
+          "paragraph_id": "P007"
+        },
+        {
+          "candidate_id": "C03",
+          "paragraph_id": "P008"
+        },
+        {
+          "candidate_id": "C04",
+          "paragraph_id": "P011"
+        },
+        {
+          "candidate_id": "C05",
+          "paragraph_id": "P012"
+        },
+        {
+          "candidate_id": "C06",
+          "paragraph_id": "P013"
+        },
+        {
+          "candidate_id": "C09",
+          "paragraph_id": "P025"
+        },
+        {
+          "candidate_id": "C10",
+          "paragraph_id": "P026"
+        },
+        {
+          "candidate_id": "C11",
+          "paragraph_id": "P027"
+        },
+        {
+          "candidate_id": "C12",
+          "paragraph_id": "P028"
+        },
+        {
+          "candidate_id": "C13",
+          "paragraph_id": "P030"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/3313656160.json",
+      "candidate_source_sha256": "7e018fca2780557a35fa6a13ee5e655a230bf6f3b9ec360c4a8a4427df8d31fc",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 4,
+          "source": "round2_delivery/runs/predictions/R2_V5/3313656160/repeat1/result.json",
+          "sha256": "2373e4bba260c85b5bf2a1a4ff43142d9efc2c77e833a3122619f75f71ee8984",
+          "unit_candidate_map": {
+            "U01": [
+              "C09"
+            ],
+            "U02": [
+              "C10"
+            ],
+            "U03": [
+              "C11"
+            ],
+            "U04": [
+              "C12"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "AI writing assistants can influence how people write and think."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "AI autocomplete tools providing biased information can shift users' views towards the bias."
+            }
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 3,
+          "source": "round2_delivery/runs/predictions/R2_E/3313656160/repeat1/result.json",
+          "sha256": "a1dca2b45f0ed0f96574e9c2bbf6639f09cf8c93ffda3ae7c82a166d1a9a77c4",
+          "unit_candidate_map": {
+            "U01": [
+              "C09"
+            ],
+            "U02": [
+              "C10"
+            ],
+            "U03": [
+              "C11"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "AI writing assistants influencing users' writing and thinking."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "AI autocomplete tools influencing users' opinions through biased information."
+            }
+          ]
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 9,
+          "source": "round2_delivery/runs/predictions/R2_S/3313656160/repeat1/result.json",
+          "sha256": "63bf89cfecfc88235dbd2adbd25c32d23d1e8d3d66d3849a1c561c7c96e0668a",
+          "unit_candidate_map": {
+            "U01": [
+              "C03"
+            ],
+            "U02": [
+              "C04"
+            ],
+            "U03": [
+              "C05"
+            ],
+            "U04": [
+              "C06"
+            ],
+            "U05": [
+              "C09"
+            ],
+            "U06": [
+              "C10"
+            ],
+            "U07": [
+              "C11"
+            ],
+            "U08": [
+              "C12"
+            ],
+            "U09": [
+              "C13"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Potential negative impacts on students' academic and intellectual skills."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Students use AI-enabled cheating to avoid engaging with uninteresting material."
+            }
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 2,
+          "source": "round2_delivery/runs/predictions/R2_B/3313656160/repeat1/result.json",
+          "sha256": "3b45befdff40cba2a6c2db8a2d0e84adeeb16264f89d7a6955fec9bed4ff3ddd",
+          "unit_candidate_map": {
+            "U01": [
+              "C07"
+            ],
+            "U02": [
+              "C10"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U02",
+              "consequence": "Participants' views shifted in the direction of bias presented by AI tools."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "3182933225",
+      "paragraph_ids": [
+        "P002",
+        "P007",
+        "P013"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C01",
+          "paragraph_id": "P002"
+        },
+        {
+          "candidate_id": "C02",
+          "paragraph_id": "P007"
+        },
+        {
+          "candidate_id": "C03",
+          "paragraph_id": "P013"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/3182933225.json",
+      "candidate_source_sha256": "f8b970ad8d6495bd108cda8122d5a4a72bc4218d25bfbaa50373676b3752e0ed",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 3,
+          "source": "round2_delivery/runs/predictions/R2_V5/3182933225/repeat1/result.json",
+          "sha256": "8b6a0c1079ce9789cf954832869c83613d97b7db2a136b62e8185efd6ba56427",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ],
+            "U03": [
+              "C03"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "The government aims to streamline its operations."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Potential job eliminations due to AI implementation."
+            }
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_E/3182933225/repeat1/result.json",
+          "sha256": "2773d370821a3bc5acce20fb7fe07517446063da3f846821c82ab630f9e5c5fa",
+          "unit_candidate_map": {},
+          "actual_consequence_fragments": []
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 1,
+          "source": "round2_delivery/runs/predictions/R2_S/3182933225/repeat1/result.json",
+          "sha256": "7acd3d91bcddc9fe0eec074118d563f21250390a7294f5375f4a831429b16794",
+          "unit_candidate_map": {
+            "U01": [
+              "C03"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "The exclusion of diversity, equity, and inclusion provisions in state contracts."
+            }
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 0,
+          "source": "round2_delivery/runs/predictions/R2_B/3182933225/repeat1/result.json",
+          "sha256": "1bf1c320e5021698eae0c9288d814419edf817b8e5e1352423041f97b33a24b2",
+          "unit_candidate_map": {},
+          "actual_consequence_fragments": []
+        }
+      ]
+    },
+    {
+      "record_id": "3297946987",
+      "paragraph_ids": [
+        "P004",
+        "P007",
+        "P009",
+        "P011",
+        "P014",
+        "P016"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C01",
+          "paragraph_id": "P004"
+        },
+        {
+          "candidate_id": "C02",
+          "paragraph_id": "P007"
+        },
+        {
+          "candidate_id": "C03",
+          "paragraph_id": "P014"
+        },
+        {
+          "candidate_id": "C04",
+          "paragraph_id": "P016"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/3297946987.json",
+      "candidate_source_sha256": "a0dce123fd0be7328cfd434f1762e59e52c9f8762a6e4201051a48225e20bcd2",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 2,
+          "source": "round2_delivery/runs/predictions/R2_V5/3297946987/repeat1/result.json",
+          "sha256": "dc41b7025d65b918c6ebc1f6a4872f425adf032ec01cbcb4ae92935dd9554a4e",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C03"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Microsoft's Azure cloud business growth is limited due to AI hardware availability."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Investor concerns about the profitability of AI-related data center investments."
+            }
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 1,
+          "source": "round2_delivery/runs/predictions/R2_E/3297946987/repeat1/result.json",
+          "sha256": "93e16d69abfb4b8251094e7615de9a85b0ca452d363a524b50becc5c2e38c9eb",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "The growth of Microsoft's cloud business is being limited, capping Azure's revenue potential."
+            }
+          ]
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 4,
+          "source": "round2_delivery/runs/predictions/R2_S/3297946987/repeat1/result.json",
+          "sha256": "35c93ec1d01557c34210015c6379d46a1780cbbe1f1365f61b7d9dab1a922b52",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ],
+            "U03": [
+              "C03"
+            ],
+            "U04": [
+              "C04"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "The growth of Microsoft's Azure cloud business is being capped, limiting its revenue potential."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Microsoft's AI infrastructure capacity is insufficient to meet the growing demand for AI services."
+            }
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 4,
+          "source": "round2_delivery/runs/predictions/R2_B/3297946987/repeat1/result.json",
+          "sha256": "d434a3922a122b064543e982642eefa515fb72fbe02cee5a4ea7cdfeb999efca",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ],
+            "U03": [
+              "C03"
+            ],
+            "U04": [
+              "C04"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Microsoft's Azure cloud business growth is limited due to AI hardware availability."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "Microsoft's current investments in AI infrastructure are insufficient to meet growing demand."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "3367280940",
+      "paragraph_ids": [
+        "P006",
+        "P023"
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C01",
+          "paragraph_id": "P006"
+        },
+        {
+          "candidate_id": "C02",
+          "paragraph_id": "P023"
+        }
+      ],
+      "candidate_source": "round2_delivery/inputs/candidates/3367280940.json",
+      "candidate_source_sha256": "3f408baa511619f889e15ae34e927f5f0d3ee9a311f183d19ccc4ce3c927b9fd",
+      "observations": [
+        {
+          "condition": "R2_V5",
+          "status": "OK",
+          "unit_count": 1,
+          "source": "round2_delivery/runs/predictions/R2_V5/3367280940/repeat1/result.json",
+          "sha256": "574a954a2b50a4490be76fc7a52ac65e71f86501b4ff719d97a4c0d9cc65b9cc",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Threats to film and TV budgets and opportunities for emerging artists."
+            }
+          ]
+        },
+        {
+          "condition": "R2_E",
+          "status": "OK",
+          "unit_count": 1,
+          "source": "round2_delivery/runs/predictions/R2_E/3367280940/repeat1/result.json",
+          "sha256": "e76f38b9696c8d485b72c7b543d3d88a975a82536f2d3565341aa127492a424b",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Threats to film and TV budgets and opportunities for emerging artists."
+            }
+          ]
+        },
+        {
+          "condition": "R2_S",
+          "status": "OK",
+          "unit_count": 2,
+          "source": "round2_delivery/runs/predictions/R2_S/3367280940/repeat1/result.json",
+          "sha256": "f329b6d093da1e56cbfd6f4a7a5a990d3bc2bf965ee08e9200cc5781d53b74bb",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Threats to film and TV budgets and opportunities for emerging artists."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "AI's inability to replicate certain creative nuances in music."
+            }
+          ]
+        },
+        {
+          "condition": "R2_B",
+          "status": "OK",
+          "unit_count": 2,
+          "source": "round2_delivery/runs/predictions/R2_B/3367280940/repeat1/result.json",
+          "sha256": "6b2385527e5e035bf3a97cacc06f5583c6b8c4fd2a559a1ecc067767bce70b2d",
+          "unit_candidate_map": {
+            "U01": [
+              "C01"
+            ],
+            "U02": [
+              "C02"
+            ]
+          },
+          "actual_consequence_fragments": [
+            {
+              "unit_id": "U01",
+              "consequence": "Film and TV budgets and opportunities for emerging artists are threatened."
+            },
+            {
+              "unit_id": "U02",
+              "consequence": "AI is unable to capture certain creative nuances in music composition."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stability": {
+    "records": [
+      {
+        "condition": "R2_V5",
+        "record_id": "3175258011",
+        "candidate_id": "C05",
+        "repeat": 1,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": null,
+        "target_decisions": [
+          {
+            "candidate_id": "C05",
+            "proposition": "Bong Joon Ho views AI as a source of creative material rather than a threat.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement reflects Bong Joon Ho's perspective on AI as a creative tool, not as a source of specific adverse consequences."
+          }
+        ],
+        "first_request_sha256": "8367fcca78c24a88e10f6e2fa0403a728e5f13223cffd640ad328aa880803065",
+        "messages_sha256": "3acaafaa48a616817793881348491cdb863bb37647a374d56c9eec129ae9019d",
+        "independent_request_path": "runs/predictions/R2_V5/3175258011/repeat1/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3175258011",
+        "candidate_id": "C05",
+        "repeat": 2,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": null,
+        "target_decisions": [
+          {
+            "candidate_id": "C05",
+            "proposition": "AI is seen as a threat to human creativity in Hollywood.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The mention of AI as a threat to creativity does not establish a specific adverse consequence caused by AI."
+          }
+        ],
+        "first_request_sha256": "8367fcca78c24a88e10f6e2fa0403a728e5f13223cffd640ad328aa880803065",
+        "messages_sha256": "3acaafaa48a616817793881348491cdb863bb37647a374d56c9eec129ae9019d",
+        "independent_request_path": "runs/predictions/R2_V5/3175258011/repeat2/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3175258011",
+        "candidate_id": "C05",
+        "repeat": 3,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": null,
+        "target_decisions": [
+          {
+            "candidate_id": "C05",
+            "proposition": "Bong Joon Ho views AI as a source of creative material rather than a threat to human creativity.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement reflects an opinion on AI's role in creativity but does not present a specific AI-related risk or adverse consequence."
+          }
+        ],
+        "first_request_sha256": "8367fcca78c24a88e10f6e2fa0403a728e5f13223cffd640ad328aa880803065",
+        "messages_sha256": "3acaafaa48a616817793881348491cdb863bb37647a374d56c9eec129ae9019d",
+        "independent_request_path": "runs/predictions/R2_V5/3175258011/repeat3/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2881368889",
+        "candidate_id": "C02",
+        "repeat": 1,
+        "status": "OK",
+        "first_confirmed": true,
+        "final_confirmed": true,
+        "covered_subclaims": [
+          "fake_news",
+          "plagiarism"
+        ],
+        "correct_two_harm_separation": false,
+        "target_decisions": [
+          {
+            "candidate_id": "C02",
+            "decision": "confirmed",
+            "proposition": "AI systems are used for dubious purposes, such as generating plagiarized papers, mediocre science fiction, and fake news.",
+            "reason": "The article explicitly mentions the use of ChatGPT for these purposes, establishing a direct connection between the AI system and the adverse consequences.",
+            "unit_ids": [
+              "U01"
+            ]
+          }
+        ],
+        "first_request_sha256": "9fbc10b42d5e4dcc3aec9359dc3aaf064a425d4a67c71097435bb87bda3930b6",
+        "messages_sha256": "ab144635e16b5f1bee74fd1168f56af6b6eaff448239ca87c551b1cf267d3e68",
+        "independent_request_path": "runs/predictions/R2_V5/2881368889/repeat1/call3.request.json",
+        "contract_repair_used": true
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2881368889",
+        "candidate_id": "C02",
+        "repeat": 2,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": false,
+        "target_decisions": [
+          {
+            "candidate_id": "C02",
+            "decision": "rejected",
+            "proposition": "ChatGPT has been used for dubious purposes such as plagiarism, creating mediocre content, and spreading fake news.",
+            "reason": "The statement lists potential uses of ChatGPT but does not establish a specific adverse consequence or harm caused by these uses.",
+            "unit_ids": []
+          }
+        ],
+        "first_request_sha256": "9fbc10b42d5e4dcc3aec9359dc3aaf064a425d4a67c71097435bb87bda3930b6",
+        "messages_sha256": "ab144635e16b5f1bee74fd1168f56af6b6eaff448239ca87c551b1cf267d3e68",
+        "independent_request_path": "runs/predictions/R2_V5/2881368889/repeat2/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2881368889",
+        "candidate_id": "C02",
+        "repeat": 3,
+        "status": "OK",
+        "first_confirmed": true,
+        "final_confirmed": true,
+        "covered_subclaims": [
+          "fake_news",
+          "plagiarism"
+        ],
+        "correct_two_harm_separation": false,
+        "target_decisions": [
+          {
+            "candidate_id": "C02",
+            "decision": "confirmed",
+            "proposition": "AI systems, such as ChatGPT, have been used for dubious purposes, including plagiarized papers, mediocre science fiction submissions, and fake news on content farms.",
+            "reason": "The article explicitly connects the use of ChatGPT to specific negative consequences, such as plagiarism and dissemination of fake news.",
+            "unit_ids": [
+              "U01"
+            ]
+          }
+        ],
+        "first_request_sha256": "9fbc10b42d5e4dcc3aec9359dc3aaf064a425d4a67c71097435bb87bda3930b6",
+        "messages_sha256": "ab144635e16b5f1bee74fd1168f56af6b6eaff448239ca87c551b1cf267d3e68",
+        "independent_request_path": "runs/predictions/R2_V5/2881368889/repeat3/call3.request.json",
+        "contract_repair_used": true
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175258011",
+        "candidate_id": "C05",
+        "repeat": 1,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": null,
+        "target_decisions": [
+          {
+            "candidate_id": "C05",
+            "proposition": "AI is seen as a source of material for storytelling, not a threat.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement reflects an opinion on AI's role in creativity but does not establish a specific AI-related risk or adverse consequence."
+          }
+        ],
+        "first_request_sha256": "63c176fc3f5f9883126093745b46826d903b99caa449fea66c1d59be288f1581",
+        "messages_sha256": "8797506aa3410ca6926ba9c3dcc01021722446288906b6f0ae254bc2ae5bb5f9",
+        "independent_request_path": "runs/predictions/R2_B/3175258011/repeat1/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175258011",
+        "candidate_id": "C05",
+        "repeat": 2,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": null,
+        "target_decisions": [
+          {
+            "candidate_id": "C05",
+            "proposition": "Bong Joon Ho views AI as a source of creative material rather than a threat to human creativity.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement reflects an opinion on AI's role in creativity but does not establish a specific AI-related adverse consequence."
+          }
+        ],
+        "first_request_sha256": "63c176fc3f5f9883126093745b46826d903b99caa449fea66c1d59be288f1581",
+        "messages_sha256": "8797506aa3410ca6926ba9c3dcc01021722446288906b6f0ae254bc2ae5bb5f9",
+        "independent_request_path": "runs/predictions/R2_B/3175258011/repeat2/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175258011",
+        "candidate_id": "C05",
+        "repeat": 3,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": null,
+        "target_decisions": [
+          {
+            "candidate_id": "C05",
+            "proposition": "Bong Joon Ho views AI as a source of creative material rather than a threat.",
+            "decision": "rejected",
+            "unit_ids": [],
+            "reason": "The statement reflects a perspective on AI's role in creativity but does not establish a specific AI-related risk or adverse consequence."
+          }
+        ],
+        "first_request_sha256": "63c176fc3f5f9883126093745b46826d903b99caa449fea66c1d59be288f1581",
+        "messages_sha256": "8797506aa3410ca6926ba9c3dcc01021722446288906b6f0ae254bc2ae5bb5f9",
+        "independent_request_path": "runs/predictions/R2_B/3175258011/repeat3/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2881368889",
+        "candidate_id": "C02",
+        "repeat": 1,
+        "status": "OK",
+        "first_confirmed": true,
+        "final_confirmed": true,
+        "covered_subclaims": [
+          "fake_news",
+          "plagiarism"
+        ],
+        "correct_two_harm_separation": false,
+        "target_decisions": [
+          {
+            "candidate_id": "C02",
+            "proposition": "ChatGPT has been used for dubious purposes such as plagiarized papers, mediocre science fiction submissions, and fake news on content farms.",
+            "decision": "confirmed",
+            "unit_ids": [
+              "U01"
+            ],
+            "reason": "The article explicitly states these uses of ChatGPT as dubious, connecting them to the AI system."
+          }
+        ],
+        "first_request_sha256": "489778152d91ecef1e247ec0660ae53c0df2ca937e04f396eb3e478a64efe81f",
+        "messages_sha256": "c3d5473ee7b112a893ee622e57595295214804b945d24f36b85f81d63a076583",
+        "independent_request_path": "runs/predictions/R2_B/2881368889/repeat1/call3.request.json",
+        "contract_repair_used": false
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2881368889",
+        "candidate_id": "C02",
+        "repeat": 2,
+        "status": "OK",
+        "first_confirmed": true,
+        "final_confirmed": true,
+        "covered_subclaims": [
+          "fake_news",
+          "plagiarism"
+        ],
+        "correct_two_harm_separation": false,
+        "target_decisions": [
+          {
+            "candidate_id": "C02",
+            "decision": "confirmed",
+            "proposition": "AI systems have been used for dubious purposes, such as generating plagiarized papers, mediocre science fiction, and fake news.",
+            "reason": "The article explicitly connects ChatGPT to these specific negative uses.",
+            "unit_ids": [
+              "U01"
+            ]
+          }
+        ],
+        "first_request_sha256": "489778152d91ecef1e247ec0660ae53c0df2ca937e04f396eb3e478a64efe81f",
+        "messages_sha256": "c3d5473ee7b112a893ee622e57595295214804b945d24f36b85f81d63a076583",
+        "independent_request_path": "runs/predictions/R2_B/2881368889/repeat2/call3.request.json",
+        "contract_repair_used": true
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2881368889",
+        "candidate_id": "C02",
+        "repeat": 3,
+        "status": "OK",
+        "first_confirmed": false,
+        "final_confirmed": false,
+        "covered_subclaims": [],
+        "correct_two_harm_separation": false,
+        "target_decisions": [
+          {
+            "candidate_id": "C02",
+            "decision": "rejected",
+            "proposition": "ChatGPT has been used for dubious purposes such as plagiarized papers, mediocre science fiction, and fake news.",
+            "reason": "The statement lists uses of ChatGPT but does not establish these as specific adverse consequences or connect them to broader harm.",
+            "unit_ids": []
+          }
+        ],
+        "first_request_sha256": "489778152d91ecef1e247ec0660ae53c0df2ca937e04f396eb3e478a64efe81f",
+        "messages_sha256": "c3d5473ee7b112a893ee622e57595295214804b945d24f36b85f81d63a076583",
+        "independent_request_path": "runs/predictions/R2_B/2881368889/repeat3/call3.request.json",
+        "contract_repair_used": false
+      }
+    ],
+    "summaries": [
+      {
+        "condition": "R2_V5",
+        "record_id": "3175258011",
+        "repeats": 3,
+        "first_confirmed": 0,
+        "final_confirmed": 0,
+        "separated_both_harms": null,
+        "unique_actual_message_hashes": 1,
+        "independent_paths": 3
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2881368889",
+        "repeats": 3,
+        "first_confirmed": 2,
+        "final_confirmed": 2,
+        "separated_both_harms": 0,
+        "unique_actual_message_hashes": 1,
+        "independent_paths": 3
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175258011",
+        "repeats": 3,
+        "first_confirmed": 0,
+        "final_confirmed": 0,
+        "separated_both_harms": null,
+        "unique_actual_message_hashes": 1,
+        "independent_paths": 3
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2881368889",
+        "repeats": 3,
+        "first_confirmed": 2,
+        "final_confirmed": 2,
+        "separated_both_harms": 0,
+        "unique_actual_message_hashes": 1,
+        "independent_paths": 3
+      }
+    ],
+    "no_cherrypicking": true,
+    "prompt_cache_is_not_local_result_reuse": true
+  }
+}

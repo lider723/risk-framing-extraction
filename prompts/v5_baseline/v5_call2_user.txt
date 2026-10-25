@@ -1,0 +1,8 @@
+RECORD_ID: {record_id}
+CANDIDATES FOUND SO FAR:
+{list of C01..C_n quotes}
+
+ARTICLE: {paragraph_numbered_article}
+
+Return the same JSON format as before, with new candidate IDs continuing
+from the last one. Empty list if nothing missed.

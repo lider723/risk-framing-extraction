@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "risk_claim_output_schema_v2.json",
+  "title": "AI risk-claim unit extraction output v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "risk_units"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "risk_units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "unit_id",
+          "risk_claim_spans",
+          "necessary_context_spans"
+        ],
+        "properties": {
+          "unit_id": {
+            "type": "string",
+            "pattern": "^U[0-9]{2,}$"
+          },
+          "risk_claim_spans": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/evidenceSpan"
+            }
+          },
+          "necessary_context_spans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/evidenceSpan"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "evidenceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["paragraph_id", "quote"],
+      "properties": {
+        "paragraph_id": {
+          "type": "string",
+          "pattern": "^P[0-9]{3,}$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

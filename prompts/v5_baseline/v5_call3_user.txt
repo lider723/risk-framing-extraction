@@ -1,0 +1,58 @@
+RECORD_ID: {record_id}
+CONTEXT_REVIEW_STATUS: {context_review_status}
+
+CANDIDATES (each with local context):
+{candidate_context_package}
+
+ADDITIONAL ARTICLE CONTEXT (original numbered text; none if not yet supplied):
+{additional_context_package}
+
+Return JSON exactly with record_id, units, candidate_decisions, context_requests.
+The following is a STRUCTURAL template, not article evidence. Replace every
+description with supported content, and use empty lists when appropriate.
+{
+  "record_id": "{record_id}",
+  "units": [
+    {
+      "unit_id": "U01",
+      "source_candidates": [
+        "C01"
+      ],
+      "confirmed": true,
+      "ambiguity": "none",
+      "resolved_reference": "",
+      "justification": {
+        "consequence": "brief adverse effect supported by the article",
+        "ai_connection": {
+          "relation": "brief explanation of the article-supported relationship",
+          "evidence_spans": [
+            {
+              "paragraph_id": "P002",
+              "quote": "exact supplied article slice"
+            }
+          ]
+        },
+        "is_affirmative": true
+      },
+      "risk_claim_spans": [
+        {
+          "paragraph_id": "P002",
+          "quote": "exact supplied article slice"
+        }
+      ],
+      "necessary_context_spans": []
+    }
+  ],
+  "candidate_decisions": [
+    {
+      "candidate_id": "C01",
+      "proposition": "brief proposition",
+      "decision": "confirmed",
+      "unit_ids": [
+        "U01"
+      ],
+      "reason": "brief evidence-based reason"
+    }
+  ],
+  "context_requests": []
+}

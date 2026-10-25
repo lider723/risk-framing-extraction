@@ -1,0 +1,331 @@
+{
+  "candidate": {
+    "type": "object",
+    "properties": {
+      "record_id": {
+        "type": "string"
+      },
+      "candidates": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "candidate_id": {
+              "type": "string"
+            },
+            "paragraph_id": {
+              "type": "string"
+            },
+            "quote": {
+              "type": "string"
+            },
+            "proposition": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidate_id",
+            "paragraph_id",
+            "quote",
+            "proposition"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "record_id",
+      "candidates"
+    ],
+    "additionalProperties": false
+  },
+  "confirmation": {
+    "type": "object",
+    "properties": {
+      "record_id": {
+        "type": "string"
+      },
+      "units": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "unit_id": {
+              "type": "string"
+            },
+            "source_candidates": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "confirmed": {
+              "type": "boolean",
+              "enum": [
+                true
+              ]
+            },
+            "ambiguity": {
+              "type": "string",
+              "enum": [
+                "none"
+              ]
+            },
+            "resolved_reference": {
+              "type": "string"
+            },
+            "justification": {
+              "type": "object",
+              "properties": {
+                "consequence": {
+                  "type": "string"
+                },
+                "ai_connection": {
+                  "type": "object",
+                  "properties": {
+                    "relation": {
+                      "type": "string"
+                    },
+                    "evidence_spans": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "paragraph_id": {
+                            "type": "string"
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "paragraph_id",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "relation",
+                    "evidence_spans"
+                  ],
+                  "additionalProperties": false
+                },
+                "is_affirmative": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "consequence",
+                "ai_connection",
+                "is_affirmative"
+              ],
+              "additionalProperties": false
+            },
+            "risk_claim_spans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "paragraph_id": {
+                    "type": "string"
+                  },
+                  "quote": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "paragraph_id",
+                  "quote"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "necessary_context_spans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "paragraph_id": {
+                    "type": "string"
+                  },
+                  "quote": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "paragraph_id",
+                  "quote"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "unit_id",
+            "source_candidates",
+            "confirmed",
+            "ambiguity",
+            "resolved_reference",
+            "justification",
+            "risk_claim_spans",
+            "necessary_context_spans"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "candidate_decisions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "candidate_id": {
+              "type": "string"
+            },
+            "proposition": {
+              "type": "string"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "confirmed",
+                "rejected",
+                "unresolved"
+              ]
+            },
+            "unit_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidate_id",
+            "proposition",
+            "decision",
+            "unit_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "context_requests": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "source_candidates": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "scope": {
+              "type": "string",
+              "enum": [
+                "paragraph_and_neighbors",
+                "article"
+              ]
+            },
+            "missing_information": {
+              "type": "string"
+            },
+            "search_terms": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "source_candidates",
+            "scope",
+            "missing_information",
+            "search_terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "record_id",
+      "units",
+      "candidate_decisions",
+      "context_requests"
+    ],
+    "additionalProperties": false
+  },
+  "final_evidence": {
+    "type": "object",
+    "properties": {
+      "record_id": {
+        "type": "string"
+      },
+      "risk_units": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "unit_id": {
+              "type": "string"
+            },
+            "risk_claim_spans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "paragraph_id": {
+                    "type": "string"
+                  },
+                  "quote": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "paragraph_id",
+                  "quote"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "necessary_context_spans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "paragraph_id": {
+                    "type": "string"
+                  },
+                  "quote": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "paragraph_id",
+                  "quote"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "unit_id",
+            "risk_claim_spans",
+            "necessary_context_spans"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "record_id",
+      "risk_units"
+    ],
+    "additionalProperties": false
+  }
+}

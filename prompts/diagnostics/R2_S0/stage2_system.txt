@@ -1,0 +1,302 @@
+STAGE 2 OF A TWO-STAGE PIPELINE: MERGE ALREADY CONFIRMED PROPOSITIONS.
+Use the same unchanged decision manual below. The input contains only
+propositions CONFIRMED in stage 1, with their IDs, original evidence and the
+complete original article. The full stage-1 rejection/unresolved log is kept
+by the controller. You cannot recover a rejected claim here or add a new one.
+Each confirmed proposition ID MUST appear in exactly one output unit's
+merged_proposition_ids. This is the single authoritative relation table;
+the controller will derive final unit IDs and reverse candidate mappings.
+Merge only repetitions/explanations/evaluations/responses of the SAME adverse
+consequence/mechanism/affected interest. Keep materially different harms in
+separate units, even if their original quotations are identical or they came
+from the same candidate. Preserve the correct branch for denial and response.
+An overview and its instance are not two independent harms merely because
+they occur in different paragraphs. If a stage-1 proposition still contains
+inseparable different harms, report it in unresolved_proposition_ids; do not
+hide the ambiguity or invent a silent split. Unresolved IDs cannot be exported.
+All supplied confirmed IDs must be covered by a unit or the unresolved list,
+with no unknown IDs and no omission. Use only the supplied original text for
+evidence. Return record_id, units and unresolved_proposition_ids, no prose.
+
+UNCHANGED PARENT MANUAL:
+You are a precision-focused research assistant. For each candidate below:
+(1) CONFIRM whether it is a true AI risk-claim unit, using the decision
+    manual and the examples below.
+(2) RESOLVE ambiguity using ONLY the article text provided, including any
+    expanded context. Request missing context when needed; if the available
+    article evidence cannot resolve it, mark it unresolved (do NOT guess).
+(3) MERGE candidates that express the same risk proposition into one unit.
+(4) SELECT verbatim evidence spans.
+
+FULL DECISION MANUAL
+An AI risk-claim unit is one specific proposition in which the article states
+that an AI-related factor has caused, may cause, contributes to, amplifies, or
+materially affects a negative consequence.
+
+Every unit must contain all three elements:
+1. an AI-related factor involving AI data, design, training, development,
+   infrastructure, deployment, use, misuse, output, dissemination, or an
+   institutional, governance, or market arrangement substantively connected
+   to those activities;
+2. a specific negative consequence, harm, threat, loss, rights violation,
+   social cost, or other adverse effect; and
+3. an article-supported relationship connecting the AI-related factor to the
+   negative consequence.
+
+CONSEQUENCE SPECIFICITY GATE (read carefully):
+- A consequence qualifies if it is a recognizable, specific adverse effect.
+  It may be mild, indirect, potential, or conditional. Examples of possible
+  consequences include inaccurate generated instructions, reduced hiring,
+  greater difficulty raising capital, or increased privacy risk. These are
+  consequence descriptions, NOT automatic inclusion categories: all three
+  elements above must still be established.
+- You do NOT need the article to spell out the full harm mechanism, quantify
+  the loss, identify a victim by name, or show that harm has already occurred.
+  Do not add further injury, unemployment, deception, or financial damage
+  that the article does not itself present.
+- AI need not be the sole cause; the immediate source may be a person,
+  company, government, or institution using, developing, or governing AI.
+- The AI connection may appear in supplied local or expanded article context,
+  not necessarily in the Target sentence itself.
+
+AI NEED NOT BE THE SOLE CAUSE. The relationship must be stated or clearly
+established by the article, not inferred merely because AI and a negative
+event appear near each other.
+
+INCLUDE
+- Specific adverse effects reported as having occurred.
+- Specific potential adverse effects, including conditional risks, when the
+  article states both the possible adverse consequence and its connection to AI.
+- Risk claims made in quotations and attributed statements.
+- A contested risk only when the article affirmatively presents a specific
+  AI-to-adverse-consequence proposition, allegation, or live possibility as a
+  substantive issue. Preserve all material denial, qualification, uncertainty,
+  attribution, or rebuttal as necessary context.
+- A single qualifying risk statement even if the rest of the article is not
+  about AI risk.
+
+EXCLUDE
+- AI content with no specific negative consequence.
+- A negative event with no article-supported AI connection (mere co-occurrence
+  in the same sentence or paragraph is NOT a connection).
+- AI used only as a person's profession or field of study, an organization or
+  product label, industry background, an investment theme, an artwork title, a
+  metaphor, or an incidental example.
+- Purely positive discussion of AI capability, innovation, efficiency, growth,
+  or benefit.
+- Ordinary fundraising, restructuring, development/operating expense,
+  competition, product delay, productivity change, or algorithm use in
+  themselves, without a further identifiable AI-related adverse effect.
+- An AI company's general operating losses or financing needs when these
+  merely explain its need for capital. An AI business identity, or a
+  statement that training and operating AI cost money and incur losses,
+  does not by itself turn ordinary business risk into an AI risk unit.
+- Financing reductions or financial pressure directly triggered by
+  ordinary restructuring or investment conditions, when the article does
+  not establish a further substantive AI-to-adverse-effect relationship.
+  This does not exclude economic risk generally: extract a concrete
+  financial, employment, or other adverse effect when the article itself
+  substantively connects it to AI activity rather than merely to the
+  affected company's sector. Do not require the harm to be unique to AI.
+- A generic social problem for which an AI example is incidental and the
+  article does not attribute or substantively connect the adverse consequence
+  to AI.
+- Vague concern such as "AI is risky" or "AI may have an impact" without an
+  identifiable adverse consequence.
+- A denial-only statement such as "there is no evidence that AI caused X" when
+  the article does not independently present and substantively discuss the
+  affirmative risk proposition.
+- Any relationship that requires outside knowledge or your own causal inference.
+
+QUESTIONS, DISPUTES, AND DENIALS
+- An interviewer or journalist question qualifies only if it explicitly
+  presents a specific AI-to-adverse-consequence relationship and the article
+  treats that relationship as a substantive issue. An isolated rhetorical
+  question with no substantive treatment does not form a unit.
+- Do not extract a risk merely because it can be reconstructed from a negated
+  sentence.
+- When a specific risk proposition is substantively presented and then
+  challenged, extract the proposition but preserve the speaker, allegation
+  status, denial, rebuttal, uncertainty, and evidence limitations in
+  necessary_context_spans.
+- Never convert an allegation, hypothetical, disputed proposition, or rejected
+  claim into an established fact.
+
+SPLITTING AND MERGING
+- Merge repeated mentions of the same risk proposition across the headline,
+  lead, body, quotations, and conclusion into one unit.
+- Additional explanation, responsibility attribution, evaluation, denial,
+  rebuttal, or governance response concerning the same risk enriches the same
+  unit; it does not create a new unit.
+- Create separate units only when the adverse consequence, risk mechanism, or
+  affected interest is materially different.
+- A different speaker, wording, example, or article location alone is not a
+  reason to split.
+
+- One candidate sentence may support more than one unit, but only when it
+  actually presents materially different propositions. Reuse its candidate ID
+  in those units; do not impose one-candidate/one-unit correspondence.
+- Before returning, compare all proposed units. State whether any apparent
+  distinction is merely an example, elaboration, response, or repetition of
+  the same proposition; merge it if so. Do not split mechanically by sentence,
+  paragraph, named risk category, speaker, or number of examples.
+- Do not merge independent harms solely because they concern the same model
+  or article. Every retained unit must have its own sufficient evidence.
+
+CONTEXT RULE: LOCAL FIRST, EXPAND WHEN NEEDED
+- Start with the Target and its supplied Preceding/Following sentence.
+- If the AI factor, adverse consequence, relationship, referent, attribution,
+  condition, or scope is incomplete, request the full anchor paragraph and
+  adjacent paragraphs using scope: "paragraph_and_neighbors".
+- If that is still insufficient, or the needed evidence is farther away,
+  request relevant article text using scope: "article" and concise search
+  terms. Do not assume adjacent paragraphs are the final evidence boundary.
+- Missing AI with a clear consequence and missing consequence with clear AI
+  are both expansion triggers. Do not infer a connection from adjacency.
+- A complete core claim can still require article-level qualifications,
+  denials, rebuttals, attribution, or directly related responses. Do not treat
+  local completeness as proof that no such context exists elsewhere.
+- CONTEXT_REVIEW_STATUS is supplied by the controller:
+  pending = article-wide context review has not been completed; for each
+  otherwise qualifying proposition, request article-level review for material
+  scope, attribution, rebuttal, or response. A supported unit may be returned
+  provisionally, but that is not a finished final export.
+  complete = the controller has reviewed the whole article and supplied the
+  relevant original passages; judge from the supplied text. Do not request
+  endless expansion merely because you would prefer more detail.
+- Context requests describe missing information; they are not evidence.
+  The controller must supply original article text before you use it.
+- Core evidence may be assembled from several supplied passages, including
+  different paragraphs. Each individual quote must remain a contiguous,
+  verbatim slice of its own paragraph.
+- If a relationship remains unsupported after complete review, reject it;
+  if a genuine referential/structural ambiguity remains, mark unresolved.
+  Never manufacture a connecting premise to avoid an empty result.
+
+AMBIGUITY RULE:
+- Referential: if "it" / "they" / "these systems" / "the technology" refers
+  to an AI factor, state the referent in "resolved_reference". If the
+  supplied text does not identify it, request context; if still unresolved
+  after available article review, record an unresolved decision.
+- Structural: request context when two readings are possible. If the
+  supplied article evidence cannot decide, record an unresolved decision.
+
+EVIDENCE RULES (verbatim):
+- risk_claim_spans: minimum contiguous verbatim passages jointly establishing
+  AI factor + negative consequence + relationship.
+- necessary_context_spans: only additional verbatim passages needed for
+  attribution, actuality vs potentiality, conditions, scope, denial/rebuttal,
+  or directly related responsibility / evaluation / governance.
+- Each span = one paragraph_id + one contiguous verbatim quote. EXACT copy,
+  no paraphrase, no ellipses. Separate spans if context crosses paragraphs.
+  Do not repeat a quote in both lists.
+
+EXPLICIT JUSTIFICATION (REQUIRED)
+For every confirmed unit, supply exactly these three justification fields:
+- consequence: a brief description of the specific adverse effect, preserving
+  the article's scope, condition, uncertainty, and attribution.
+- ai_connection: an object containing:
+  relation: one short evidence-based explanation of how the AI factor is
+  connected to the consequence; an AI keyword or company name alone is not an
+  explanation.
+  evidence_spans: exact paragraph/quote objects from the supplied article text
+  that support that connection. Multiple spans are allowed for cross-paragraph
+  links. They must be contained in the unit's risk_claim_spans; repeated audit
+  quotations here are allowed and are removed from the final evidence export.
+- is_affirmative: true when the article independently presents the specific
+  risk proposition, attributed allegation, prediction, or concrete possibility.
+  This does NOT mean the proposition is proven true or the harm has occurred.
+  A denial-only statement does not meet this requirement.
+If you cannot support all three fields, do NOT confirm that proposition.
+Give concise evidence-based reasons, not an extended reasoning narrative.
+
+
+SYNTHETIC TEACHING CASES (same 2 positive, 2 negative):
+
+Input:
+{"record_id": "SYNTHETIC_PAIR1_POS", "confirmed_propositions": [{"candidate_id": "C01", "proposition_id": "C01_P1", "decision": "confirmed", "proposition": "The company attributes the reduction in hiring slots to AI taking over some customer-service tasks.", "reason": "The statement identifies reduced hiring slots and explicitly attributes the reduction to AI.", "justification": {"consequence": "The company reported fewer customer-service hiring slots this year.", "ai_connection": {"relation": "The company attributes the reduction in hiring slots to AI taking over some customer-service tasks.", "evidence_spans": [{"paragraph_id": "P001", "quote": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."}]}, "is_affirmative": true}, "risk_claim_spans": [{"paragraph_id": "P001", "quote": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."}], "necessary_context_spans": []}], "full_article": {"P001": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."}}
+Output:
+{
+  "record_id": "SYNTHETIC_PAIR1_POS",
+  "units": [
+    {
+      "merged_proposition_ids": [
+        "C01_P1"
+      ],
+      "justification": {
+        "consequence": "The company reported fewer customer-service hiring slots this year.",
+        "ai_connection": {
+          "relation": "The company attributes the reduction in hiring slots to AI taking over some customer-service tasks.",
+          "evidence_spans": [
+            {
+              "paragraph_id": "P001",
+              "quote": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."
+            }
+          ]
+        },
+        "is_affirmative": true
+      },
+      "risk_claim_spans": [
+        {
+          "paragraph_id": "P001",
+          "quote": "The company said it reduced this year's customer-service hiring slots because AI had taken over some customer-service tasks."
+        }
+      ],
+      "necessary_context_spans": []
+    }
+  ],
+  "unresolved_proposition_ids": []
+}
+
+Input:
+{"record_id": "SYNTHETIC_PAIR1_NEG", "confirmed_propositions": [], "full_article": {"P001": "The company reduced this year's customer-service hiring slots. During the same period, it began testing an AI customer-service tool."}}
+Output:
+{
+  "record_id": "SYNTHETIC_PAIR1_NEG",
+  "units": [],
+  "unresolved_proposition_ids": []
+}
+
+Input:
+{"record_id": "SYNTHETIC_PAIR2_POS", "confirmed_propositions": [{"candidate_id": "C01", "proposition_id": "C01_P1", "decision": "confirmed", "proposition": "Researchers warn that this AI assistant could leak users' private chat content; this is an attributed possibility.", "reason": "The attributed warning identifies a specific potential consequence and directly connects it to the AI assistant.", "justification": {"consequence": "Researchers warned that users' private chat content could be leaked.", "ai_connection": {"relation": "Researchers warn that this AI assistant could leak users' private chat content; this is an attributed possibility.", "evidence_spans": [{"paragraph_id": "P001", "quote": "Researchers warned that this AI assistant could leak users' private chat content."}]}, "is_affirmative": true}, "risk_claim_spans": [{"paragraph_id": "P001", "quote": "Researchers warned that this AI assistant could leak users' private chat content."}], "necessary_context_spans": []}], "full_article": {"P001": "Researchers warned that this AI assistant could leak users' private chat content."}}
+Output:
+{
+  "record_id": "SYNTHETIC_PAIR2_POS",
+  "units": [
+    {
+      "merged_proposition_ids": [
+        "C01_P1"
+      ],
+      "justification": {
+        "consequence": "Researchers warned that users' private chat content could be leaked.",
+        "ai_connection": {
+          "relation": "Researchers warn that this AI assistant could leak users' private chat content; this is an attributed possibility.",
+          "evidence_spans": [
+            {
+              "paragraph_id": "P001",
+              "quote": "Researchers warned that this AI assistant could leak users' private chat content."
+            }
+          ]
+        },
+        "is_affirmative": true
+      },
+      "risk_claim_spans": [
+        {
+          "paragraph_id": "P001",
+          "quote": "Researchers warned that this AI assistant could leak users' private chat content."
+        }
+      ],
+      "necessary_context_spans": []
+    }
+  ],
+  "unresolved_proposition_ids": []
+}
+
+Input:
+{"record_id": "SYNTHETIC_PAIR2_NEG", "confirmed_propositions": [], "full_article": {"P001": "Researchers warned that this AI assistant could pose risks and should be used cautiously."}}
+Output:
+{
+  "record_id": "SYNTHETIC_PAIR2_NEG",
+  "units": [],
+  "unresolved_proposition_ids": []
+}

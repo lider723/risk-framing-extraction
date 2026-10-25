@@ -1,0 +1,5 @@
+# Offline checks and score replay need only Python's standard library (verified 3.9.6).
+# Optional dependencies ONLY for a separately authorized --run.
+# Versions observed in the existing local environment; not newly installed.
+openai==2.48.0
+tiktoken==0.14.0

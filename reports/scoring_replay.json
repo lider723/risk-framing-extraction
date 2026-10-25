@@ -1,0 +1,6401 @@
+{
+  "reviewer": "llm_assisted",
+  "independent_human_blind_review": false,
+  "notice": "Existing judgments and signatures, not re-judged. No original quotations or full responses exported. This replays arithmetic and matching, not independent semantic validation.",
+  "round1": {
+    "aliases": {
+      "cognition": "student_skill"
+    },
+    "common_complete_ids": [
+      "2763593998",
+      "2881368889",
+      "2891648776",
+      "3076798484",
+      "3173716637",
+      "3175258011",
+      "3175482871",
+      "3176421865",
+      "3182334861",
+      "3182336378",
+      "3182933225",
+      "3255564008",
+      "3334079418",
+      "3367280940"
+    ],
+    "expected_summaries": [
+      {
+        "condition": "D0",
+        "planned_articles": 16,
+        "complete_articles": 16,
+        "common_complete_articles": 14,
+        "planned_reference_units": 31,
+        "gold": 23,
+        "pred": 40,
+        "TP": 18,
+        "FP": 22,
+        "FN": 5,
+        "recall": 0.782608695652174,
+        "precision": 0.45,
+        "f1": 0.5714285714285714,
+        "content_covered_reference_items": 21,
+        "independent_content_misses": 2,
+        "unsupported_units": 7,
+        "boundary_units": 0,
+        "context_only_units": 5,
+        "duplicate_supported_units": 7,
+        "mixed_units": 5,
+        "severe_attribution_errors": 0
+      },
+      {
+        "condition": "D1",
+        "planned_articles": 16,
+        "complete_articles": 16,
+        "common_complete_articles": 14,
+        "planned_reference_units": 31,
+        "gold": 23,
+        "pred": 33,
+        "TP": 15,
+        "FP": 18,
+        "FN": 8,
+        "recall": 0.6521739130434783,
+        "precision": 0.45454545454545453,
+        "f1": 0.5357142857142857,
+        "content_covered_reference_items": 20,
+        "independent_content_misses": 3,
+        "unsupported_units": 3,
+        "boundary_units": 2,
+        "context_only_units": 5,
+        "duplicate_supported_units": 5,
+        "mixed_units": 6,
+        "severe_attribution_errors": 0
+      },
+      {
+        "condition": "D2",
+        "planned_articles": 16,
+        "complete_articles": 15,
+        "common_complete_articles": 14,
+        "planned_reference_units": 31,
+        "gold": 23,
+        "pred": 34,
+        "TP": 16,
+        "FP": 18,
+        "FN": 7,
+        "recall": 0.6956521739130435,
+        "precision": 0.47058823529411764,
+        "f1": 0.5614035087719298,
+        "content_covered_reference_items": 21,
+        "independent_content_misses": 2,
+        "unsupported_units": 2,
+        "boundary_units": 0,
+        "context_only_units": 7,
+        "duplicate_supported_units": 6,
+        "mixed_units": 6,
+        "severe_attribution_errors": 0
+      },
+      {
+        "condition": "D3",
+        "planned_articles": 16,
+        "complete_articles": 15,
+        "common_complete_articles": 14,
+        "planned_reference_units": 31,
+        "gold": 23,
+        "pred": 42,
+        "TP": 17,
+        "FP": 25,
+        "FN": 6,
+        "recall": 0.7391304347826086,
+        "precision": 0.40476190476190477,
+        "f1": 0.5230769230769231,
+        "content_covered_reference_items": 20,
+        "independent_content_misses": 3,
+        "unsupported_units": 4,
+        "boundary_units": 2,
+        "context_only_units": 8,
+        "duplicate_supported_units": 9,
+        "mixed_units": 5,
+        "severe_attribution_errors": 0
+      }
+    ],
+    "rows": [
+      {
+        "condition": "D0",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "masked_review_id": "02_A",
+          "source": "round1_delivery/runs/panel/D0/results/3182334861.json",
+          "result_sha256": "8993386310fd5b6b23bec6cf050beb346f90887dc551082626eefb5205eacc29",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "902283fdd21a0a65778854eb7f0b188e66bc5d1b13cf09f1003476b15ac1bd22"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "masked_review_id": "02_B",
+          "source": "round1_delivery/runs/panel/D2/results/3182334861.json",
+          "result_sha256": "6eae6661bee5b6f4239baa804279e3afd51e567c49ed631f8b70cf0ca3591245",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "88c098ef5679165e3ee167ce138871a9b066b3f5a630bfa370bc17c4eb341702"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "masked_review_id": "02_C",
+          "source": "round1_delivery/runs/panel/D1/results/3182334861.json",
+          "result_sha256": "b17540574f7225d39bbb93f020b8028bac31cbec17c2cf287c85bc2f04c720ad",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "ab1a16114a865dadfdcbc862f7a65c7b40887c9b7374f8f29fc6bd7077b3f2c4"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3255564008",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "misinformation"
+          ],
+          "U02": [
+            "delusion"
+          ],
+          "U03": [
+            "social_skill"
+          ],
+          "U04": [
+            "help_deterrence"
+          ],
+          "U05": [
+            "relationship"
+          ],
+          "U06": [
+            "dependence"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "judgment_error"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "delusion",
+              "help_deterrence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "distorted_neutrality"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "social_skill",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "supported",
+            "claims": [
+              "emotional_resilience"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "supported",
+            "claims": [
+              "critical_thinking"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "03_A",
+          "source": "round1_delivery/runs/panel/D1/results/3255564008.json",
+          "result_sha256": "316eae3a3019f9f10c75044e48f5a1c9d59d8c150319c5bb15d4ee5ef35fa85e",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "69d9ad0ebafca170325b4ba66a7b5ee83f2ca0e0fc770688249d77fcbdaaa507"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3255564008",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "misinformation"
+          ],
+          "U02": [
+            "delusion"
+          ],
+          "U03": [
+            "social_skill"
+          ],
+          "U04": [
+            "help_deterrence"
+          ],
+          "U05": [
+            "relationship"
+          ],
+          "U06": [
+            "dependence"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "misinformation"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "delusion",
+              "help_deterrence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "distorted_neutrality"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "social_skill",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "supported",
+            "claims": [
+              "emotional_resilience"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "supported",
+            "claims": [
+              "critical_thinking"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "supported",
+            "claims": [
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U10",
+            "validity": "context",
+            "claims": [
+              "misinformation"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U11",
+            "validity": "context",
+            "claims": [
+              "critical_thinking"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U12",
+            "validity": "supported",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "03_B",
+          "source": "round1_delivery/runs/panel/D2/results/3255564008.json",
+          "result_sha256": "6fe31ac46382deb2a930f555be7422b78e72393aa6370e3011e7abd20e9d0d3e",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "25522bcfd16ef271ab0fd33aaf8eeaf7f6f449566dad19b27a41ecbe273e9d1a"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3255564008",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "misinformation"
+          ],
+          "U02": [
+            "delusion"
+          ],
+          "U03": [
+            "social_skill"
+          ],
+          "U04": [
+            "help_deterrence"
+          ],
+          "U05": [
+            "relationship"
+          ],
+          "U06": [
+            "dependence"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "judgment_error"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "delusion",
+              "help_deterrence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "distorted_neutrality"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "social_skill",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "supported",
+            "claims": [
+              "emotional_resilience"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "supported",
+            "claims": [
+              "critical_thinking"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "supported",
+            "claims": [
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "supported",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U10",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "03_C",
+          "source": "round1_delivery/runs/panel/D0/results/3255564008.json",
+          "result_sha256": "83c900bd81c85bc07cbe4313a9e9840723c81175c861ba4fb5edd47511d3f14b",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "1d388db50d383cf4a62a5b3f0a7eca49cecac8026ccebfefac17182fa6d6256a"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "04_A",
+          "source": "round1_delivery/runs/panel/D0/results/3173716637.json",
+          "result_sha256": "69f4b1ec2d19bb3b4d6bc1bd08ae913474f02e18517f41cf03392de784296a87",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "68f02dbc4778306c03d5ec84a1137729674b1d96425d0731b55f899a9218ce1a"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "04_B",
+          "source": "round1_delivery/runs/panel/D1/results/3173716637.json",
+          "result_sha256": "e4038c62b4b68aa514f5aefbca459fe38bfc609b692a7584853f430abebda60c",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "19ae7baa084b31b1e6d7a5ca670f8bee0cce55643150c442c2224d7b8cdde0c0"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "04_C",
+          "source": "round1_delivery/runs/panel/D2/results/3173716637.json",
+          "result_sha256": "3be3b4b9d0ffc9592761abe65899cd500eef6d98f8a2fc0d2ff2131d40b7bc04",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "4e578148346a4ebf6552d0f78f6cfe5125cb639c4c906d7942c9c0270cf90a75"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "05_A",
+          "source": "round1_delivery/runs/panel/D2/results/2763593998.json",
+          "result_sha256": "151cb30f01b7dd9af6d08a42cdee112a1d17d90e261ceec8b0af68485297d590",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "6f75c81da60effd31ae0b44b86d676500e16acc7668792d7fe5d5b27c9a71acb"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "05_B",
+          "source": "round1_delivery/runs/panel/D1/results/2763593998.json",
+          "result_sha256": "35ac6743c3d0f4db88775454e4f2b5999067375dd9a704a91475f44ddf4a1059",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "d8987d391faa6826aed00bf6152d05173a7848bcfbffba63967369ff705928fb"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "05_C",
+          "source": "round1_delivery/runs/panel/D0/results/2763593998.json",
+          "result_sha256": "ded9f6cde53aefaa414241f2cbbed5f4f63e4de9f86877c6456080ea62718f1a",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "a2d0939caaaac9cf17c43c665747982c8671bfeb2f85b785649c5953dac594a2"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "08_A",
+          "source": "round1_delivery/runs/panel/D2/results/3367280940.json",
+          "result_sha256": "17844a1f11b9ece4e5346c850a7239e652753214acb2a779ccc92843a2e96d9e",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "84abe34b5bcdc1c48aa837224f93fd5dd6749fdaa54676086281a4d7e1f0cb24"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "08_B",
+          "source": "round1_delivery/runs/panel/D0/results/3367280940.json",
+          "result_sha256": "0d371ca88c39864a22d0ad97cccb218f3d99df2e4be1874939d457b69da209af",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "52c01c556970b925eab49231dead7153c55d4b0efb9e41728e94ad24d3b57bf4"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "boundary",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "08_C",
+          "source": "round1_delivery/runs/panel/D1/results/3367280940.json",
+          "result_sha256": "97c4f413c20b959fd24ad438a3ad6c13b622b37c03d5b36295aec032e25eebca",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "09e71b0ac3b83031ba8f7c0c0afa3a206cd754681e2bdaac0db6b0352cbc5d76"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "masked_review_id": "11_A",
+          "source": "round1_delivery/runs/panel/D1/results/3182933225.json",
+          "result_sha256": "25d956ebd3ec6cd11c976ff0ae9cd31afc5e467c332d1503769935587c1b5a76",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "50a70fd7fdad8cb0270cf1c89ffa1e40b88c54497f0b9cc1f52ab9707608659d"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "11_B",
+          "source": "round1_delivery/runs/panel/D0/results/3182933225.json",
+          "result_sha256": "a092bf546b264d7ec903e268ba95ac574cc7564f3e60739010004c12937fffd8",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "a5061b2174d3f6abb4049300fc3c9c4b490b40d707166dce1e2c70aabcd7c24f"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "11_C",
+          "source": "round1_delivery/runs/panel/D2/results/3182933225.json",
+          "result_sha256": "b96e75b8723763bc6f79239d5b0dc2908c9ad8794ede5b92830693dbf85845ad",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "b71796dd5f7fb33a1ad6a54d0dfa8c7a9bc580299781321cf0e2d39304851e00"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "14_A",
+          "source": "round1_delivery/runs/panel/D2/results/3297946987.json",
+          "result_sha256": "98af760cb0030ba2323c3db3fccddffefc265a9b22f67dc5b860765f01d2ec4d",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "57c8108ed38fda74f50ca05f1a14438bbd133953329da55b339f38cfe3b224c3"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "severe_attribution_error": true
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "14_B",
+          "source": "round1_delivery/runs/panel/D1/results/3297946987.json",
+          "result_sha256": "09a76c655e7880fb670ceaacf8e0fe104f09c2400fc99419cbee4e019eacf8ea",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "45314a3b0fceadc1ce6ddba483f40cb4d90acc41ddc0d5195502e797d64f6b1c"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "14_C",
+          "source": "round1_delivery/runs/panel/D0/results/3297946987.json",
+          "result_sha256": "1380fffc4928ee702638237b06ebd07b2cc5fec3de9b32174c25f0e6967868b4",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "2e9e652410c51a5bf1e843ec58685245c6c6cb6919a3eaaf1390615d9ef60585"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "creativity"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "23_A",
+          "source": "round1_delivery/runs/panel/D0/results/3175258011.json",
+          "result_sha256": "0955d194ebeb62def8fd3141c051b91a5239d68f5c79b1aecf576dd69f931825",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "8332f8ef9090a071885343cadb7ce07aa16c2079f324868ff57177b5a7f35e89"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "masked_review_id": "23_B",
+          "source": "round1_delivery/runs/panel/D2/results/3175258011.json",
+          "result_sha256": "6c93d3549194429f4e0b05574a680f0ab5120e7f3cb86d7b67845577033b3fd8",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "033a54d502f0524207a05285f96c5b33aec75e86b5a33479d23ea103006784b1"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "masked_review_id": "23_C",
+          "source": "round1_delivery/runs/panel/D1/results/3175258011.json",
+          "result_sha256": "8e4b7235ee45f15673b0b3aee77d453aa7c52aef81edb41a9921fbb94088cab5",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "3432006d76baa8ff586c2999cca59d9c7188e13e2fa455268e70b1f6ff151c2c"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "24_A",
+          "source": "round1_delivery/runs/panel/D1/results/2881368889.json",
+          "result_sha256": "d1c67f07b16264f4a7fe99bd46104207afa2a374de6c356590812250dd5d3096",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "217df271770bb447faaa8749c2882b4d46e62c5c778dcc0fa905614ecf9612c4"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "24_B",
+          "source": "round1_delivery/runs/panel/D0/results/2881368889.json",
+          "result_sha256": "e59db09a2c5edf623fe24365c482b37bb840c8cd8d10335a050124f9f7b2f5e3",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "068a2373c4f3cdc50d6af609c3e93d0745d76a09c1b72bf699ca419196d363ce"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "24_C",
+          "source": "round1_delivery/runs/panel/D2/results/2881368889.json",
+          "result_sha256": "2e3c02dc9945abaf5453d49a63e207d54591bb4abaa12a5aac22b65aa7d01ea1",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "684cd208ed3ba88a9ca719cf2d40f373bc59a2a036448acbc86851780a9d00e8"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "25_A",
+          "source": "round1_delivery/runs/panel/D2/results/3175482871.json",
+          "result_sha256": "fc866b3a176d236e5d0b8fdf318f0ce7dce2eda2a299d1e2648024098a69c1b0",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "d34a8aa06112a18e7336ad88b693d924f984bd23cb17fe123824c5d47fc56b16"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U10",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "25_B",
+          "source": "round1_delivery/runs/panel/D0/results/3175482871.json",
+          "result_sha256": "b82eb32f0a3d40db36254de918ae8a982a5c08fde5d25fac1c9468f4782152e3",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "28253a36927ff9a1b47f9d68ca31948fae88643c13c32c6a558f5b6a533f1fa3"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "25_C",
+          "source": "round1_delivery/runs/panel/D1/results/3175482871.json",
+          "result_sha256": "12d803e7018e6de1dcf70a8dec6411464ddb39e8a5e182be5b5e7d35e00734bd",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "8583ddcadac222f9e475294ba878c32e6b8c73322e7b1ddb30078715c317ebb2"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3076798484",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "paperclip"
+          ],
+          "U02": [
+            "addiction"
+          ],
+          "U03": [
+            "relationship"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "npc_performance"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "addiction",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "28_A",
+          "source": "round1_delivery/runs/panel/D0/results/3076798484.json",
+          "result_sha256": "c9927996c4b23bd1aeb8e7527cbe93f145a158139359c9bb1d11fa8be6ef544d",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "01e8492e2d4e401bf19f0f975cebe471405b755852e9618b432bdf8fbda4d5fa"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3076798484",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "paperclip"
+          ],
+          "U02": [
+            "addiction"
+          ],
+          "U03": [
+            "relationship"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "boundary",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "addiction",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "28_B",
+          "source": "round1_delivery/runs/panel/D1/results/3076798484.json",
+          "result_sha256": "403ac93ab3c6755bc129110b7c94d5ff11c3a2760accea00ec2afbad13a7135e",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "3d3087d421c5b72e8b47d335060c6d55206cfa3792b929f2dc3790eb39d97a85"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3076798484",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "paperclip"
+          ],
+          "U02": [
+            "addiction"
+          ],
+          "U03": [
+            "relationship"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "npc_performance"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "addiction",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "28_C",
+          "source": "round1_delivery/runs/panel/D2/results/3076798484.json",
+          "result_sha256": "368702e3347031a8cda6e980e7c7a4462d59a5a75f68a668e2ac90e7173e9eb6",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "7efa8d6595fef62e4e829d3353ded3aeefc4b9fac40d1a298485701a15171b6e"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3176421865",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "suspension"
+          ],
+          "U02": [
+            "harassment"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "suspension",
+              "harassment"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "32_A",
+          "source": "round1_delivery/runs/panel/D1/results/3176421865.json",
+          "result_sha256": "61c9a09a20459bc292a7728bbd54ef862b5e1150dfdc826dcfc9d12df510caec",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "475f6467bd6686724e87b2fc6af3e5045aae20c14efa5cdc8d41c71d7cc0e786"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3176421865",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "suspension"
+          ],
+          "U02": [
+            "harassment"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "suspension"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "harassment"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "32_B",
+          "source": "round1_delivery/runs/panel/D0/results/3176421865.json",
+          "result_sha256": "cd1bc136182aa9db35858dc7632a782756ea7b24395592b6575851e85aa22423",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "9f7ecaff954744b6268b485063a6b87652dcc47a4dd7f8398914338d31cd52a1"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3176421865",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "suspension"
+          ],
+          "U02": [
+            "harassment"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "suspension",
+              "harassment"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "32_C",
+          "source": "round1_delivery/runs/panel/D2/results/3176421865.json",
+          "result_sha256": "84fdbefa5d3d5783cd81fcfe87b53b928fcd3acd6234082a9ec8440c4b454e22",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "d69aa39f686cd576d99fc58319516294d7d16a9344b938a6b8ef1e0975d65e47"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "35_A",
+          "source": "round1_delivery/runs/panel/D1/results/2891648776.json",
+          "result_sha256": "78e1868595a761745eb16a9b4d15ca6ebd0c6aa106b3cd4519303143df6066e5",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "4a19faa2b4f5619962b8c5093deb086ac7b262fc19973e85c55c0910faeea796"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "35_B",
+          "source": "round1_delivery/runs/panel/D0/results/2891648776.json",
+          "result_sha256": "df683aefddff0c1f4270b63d820b5f3cc826e7ee3af66a693ca8add56afb02a4",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "132de7c12a38583cea741fe2482ed46628210e2a31678ba2461f2271624565f6"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "35_C",
+          "source": "round1_delivery/runs/panel/D2/results/2891648776.json",
+          "result_sha256": "433d5bbc2bea0783f91fcacfed66cbe479db7d1a395c59ab90aa87fbbfbe2e01",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "d95b31810ec5d9caa8eca4db5b5baa55e591255eae85862dfdb4ccba83a4529a"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "masked_review_id": "40_A",
+          "source": "round1_delivery/runs/panel/D1/results/3313656160.json",
+          "result_sha256": "9eb9c0e50a4455aa6704dd8e5d926a81f67822294b1751f78746ec9d789daeaa",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "30bb2f74417c7298f8fe15b3360ff330e50ee800482be3f96cbce0a4335552c2"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "VALIDATION_ERROR",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "masked_review_id": "40_B",
+          "source": "round1_delivery/runs/panel/D2/results/3313656160.json",
+          "result_sha256": "706a8cb2d060312862c088386039679c41e88167ebae40c19bbdff43ea219882",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "9643127f2d769892c26ad1acd115a5dd4bcadae5377445829050e851deb1c697"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "cognition"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "student_skill"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "cheating"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "student_skill"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "supported",
+            "claims": [
+              "student_skill"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "context",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U10",
+            "validity": "context",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U11",
+            "validity": "supported",
+            "claims": [
+              "job_loss"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "40_C",
+          "source": "round1_delivery/runs/panel/D0/results/3313656160.json",
+          "result_sha256": "a3ff3187ddb706375336b057bb5981e6034f213a3c1aaaec747b612a76eb619b",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "200d77e8b35e62810421cda2afd3c9cae8ca7e7e177f0a38c79cb557a0953c46"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3182336378",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "42_A",
+          "source": "round1_delivery/runs/panel/D0/results/3182336378.json",
+          "result_sha256": "550457a0832682d7e94a63447eb237edc2541d1674aedae86e8907a4aa321f33",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "d49defe5ac48b5041aa924984ab6330ff634c9c2ffaf8d6e42412eb6d5f29d3d"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3182336378",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "masked_review_id": "42_B",
+          "source": "round1_delivery/runs/panel/D2/results/3182336378.json",
+          "result_sha256": "c9fe6a9f8526d49db0edb39f6b2037198bdb17da0c64668d4277e1b83105fef1",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "9b5757aa9a8e3f8ddeeda0c23b95fe7b49f6d005d54240cc70649b8870ad60a5"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3182336378",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "42_C",
+          "source": "round1_delivery/runs/panel/D1/results/3182336378.json",
+          "result_sha256": "6723c5abd69e674c25e991c13fb2cde9498377857eed580aa8cdb6f65f04ddcf",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "9a26b4718079b95d14df17c31e15a3ea621c9221eb09beef47bc186e92a31268"
+        }
+      },
+      {
+        "condition": "D2",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "55_A",
+          "source": "round1_delivery/runs/panel/D2/results/3334079418.json",
+          "result_sha256": "3071d606221fdfd8ea0256d82738a7b67dad379ca54a8ad5c195f8278520631c",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "83e634d74255b13817ecc0b6cdaf768bd7538f2456637e71b258e0e259cae073"
+        }
+      },
+      {
+        "condition": "D0",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "55_B",
+          "source": "round1_delivery/runs/panel/D0/results/3334079418.json",
+          "result_sha256": "2d607b63b247cd41172fae41de8b419c7b0c56eb0b3aedad3822843c2bbe92ed",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "47af53dabbbfc0c85d07fdeb0f041eea018b036ebc876b54656dedeec7fe83e7"
+        }
+      },
+      {
+        "condition": "D1",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "55_C",
+          "source": "round1_delivery/runs/panel/D1/results/3334079418.json",
+          "result_sha256": "417cd521cc6b604eae5e516f4b3b4d627d55ce9a489d642751e030f72d1cca43",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "57c5d6e39aafad471571adc2e7be5c7f605fd5a6d336f93a16603de8b0060e49"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "masked_review_id": "D3_02_B",
+          "source": "round1_delivery/runs/panel/D3/results/3182334861.json",
+          "result_sha256": "ee7bca5d2679643f4ce53964373365997e8fc7d8fd347160736505d2dd807460",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "fe795bb5dba2d3d37fd4bdfcb5c1502a1628633629e7da6175e708e28e04491f"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3255564008",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "misinformation"
+          ],
+          "U02": [
+            "delusion"
+          ],
+          "U03": [
+            "social_skill"
+          ],
+          "U04": [
+            "help_deterrence"
+          ],
+          "U05": [
+            "relationship"
+          ],
+          "U06": [
+            "dependence"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "delusion",
+              "help_deterrence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "distorted_neutrality"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "social_skill",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "emotional_resilience"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "supported",
+            "claims": [
+              "critical_thinking"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "context",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "supported",
+            "claims": [
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "supported",
+            "claims": [
+              "dependence"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U10",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_03_B",
+          "source": "round1_delivery/runs/panel/D3/results/3255564008.json",
+          "result_sha256": "04fc273db18faa872e7f90dd876fd828863161d27c9adf0cca9dcb64e9319010",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "c6dd15a5daeafedbf84d51c669a935f609404390ddcce6f46b53e6ed3d4e044e"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_04_A",
+          "source": "round1_delivery/runs/panel/D3/results/3173716637.json",
+          "result_sha256": "a9c5c3cb6bd6a2b3ddf76a4435c5f1f1e7cef8e8e5589cf466b56ac9c63a6ee9",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "59993312b17fdf3d77cfe05b65b1e58cc324f7ba83873bd733df532235a4a8ad"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_05_A",
+          "source": "round1_delivery/runs/panel/D3/results/2763593998.json",
+          "result_sha256": "861926f88b9a5f09bfcd5617005122687fbac1798fef099ac1ec9eb5b5001f76",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "0ea2fd9d34d407a46646979abb69b0374ac9802a9cf8c5ad293c0e9dddffd407"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "boundary",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_08_B",
+          "source": "round1_delivery/runs/panel/D3/results/3367280940.json",
+          "result_sha256": "0f5a0c49c550f163d36dad4f2e06f4305c6f8aec8259a64e51888fd5111a6df5",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "8ad52570a8ff18ec656849132fefa76ae59cbcd5e0bf0ce63cb8aaccf6c76a58"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "unsupported",
+            "claims": [],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_11_A",
+          "source": "round1_delivery/runs/panel/D3/results/3182933225.json",
+          "result_sha256": "49d5c7a581f0d91bbeb6aa041552d1e208427b1324c2ed6210358dcde145b5c1",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "718212b332270cb8fe48b2469381ccd9ae398fe38653649c8d4a91605a95113a"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "PARTIAL",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "masked_review_id": "D3_14_B",
+          "source": "round1_delivery/runs/panel/D3/results/3297946987.json",
+          "result_sha256": "b0bfd62e2e3ec9e062555ca94fa446a6b74d68f68d9fd62d70a90e056bededcc",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "46c8a1ebdca18efde922e684d551306bc552c5424c4fea86b1a3b634b32699b4"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "masked_review_id": "D3_23_B",
+          "source": "round1_delivery/runs/panel/D3/results/3175258011.json",
+          "result_sha256": "87aebdd0cd70a474b244b7421e9e58b059364f1cb645361aaeb68e27edd79369",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "5007474301190b0382d5a682eadb71fc5834295350d7e1c60f3e0b3a1260f98c"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_24_A",
+          "source": "round1_delivery/runs/panel/D3/results/2881368889.json",
+          "result_sha256": "259c5ab56e2596587d22e956fed8b8923c264ed5b767a3680a7464e73b54dfea",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "c716501902c9bad69d7e9ea7a5d35d47859d08e3470db71025c6287cdc8d04d3"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U10",
+            "validity": "context",
+            "claims": [
+              "ad_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_25_A",
+          "source": "round1_delivery/runs/panel/D3/results/3175482871.json",
+          "result_sha256": "98e9f8f817801b987f52b5f3f2ede31d60e7f4aa440daed391879669ba17e1cf",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "165779565010bfaceed5da193cbd0e391e3b823e11564b1975a79e86bbd3eda9"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3076798484",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "paperclip"
+          ],
+          "U02": [
+            "addiction"
+          ],
+          "U03": [
+            "relationship"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "boundary",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "addiction",
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "relationship"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_28_A",
+          "source": "round1_delivery/runs/panel/D3/results/3076798484.json",
+          "result_sha256": "38fca3c4bae049c5a2801fc24c810a0310bbd52322f869c90d11133d73f53588",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "9ad4c22d47a1595386dd98c0d4ef6857831f20c4a0153c0acba1afd0d2b366a6"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3176421865",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "suspension"
+          ],
+          "U02": [
+            "harassment"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "suspension"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "suspension"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "reputation"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "context",
+            "claims": [],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "harassment"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_32_B",
+          "source": "round1_delivery/runs/panel/D3/results/3176421865.json",
+          "result_sha256": "12c87083bd5a84217e39cca2691638f2f2e7e7eb1e22698013221b27f1583db6",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "26ac8aa91085b6c674cb5b707bca416415600c6988bdb229752f674694a9a028"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_35_B",
+          "source": "round1_delivery/runs/panel/D3/results/2891648776.json",
+          "result_sha256": "234c393979228a5b5d56615fb1d0c18a4f1f977ae9eb2b30f532e9587e45ab23",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "bcdb068b24fb7d59bbc17f43412123d476c60ef7af1a64e270384cf21a6ebe7b"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "student_skill"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "cheating"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "student_skill"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U04",
+            "validity": "supported",
+            "claims": [
+              "student_skill"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U05",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U06",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U07",
+            "validity": "context",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U08",
+            "validity": "context",
+            "claims": [
+              "opinion_bias"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U09",
+            "validity": "supported",
+            "claims": [
+              "job_loss"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_40_B",
+          "source": "round1_delivery/runs/panel/D3/results/3313656160.json",
+          "result_sha256": "b306efd85447c1e3229bee63e2bef74f00df1678ae2026e9e43020ee3c818d8d",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "e96889686a41acd8f0b43e95be4e95ec8906da30745151a49b3be47047a93f78"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3182336378",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "masked_review_id": "D3_42_A",
+          "source": "round1_delivery/runs/panel/D3/results/3182336378.json",
+          "result_sha256": "09859b5bf81af12695f003457fd4b2cea26941749284227db16d3ca705b4d5c6",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "695cd1c02d36ab8ca6b5781aeb46e2389c29f4f44050e7c5017a4af59726a7ce"
+        }
+      },
+      {
+        "condition": "D3",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U02",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "severe_attribution_error": false
+          },
+          {
+            "unit_id": "U03",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "severe_attribution_error": false
+          }
+        ],
+        "recovery": {
+          "masked_review_id": "D3_55_B",
+          "source": "round1_delivery/runs/panel/D3/results/3334079418.json",
+          "result_sha256": "c8333348e5f6245e96105018e7b2d69dcb0589cc29638a07e222f1d2f3a4a4a2",
+          "hash_kind": "canonical_json_sort_keys_utf8",
+          "file_sha256": "0f4779f3a8b75689cb357f1a52f8058b13ecb268ca725434504a46fb82c5bb7d"
+        }
+      }
+    ]
+  },
+  "round2": {
+    "aliases": {
+      "cognition": "student_skill"
+    },
+    "common_complete_ids": [
+      "2763593998",
+      "2881368889",
+      "2891648776",
+      "3173716637",
+      "3175258011",
+      "3175482871",
+      "3182334861",
+      "3182933225",
+      "3297946987",
+      "3313656160",
+      "3334079418",
+      "3367280940"
+    ],
+    "expected_summaries": [
+      {
+        "condition": "R2_E0",
+        "gold": 20,
+        "pred": 28,
+        "TP": 12,
+        "FP": 16,
+        "FN": 8,
+        "precision": 0.42857142857142855,
+        "recall": 0.6,
+        "f1": 0.5,
+        "content_covered": 14,
+        "duplicates": 8,
+        "mixed": 2,
+        "unsupported": 3,
+        "boundary": 1,
+        "context": 4,
+        "severe_attribution": 0,
+        "condition_errors": 0
+      },
+      {
+        "condition": "R2_E",
+        "gold": 20,
+        "pred": 13,
+        "TP": 9,
+        "FP": 4,
+        "FN": 11,
+        "precision": 0.6923076923076923,
+        "recall": 0.45,
+        "f1": 0.5454545454545454,
+        "content_covered": 10,
+        "duplicates": 2,
+        "mixed": 1,
+        "unsupported": 0,
+        "boundary": 0,
+        "context": 2,
+        "severe_attribution": 0,
+        "condition_errors": 0
+      },
+      {
+        "condition": "R2_S0",
+        "gold": 20,
+        "pred": 33,
+        "TP": 15,
+        "FP": 18,
+        "FN": 5,
+        "precision": 0.45454545454545453,
+        "recall": 0.75,
+        "f1": 0.5660377358490566,
+        "content_covered": 16,
+        "duplicates": 14,
+        "mixed": 1,
+        "unsupported": 0,
+        "boundary": 1,
+        "context": 4,
+        "severe_attribution": 0,
+        "condition_errors": 0
+      },
+      {
+        "condition": "R2_S",
+        "gold": 20,
+        "pred": 37,
+        "TP": 15,
+        "FP": 22,
+        "FN": 5,
+        "precision": 0.40540540540540543,
+        "recall": 0.75,
+        "f1": 0.5263157894736842,
+        "content_covered": 16,
+        "duplicates": 13,
+        "mixed": 1,
+        "unsupported": 0,
+        "boundary": 3,
+        "context": 7,
+        "severe_attribution": 0,
+        "condition_errors": 0
+      },
+      {
+        "condition": "R2_V5",
+        "gold": 20,
+        "pred": 26,
+        "TP": 11,
+        "FP": 15,
+        "FN": 9,
+        "precision": 0.4230769230769231,
+        "recall": 0.55,
+        "f1": 0.4782608695652174,
+        "content_covered": 13,
+        "duplicates": 9,
+        "mixed": 2,
+        "unsupported": 1,
+        "boundary": 1,
+        "context": 4,
+        "severe_attribution": 1,
+        "condition_errors": 0
+      },
+      {
+        "condition": "R2_B",
+        "gold": 20,
+        "pred": 25,
+        "TP": 12,
+        "FP": 13,
+        "FN": 8,
+        "precision": 0.48,
+        "recall": 0.6,
+        "f1": 0.5333333333333333,
+        "content_covered": 14,
+        "duplicates": 8,
+        "mixed": 2,
+        "unsupported": 1,
+        "boundary": 1,
+        "context": 3,
+        "severe_attribution": 1,
+        "condition_errors": 1
+      }
+    ],
+    "rows": [
+      {
+        "condition": "R2_B",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J021a7cb256f4f",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/2763593998/repeat1/result.json",
+          "result_sha256": "827630edbd37c6f26b1cf861e6e70d7c13398440022f04d202cf369620b2768f",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J9f138d1e4f5d9",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/2881368889/repeat1/result.json",
+          "result_sha256": "571cc641ca26b31e30f9b42a912e1f31062ba9ef9c6d8fb5f87dd30c054bbdf2",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2881368889",
+        "repeat": 2,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jc7032a4052592",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/2881368889/repeat2/result.json",
+          "result_sha256": "fcbe74a7c62d16d9e3a144c4cef823c7819ea8fa39ac583d982b142fc3934595",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2881368889",
+        "repeat": 3,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/2881368889/repeat3/result.json",
+          "result_sha256": "57ecce66ba96f6012bfcf067308320137bc510dfbb61c520192f003e477ed222",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J7931239f757c5",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ai_safety_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jee8712e487c31",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/2891648776/repeat1/result.json",
+          "result_sha256": "f99e1daee55f635b26757f0dd36d56978900bd37f0e8594b37203f63f8aa76fd",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J6296069fb85e2",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3173716637/repeat1/result.json",
+          "result_sha256": "c76866f20792e197daffa4c1d2fbd417dad4d13a44bff1cbdaf368f93dc1a6ff",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3175258011/repeat1/result.json",
+          "result_sha256": "d770315151b0d84d2fcc30e4a2ff2a838fe5374da6300e7bc902cf2a612dc38f",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175258011",
+        "repeat": 2,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3175258011/repeat2/result.json",
+          "result_sha256": "fcc5c55c48433f3885b131a028216b520ae3aa8c7f9e13bfb78d6e705f621a76",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175258011",
+        "repeat": 3,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3175258011/repeat3/result.json",
+          "result_sha256": "be6a73ac9534bf7ce14087af4d3973262eb3426c6c18043042224cf5c8b16300",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Ja39095db51068",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J459a1a281d080",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J76ece22822184",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J1634246b86de1",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U05",
+            "masked_id": "Jf2c81fafa92c5",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U06",
+            "masked_id": "Jf7304d5a3d80f",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "error_signature": "consent_not_stated",
+            "severe_attribution_error": false,
+            "condition_error": true
+          },
+          {
+            "unit_id": "U07",
+            "masked_id": "Jea2eb74f198c9",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U08",
+            "masked_id": "Jd0072d89dfd75",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U09",
+            "masked_id": "J2c43a7aabeb52",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U10",
+            "masked_id": "J9f1bec7575f17",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ad_governance",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3175482871/repeat1/result.json",
+          "result_sha256": "0cd8d02e8016b09c37de52f796c5d74b23ed9c3b80568303139b264e2d5c5359",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3182334861/repeat1/result.json",
+          "result_sha256": "f924725c196a9d3ba22e17fe4ee9773a3ec52ca08ae9164696dcabfef55e8126",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3182933225/repeat1/result.json",
+          "result_sha256": "1bf1c320e5021698eae0c9288d814419edf817b8e5e1352423041f97b33a24b2",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J366c15726a168",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J0017e22895b03",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J8ba1fd410cce9",
+            "validity": "unsupported",
+            "claims": [],
+            "error_signature": "stock_loss_from_jitters",
+            "severe_attribution_error": true,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J80a6d240b6369",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3297946987/repeat1/result.json",
+          "result_sha256": "d434a3922a122b064543e982642eefa515fb72fbe02cee5a4ea7cdfeb999efca",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jab9c7679aa229",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "risk_mitigation",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jf2622d1dbb683",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3313656160/repeat1/result.json",
+          "result_sha256": "3b45befdff40cba2a6c2db8a2d0e84adeeb16264f89d7a6955fec9bed4ff3ddd",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jb6cb99e9b2907",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jf4d62badc54d3",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3334079418/repeat1/result.json",
+          "result_sha256": "4854243093994556d5807565be422778cdf5f6cd84d7f23c65754593d42fec16",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_B",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jcebe1ab7d5972",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J2f0383ca7bbb0",
+            "validity": "boundary",
+            "claims": [],
+            "error_signature": "creative_nuance_capability",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_B/3367280940/repeat1/result.json",
+          "result_sha256": "6b2385527e5e035bf3a97cacc06f5583c6b8c4fd2a559a1ecc067767bce70b2d",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J15d9a318987af",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/2763593998/repeat1/result.json",
+          "result_sha256": "c9a6815062f90757063891b0984272634a2b1ed670daf770cb0f75b34b0f32de",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/2881368889/repeat1/result.json",
+          "result_sha256": "b8a5e01aeb66c709bd2d8568d49c1be965349f8bf1dbbb138687ebd31af6d10d",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J2481e0557aa73",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "rapid_ai_danger",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jeb38b662b938e",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ai_safety_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Ja8e69ec669f73",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/2891648776/repeat1/result.json",
+          "result_sha256": "435acc745b4eb5d05101168c0c95089a4c319d410c79daed74b503a541926f64",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J0eb64a0629667",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3173716637/repeat1/result.json",
+          "result_sha256": "43f19315b94695e8b46c0faadfe8fd6548cf8f1d6712ce671e5743d52658bc09",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3175258011/repeat1/result.json",
+          "result_sha256": "dfe84cb99bc9824b8cbaa6081d4885073222871ad4f265e727dca45f8eecf6ad",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J4d19b1b60b87a",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3175482871/repeat1/result.json",
+          "result_sha256": "7fd4a4b5d293967897ae767304e113fe82fbb5c371c2aa57d106029f5f6a5d9d",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3182334861/repeat1/result.json",
+          "result_sha256": "2ab0c4f29fec450268bd0274ad91f37c637dcaa64a02b36ed5b7a470d386b6c6",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3182933225/repeat1/result.json",
+          "result_sha256": "2773d370821a3bc5acce20fb7fe07517446063da3f846821c82ab630f9e5c5fa",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jf4235288c1b50",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3297946987/repeat1/result.json",
+          "result_sha256": "93e16d69abfb4b8251094e7615de9a85b0ca452d363a524b50becc5c2e38c9eb",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J96f3a1d6c73f5",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J620cbd2f721d6",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J78ad854dc82eb",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3313656160/repeat1/result.json",
+          "result_sha256": "a1dca2b45f0ed0f96574e9c2bbf6639f09cf8c93ffda3ae7c82a166d1a9a77c4",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J18120177456b0",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J0b9589dfa662e",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3334079418/repeat1/result.json",
+          "result_sha256": "f7d40ad2305d82773809c86878559965fb425a5c55e92898eac9caf2c2fc0021",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J06507d54dca6a",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E/3367280940/repeat1/result.json",
+          "result_sha256": "e76f38b9696c8d485b72c7b543d3d88a975a82536f2d3565341aa127492a424b",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jfcd95af6d2f6b",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/2763593998/repeat1/result.json",
+          "result_sha256": "cfa77c2b0aca3a6d6ef009696f30b900d1d30b29cc4421f30ebfc36607a74293",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J3b38adf5f4751",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/2881368889/repeat1/result.json",
+          "result_sha256": "83674461dbfd96f9603ac7cc240233049b2e81ccef91a1bc5ed8d38bf833e692",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jdec77644c9076",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "rapid_ai_danger",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J5814120778af9",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ai_safety_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J15d6cd4aee469",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/2891648776/repeat1/result.json",
+          "result_sha256": "43bd21fee9c6afc4ceeee321e1438a27473892c550fc05865eeb5e05c9cee07d",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jb94901378e687",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3173716637/repeat1/result.json",
+          "result_sha256": "cc81e6a99b822045f4f71f827f53f47d6a208e5e2e5a1ab8e0e3e95b991248e4",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3175258011/repeat1/result.json",
+          "result_sha256": "a40592b56170577090ea860459d56e8d1dc25b8fc8e02fc1351abf8bf216dbb3",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J342377768ab94",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J12b8c63391471",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Jcea0438be5a45",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J1fbe15648c96d",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U05",
+            "masked_id": "J43547b6552506",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U06",
+            "masked_id": "J6e73faf9daded",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U07",
+            "masked_id": "Ja1c6d2e1959dd",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U08",
+            "masked_id": "J086a4692a5873",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U09",
+            "masked_id": "J2938cc292f5d5",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3175482871/repeat1/result.json",
+          "result_sha256": "4143987a1784a3b2a456b3c77e34a65e67ff677f1ecd6488f6941f7ff37db58e",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3182334861/repeat1/result.json",
+          "result_sha256": "c1b83849fb9ee4246150b16de3174051274f7419e1b9fb1cb96e3e24d1b2663f",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jbbdc365038ff0",
+            "validity": "unsupported",
+            "claims": [],
+            "error_signature": "ai_plan_implies_risk",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jbfdc72b179e65",
+            "validity": "unsupported",
+            "claims": [],
+            "error_signature": "ai_plan_implies_risk",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Jb84f2363e79e6",
+            "validity": "unsupported",
+            "claims": [],
+            "error_signature": "ai_plan_implies_risk",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3182933225/repeat1/result.json",
+          "result_sha256": "85157883d0341e45d2a8f983047625ee4a76397319a0b8eda0197055950a5e85",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J1325243db053a",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J81916afe23fd8",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J64888f125a176",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "investment_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J31d267176b996",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3297946987/repeat1/result.json",
+          "result_sha256": "65213dcfa6806054df100194cb03eda91c4d49accc15b9b7da780289d12f973d",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J78907f2eba4b7",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "risk_mitigation",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jdae53d513a450",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3313656160/repeat1/result.json",
+          "result_sha256": "f8ec90c0d732fccec475a290e158ae14c6600fe43c6c410ebec1ad64fa499e0f",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jda9fb5bae0cb3",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Ja65d0cb7981c2",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3334079418/repeat1/result.json",
+          "result_sha256": "a757d6ab6507fdccdf1958971c00e259631f0ab9551e058017e8a8313c6e33c4",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_E0",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J7e0c439136218",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jcba46cd4b1786",
+            "validity": "boundary",
+            "claims": [],
+            "error_signature": "creative_nuance_capability",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_E0/3367280940/repeat1/result.json",
+          "result_sha256": "7ed5f55b382ce2f9856982d3420554ee3de306cf90fd0766f3b21b7e806310d8",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J9e4027cde3fcc",
+            "validity": "boundary",
+            "claims": [],
+            "error_signature": "artists_upheaval",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jcfde3d860a877",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Je6fc34054a91b",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "neutral_video_capability",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/2763593998/repeat1/result.json",
+          "result_sha256": "4649899e3e798e807ba9f5e6a843aac77703df4442e49c980314dfc5e3a48741",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/2881368889/repeat1/result.json",
+          "result_sha256": "fe89a3174c4ff0410e192b05643a9a5781828b2fb8e652758316be2a1ca3e2a2",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J11a2cf57f96b9",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "rapid_ai_danger",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J03a4f04e719b5",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ai_safety_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J9d53db687c7d8",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/2891648776/repeat1/result.json",
+          "result_sha256": "10122f9a1af8a6b51b8002e24c6987000c98a638bf106d3cd85ec6f5e62fd90a",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J4caf9cfb2f5da",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3173716637/repeat1/result.json",
+          "result_sha256": "33cc810ca9f808aedce49b183845384a4f13f60e912df01d460bd2124b61f78d",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3175258011/repeat1/result.json",
+          "result_sha256": "33ac1d5d86adec671c73fadd664cf8425f4473958db3868841c9a06090935d1a",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Je0b0a34ee2b6f",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J3ccc0cfcf541d",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Ja3d05235cefad",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J35e2f6e59be10",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U05",
+            "masked_id": "J74cfa2425c710",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U06",
+            "masked_id": "Jd53a75ea1392c",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U07",
+            "masked_id": "J2faae0aec3970",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U08",
+            "masked_id": "Jc8acd06afff44",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U09",
+            "masked_id": "J379e66ec05f95",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U10",
+            "masked_id": "J75d7166ceedcb",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ad_governance",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3175482871/repeat1/result.json",
+          "result_sha256": "aa065a56d7455f0f0a6365376a222ea7a4b03f606be662857bb3c96cb2d3b7a7",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3182334861/repeat1/result.json",
+          "result_sha256": "094e803c669a9e51cb9f1c80947920a895b4a16e3524c855e59d5a1f4b3c140f",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Je559928aeff72",
+            "validity": "boundary",
+            "claims": [],
+            "error_signature": "dei_exclusion_as_harm",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3182933225/repeat1/result.json",
+          "result_sha256": "7acd3d91bcddc9fe0eec074118d563f21250390a7294f5375f4a831429b16794",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J063e8e36688dd",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J497a3b8a5ba54",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Jf601b2f3dfb9c",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "investment_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J050d9e9c8158d",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3297946987/repeat1/result.json",
+          "result_sha256": "35c93ec1d01557c34210015c6379d46a1780cbbe1f1365f61b7d9dab1a922b52",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jc3536f9202451",
+            "validity": "supported",
+            "claims": [
+              "cognition",
+              "student_skill"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J7bdff9eaf72e6",
+            "validity": "supported",
+            "claims": [
+              "cheating"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Jb8391dd2359ef",
+            "validity": "supported",
+            "claims": [
+              "cognition",
+              "student_skill"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J95f7855be4e27",
+            "validity": "supported",
+            "claims": [
+              "cognition",
+              "student_skill"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U05",
+            "masked_id": "J8aa634b751916",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U06",
+            "masked_id": "Jd24db432aa0ab",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U07",
+            "masked_id": "J0a37cb514ca90",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U08",
+            "masked_id": "J1557374d8c77e",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "risk_neglect",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U09",
+            "masked_id": "Jd0710e5ad8c8b",
+            "validity": "supported",
+            "claims": [
+              "job_loss"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3313656160/repeat1/result.json",
+          "result_sha256": "63bf89cfecfc88235dbd2adbd25c32d23d1e8d3d66d3849a1c561c7c96e0668a",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J21d1576f555a1",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jaa8175e4177b9",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J56390ee8b3bf8",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J44d136b8f74fc",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "additional_lawsuits",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3334079418/repeat1/result.json",
+          "result_sha256": "0f9d8cdcdfb36a93bde4dd5e6196d2d9e12e7b8a1dc9a269646a925c7f1bb5b7",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jf5c6f1ad27681",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J743aa904e5dbf",
+            "validity": "boundary",
+            "claims": [],
+            "error_signature": "creative_nuance_capability",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S/3367280940/repeat1/result.json",
+          "result_sha256": "f329b6d093da1e56cbfd6f4a7a5a990d3bc2bf965ee08e9200cc5781d53b74bb",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J6fde4c05589cb",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/2763593998/repeat1/result.json",
+          "result_sha256": "786dbacc9064ac41a8cf127026a9957adcee9abfd90e2d3a449dd1bb531eac86",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/2881368889/repeat1/result.json",
+          "result_sha256": "6d54ef5e0732a1c46678f4ecd45f88e50124ac04116d4ef8f856d61dac5179cc",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jc09584469af20",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "rapid_ai_danger",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J6656635dc507a",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ai_safety_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Jb7c5cf7996b5c",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/2891648776/repeat1/result.json",
+          "result_sha256": "bb72ae2a5164d7d9f6a389af4c97281831335a946ca014768784aba342c43364",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jb6154efc5577b",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3173716637/repeat1/result.json",
+          "result_sha256": "665b6ff645770ab757bfa3f68c8dc5e0f49bb929e9e82673899872adeb54518c",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3175258011/repeat1/result.json",
+          "result_sha256": "370842a7541366d14fb3b9690bf4ad7dbeaae86a9432002176072bc05ec98f0f",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J1cab77bf171c9",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J8037aa58ea6f9",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J851fe3de7eaab",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J76613b616e9b4",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U05",
+            "masked_id": "Jfc2e526f3f860",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U06",
+            "masked_id": "Je71da49723e34",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U07",
+            "masked_id": "Ja10538af66cf4",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U08",
+            "masked_id": "J51e75e7fe0954",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U09",
+            "masked_id": "Jeedd0b32f8a5f",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3175482871/repeat1/result.json",
+          "result_sha256": "deede36e1df7a52dbe482ca616629f815f85104bc77e691bea1781fbffb6d601",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3182334861/repeat1/result.json",
+          "result_sha256": "09677b33e0b38a0a1ef1f4bfad31e66338046bdc76d96436a39c4c76c20e5b26",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J1bc1199e6ae65",
+            "validity": "boundary",
+            "claims": [],
+            "error_signature": "dei_exclusion_as_harm",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3182933225/repeat1/result.json",
+          "result_sha256": "68116fab9e791d23b012410eb6cdfb704c2ca419bc34540c375cbf266753ecd5",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J65ba7371d09f9",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Je8a2e78eb930b",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J1d049d81e85b0",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "investment_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "Jf3f7d7fb13d9f",
+            "validity": "supported",
+            "claims": [
+              "bubble"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3297946987/repeat1/result.json",
+          "result_sha256": "dbbaa1fd26caaa12fd77425203137637a987823ef0f393b55d6e9e3a16e329df",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J85e4f8203b2e8",
+            "validity": "supported",
+            "claims": [
+              "cognition",
+              "student_skill"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J17f6c3d691561",
+            "validity": "supported",
+            "claims": [
+              "cognition",
+              "student_skill"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J9b206499a7820",
+            "validity": "supported",
+            "claims": [
+              "cheating"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "J7999380ddcaef",
+            "validity": "supported",
+            "claims": [
+              "cognition",
+              "student_skill"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U05",
+            "masked_id": "Jfb8d6c2286b70",
+            "validity": "supported",
+            "claims": [
+              "cognition",
+              "student_skill"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U06",
+            "masked_id": "J87afb8987d7ca",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U07",
+            "masked_id": "Jb49c40ff72a1a",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U08",
+            "masked_id": "J350618298cc4b",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U09",
+            "masked_id": "Jc96ba4d520621",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "risk_neglect",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U10",
+            "masked_id": "J81bd5ae8a6c5f",
+            "validity": "supported",
+            "claims": [
+              "job_loss"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3313656160/repeat1/result.json",
+          "result_sha256": "ee081f1d0853fca559a4f7ee29c0278bb4895e6a5e8b0e96e41c34c36d868ca9",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J7c6918adb3977",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jadcf3b69a0d6a",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J41f4c16386cf0",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3334079418/repeat1/result.json",
+          "result_sha256": "43619e10b4e6079d6f39a7ed0cb3048f8d935670b4a3e50c2cb8e50d269d8296",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_S0",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jcc3d2227dd669",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_S0/3367280940/repeat1/result.json",
+          "result_sha256": "69893d83321bc529ef9f23b4704664f184632e0ff74559b1f301616f792aec12",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2763593998",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "bias"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J3d4f20e582af2",
+            "validity": "supported",
+            "claims": [
+              "bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/2763593998/repeat1/result.json",
+          "result_sha256": "a1da54a600add1c2578c6fd466806c65d2fb0e618e70b454d3d72f09823993e9",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2881368889",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J5ffb5f244912b",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/2881368889/repeat1/result.json",
+          "result_sha256": "700ed53a0bd215c4c0d30b8e1a8324dea97c94863d13d0d282348fcbb26dbde3",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2881368889",
+        "repeat": 2,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/2881368889/repeat2/result.json",
+          "result_sha256": "02074193224c41101537edb627789279e2defff64c39207e83f7e587a1d03727",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2881368889",
+        "repeat": 3,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "plagiarism"
+          ],
+          "U02": [
+            "fake_news"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jeae5a83ed67b2",
+            "validity": "supported",
+            "claims": [
+              "plagiarism",
+              "fake_news"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/2881368889/repeat3/result.json",
+          "result_sha256": "be0ea25c76700f610610630f7c39d80404306ee9cb36d6ea3b3158b46b9752fb",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "2891648776",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "job_loss"
+          ],
+          "U02": [
+            "war_control"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "Jef21c951d2668",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "ai_safety_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J3ad5ff6a3f406",
+            "validity": "supported",
+            "claims": [
+              "job_loss",
+              "war_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/2891648776/repeat1/result.json",
+          "result_sha256": "2124d11fcb389cd7a2cbbd2caf25f1a967ee7af8aaf3e233a9c55e2c03b67e48",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3173716637",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "future_job"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J4527cf220155d",
+            "validity": "supported",
+            "claims": [
+              "future_job"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3173716637/repeat1/result.json",
+          "result_sha256": "31fda543332f5323f12a7648957efac07e955cdac36423333f0f1a00686de191",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3175258011",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3175258011/repeat1/result.json",
+          "result_sha256": "41b98229c90f1272b722e5c0ce7bd16f45b481bb6fb7872a9486bdb23fba40ef",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3175258011",
+        "repeat": 2,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3175258011/repeat2/result.json",
+          "result_sha256": "4b35be3a0e9084be0b32dd15c693ca5fa7a7ba1c8c222743c7c6dc63099cf218",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3175258011",
+        "repeat": 3,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "creativity"
+          ]
+        },
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3175258011/repeat3/result.json",
+          "result_sha256": "b47017411f1f6d042c26a715c57875ac307380833a844792f778aba0cf333ec1",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3175482871",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "ad_control"
+          ],
+          "U02": [
+            "brand_material"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J88f69b4e63482",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jcecb5275aeb53",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Jaad74e46e3603",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "Jd244df2f1b102",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U05",
+            "masked_id": "Ja960d7d4954b4",
+            "validity": "supported",
+            "claims": [
+              "brand_material"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U06",
+            "masked_id": "J61b7571d0a0b6",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U07",
+            "masked_id": "J8412055c2ffe3",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U08",
+            "masked_id": "J18d37a3a9c44f",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U09",
+            "masked_id": "Jec0d224e5f5b8",
+            "validity": "supported",
+            "claims": [
+              "ad_control"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3175482871/repeat1/result.json",
+          "result_sha256": "81c70aa92dc7e81f7088f031ea27795f655afbe24614d900708a5e057ddf138f",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3182334861",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3182334861/repeat1/result.json",
+          "result_sha256": "3993e2f27f12bb2c079004b4d14f5bf1e05d6dccc5e2107e269ccaa931bff683",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3182933225",
+        "repeat": 1,
+        "status": "OK",
+        "references": {},
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J4f34d9a2ecf38",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "neutral_ai_plan",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jaacc3d45712e7",
+            "validity": "unsupported",
+            "claims": [],
+            "error_signature": "ai_caused_state_job_cuts",
+            "severe_attribution_error": true,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "Jf900448004eef",
+            "validity": "boundary",
+            "claims": [],
+            "error_signature": "dei_exclusion_as_harm",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3182933225/repeat1/result.json",
+          "result_sha256": "8b6a0c1079ce9789cf954832869c83613d97b7db2a136b62e8185efd6ba56427",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3297946987",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "capacity"
+          ],
+          "U02": [
+            "stock_loss"
+          ],
+          "U03": [
+            "bubble"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J366c15726a168",
+            "validity": "supported",
+            "claims": [
+              "capacity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "Jccf6c83ad99da",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "investment_concern",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3297946987/repeat1/result.json",
+          "result_sha256": "dc41b7025d65b918c6ebc1f6a4872f425adf032ec01cbcb4ae92935dd9554a4e",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3313656160",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "cheating"
+          ],
+          "U02": [
+            "cognition"
+          ],
+          "U03": [
+            "student_skill"
+          ],
+          "U04": [
+            "opinion_bias"
+          ],
+          "U05": [
+            "job_loss"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J72c0a54684d3e",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J687d93827c006",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U03",
+            "masked_id": "J11f8fb7b85dbe",
+            "validity": "supported",
+            "claims": [
+              "opinion_bias"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U04",
+            "masked_id": "Je3ba740a369c9",
+            "validity": "context",
+            "claims": [],
+            "error_signature": "risk_neglect",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3313656160/repeat1/result.json",
+          "result_sha256": "2373e4bba260c85b5bf2a1a4ff43142d9efc2c77e833a3122619f75f71ee8984",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3334079418",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "delusion"
+          ],
+          "U02": [
+            "suicide_allegation"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J28373035ab506",
+            "validity": "supported",
+            "claims": [
+              "delusion"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          },
+          {
+            "unit_id": "U02",
+            "masked_id": "J6ff93e457617e",
+            "validity": "supported",
+            "claims": [
+              "suicide_allegation"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3334079418/repeat1/result.json",
+          "result_sha256": "c0c2f181ebf5405772723cf7671cfe24ebd2b017a9bbe7ae6e9aa352012bc56a",
+          "hash_kind": "file_bytes_sha256"
+        }
+      },
+      {
+        "condition": "R2_V5",
+        "record_id": "3367280940",
+        "repeat": 1,
+        "status": "OK",
+        "references": {
+          "U01": [
+            "arts_opportunity"
+          ]
+        },
+        "units": [
+          {
+            "unit_id": "U01",
+            "masked_id": "J97ed520b918f9",
+            "validity": "supported",
+            "claims": [
+              "arts_opportunity"
+            ],
+            "error_signature": "",
+            "severe_attribution_error": false,
+            "condition_error": false
+          }
+        ],
+        "recovery": {
+          "source": "round2_delivery/runs/predictions/R2_V5/3367280940/repeat1/result.json",
+          "result_sha256": "574a954a2b50a4490be76fc7a52ac65e71f86501b4ff719d97a4c0d9cc65b9cc",
+          "hash_kind": "file_bytes_sha256"
+        }
+      }
+    ]
+  }
+}

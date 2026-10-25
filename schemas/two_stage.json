@@ -1,0 +1,319 @@
+{
+  "stage1": {
+    "type": "object",
+    "properties": {
+      "record_id": {
+        "type": "string"
+      },
+      "candidate_assessments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "candidate_id": {
+              "type": "string"
+            },
+            "propositions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "proposition_id": {
+                    "type": "string"
+                  },
+                  "decision": {
+                    "type": "string",
+                    "enum": [
+                      "confirmed",
+                      "rejected",
+                      "unresolved"
+                    ]
+                  },
+                  "proposition": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  },
+                  "justification": {
+                    "type": "object",
+                    "properties": {
+                      "consequence": {
+                        "type": "string"
+                      },
+                      "ai_connection": {
+                        "type": "object",
+                        "properties": {
+                          "relation": {
+                            "type": "string"
+                          },
+                          "evidence_spans": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "paragraph_id": {
+                                  "type": "string"
+                                },
+                                "quote": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "paragraph_id",
+                                "quote"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "relation",
+                          "evidence_spans"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "is_affirmative": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "consequence",
+                      "ai_connection",
+                      "is_affirmative"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "risk_claim_spans": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "paragraph_id": {
+                          "type": "string"
+                        },
+                        "quote": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "paragraph_id",
+                        "quote"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "necessary_context_spans": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "paragraph_id": {
+                          "type": "string"
+                        },
+                        "quote": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "paragraph_id",
+                        "quote"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "proposition_id",
+                  "decision",
+                  "proposition",
+                  "reason",
+                  "justification",
+                  "risk_claim_spans",
+                  "necessary_context_spans"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "candidate_id",
+            "propositions"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "context_requests": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "source_candidates": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "scope": {
+              "type": "string",
+              "enum": [
+                "paragraph_and_neighbors",
+                "article"
+              ]
+            },
+            "missing_information": {
+              "type": "string"
+            },
+            "search_terms": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "source_candidates",
+            "scope",
+            "missing_information",
+            "search_terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "record_id",
+      "candidate_assessments",
+      "context_requests"
+    ],
+    "additionalProperties": false
+  },
+  "stage2": {
+    "type": "object",
+    "properties": {
+      "record_id": {
+        "type": "string"
+      },
+      "units": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "merged_proposition_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "justification": {
+              "type": "object",
+              "properties": {
+                "consequence": {
+                  "type": "string"
+                },
+                "ai_connection": {
+                  "type": "object",
+                  "properties": {
+                    "relation": {
+                      "type": "string"
+                    },
+                    "evidence_spans": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "paragraph_id": {
+                            "type": "string"
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "paragraph_id",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "relation",
+                    "evidence_spans"
+                  ],
+                  "additionalProperties": false
+                },
+                "is_affirmative": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "consequence",
+                "ai_connection",
+                "is_affirmative"
+              ],
+              "additionalProperties": false
+            },
+            "risk_claim_spans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "paragraph_id": {
+                    "type": "string"
+                  },
+                  "quote": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "paragraph_id",
+                  "quote"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "necessary_context_spans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "paragraph_id": {
+                    "type": "string"
+                  },
+                  "quote": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "paragraph_id",
+                  "quote"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "merged_proposition_ids",
+            "justification",
+            "risk_claim_spans",
+            "necessary_context_spans"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "unresolved_proposition_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "record_id",
+      "units",
+      "unresolved_proposition_ids"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,67 @@
+--- parent
++++ revised
+@@ -19,14 +19,7 @@
+ representation. They are not corpus articles.
+ 
+ UNCHANGED PARENT MANUAL:
+-You are a precision-focused research assistant. For each candidate below:
+-(1) CONFIRM whether it is a true AI risk-claim unit, using the decision
+-    manual and the examples below.
+-(2) RESOLVE ambiguity using ONLY the article text provided, including any
+-    expanded context. Request missing context when needed; if the available
+-    article evidence cannot resolve it, mark it unresolved (do NOT guess).
+-(3) MERGE candidates that express the same risk proposition into one unit.
+-(4) SELECT verbatim evidence spans.
++You are a precision-focused research assistant for STAGE 1 only. Assess each supplied candidate, resolve its referents using supplied article text, identify materially distinct propositions within it, and select verbatim evidence. Do not merge across candidates or create the final unit relation table. Return explicit confirmed, rejected or unresolved assessments using this intermediate schema.
+ 
+ FULL DECISION MANUAL
+ An AI risk-claim unit is one specific proposition in which the article states
+@@ -122,26 +115,10 @@
+ - Never convert an allegation, hypothetical, disputed proposition, or rejected
+   claim into an established fact.
+ 
+-SPLITTING AND MERGING
+-- Merge repeated mentions of the same risk proposition across the headline,
+-  lead, body, quotations, and conclusion into one unit.
+-- Additional explanation, responsibility attribution, evaluation, denial,
+-  rebuttal, or governance response concerning the same risk enriches the same
+-  unit; it does not create a new unit.
+-- Create separate units only when the adverse consequence, risk mechanism, or
+-  affected interest is materially different.
+-- A different speaker, wording, example, or article location alone is not a
+-  reason to split.
+-
+-- One candidate sentence may support more than one unit, but only when it
+-  actually presents materially different propositions. Reuse its candidate ID
+-  in those units; do not impose one-candidate/one-unit correspondence.
+-- Before returning, compare all proposed units. State whether any apparent
+-  distinction is merely an example, elaboration, response, or repetition of
+-  the same proposition; merge it if so. Do not split mechanically by sentence,
+-  paragraph, named risk category, speaker, or number of examples.
+-- Do not merge independent harms solely because they concern the same model
+-  or article. Every retained unit must have its own sufficient evidence.
++SPLITTING WITHIN EACH CANDIDATE (STAGE 1)
++- Materially different adverse consequences, mechanisms or affected interests are distinct risks; a different speaker, wording, example, paragraph or risk-category name alone is not a distinct risk. Do not invent harms from neutral capability, evaluation, response or co-occurrence. Every retained proposition needs sufficient article evidence.
++- Within one candidate, list materially different supported propositions separately, retaining that candidate ID for each. Do not compress different harms because their evidence sentence is the same.
++- Repetition, elaboration, evaluation, denial and response belonging to that same proposition stay associated with it. Do not compare and merge propositions across different candidates here: retain their IDs for Stage 2. Do not create final unit IDs or final cross-candidate mappings.
+ 
+ CONTEXT RULE: LOCAL FIRST, EXPAND WHEN NEEDED
+ - Start with the Target and its supplied Preceding/Following sentence.
+@@ -175,7 +152,7 @@
+ 
+ AMBIGUITY RULE:
+ - Referential: if "it" / "they" / "these systems" / "the technology" refers
+-  to an AI factor, state the referent in "resolved_reference". If the
++  to an AI factor, state the referent in the existing proposition and ai_connection fields. If the
+   supplied text does not identify it, request context; if still unresolved
+   after available article review, record an unresolved decision.
+ - Structural: request context when two readings are possible. If the
+@@ -192,7 +169,7 @@
+   Do not repeat a quote in both lists.
+ 
+ EXPLICIT JUSTIFICATION (REQUIRED)
+-For every confirmed unit, supply exactly these three justification fields:
++For every confirmed proposition, supply exactly these three justification fields:
+ - consequence: a brief description of the specific adverse effect, preserving
+   the article's scope, condition, uncertainty, and attribution.
+ - ai_connection: an object containing:

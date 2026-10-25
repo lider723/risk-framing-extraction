@@ -1,0 +1,379 @@
+{
+  "date": "2026-10-25",
+  "scope": "Same 12 exposed development articles, 20 original reference units; fixed historical v5 candidates + full article; not an end-to-end extraction comparison or downstream coding accuracy",
+  "reviewer": "llm_assisted; same executing assistant; not independent human blind review",
+  "conditions": [
+    {
+      "condition": "R2_E0",
+      "planned_articles": 12,
+      "complete_articles": 12,
+      "gold": 20,
+      "pred": 28,
+      "TP": 12,
+      "FP": 16,
+      "FN": 8,
+      "precision": 0.42857142857142855,
+      "recall": 0.6,
+      "f1": 0.5,
+      "content_covered": 14,
+      "unsupported": 3,
+      "boundary": 1,
+      "context": 4,
+      "duplicates": 8,
+      "mixed": 2,
+      "severe_attribution": 0,
+      "condition_errors": 0,
+      "planned_reference_unavailable": 0
+    },
+    {
+      "condition": "R2_E",
+      "planned_articles": 12,
+      "complete_articles": 12,
+      "gold": 20,
+      "pred": 13,
+      "TP": 9,
+      "FP": 4,
+      "FN": 11,
+      "precision": 0.6923076923076923,
+      "recall": 0.45,
+      "f1": 0.5454545454545454,
+      "content_covered": 10,
+      "unsupported": 0,
+      "boundary": 0,
+      "context": 2,
+      "duplicates": 2,
+      "mixed": 1,
+      "severe_attribution": 0,
+      "condition_errors": 0,
+      "planned_reference_unavailable": 0
+    },
+    {
+      "condition": "R2_S0",
+      "planned_articles": 12,
+      "complete_articles": 12,
+      "gold": 20,
+      "pred": 33,
+      "TP": 15,
+      "FP": 18,
+      "FN": 5,
+      "precision": 0.45454545454545453,
+      "recall": 0.75,
+      "f1": 0.5660377358490566,
+      "content_covered": 16,
+      "unsupported": 0,
+      "boundary": 1,
+      "context": 4,
+      "duplicates": 14,
+      "mixed": 1,
+      "severe_attribution": 0,
+      "condition_errors": 0,
+      "planned_reference_unavailable": 0
+    },
+    {
+      "condition": "R2_S",
+      "planned_articles": 12,
+      "complete_articles": 12,
+      "gold": 20,
+      "pred": 37,
+      "TP": 15,
+      "FP": 22,
+      "FN": 5,
+      "precision": 0.40540540540540543,
+      "recall": 0.75,
+      "f1": 0.5263157894736842,
+      "content_covered": 16,
+      "unsupported": 0,
+      "boundary": 3,
+      "context": 7,
+      "duplicates": 13,
+      "mixed": 1,
+      "severe_attribution": 0,
+      "condition_errors": 0,
+      "planned_reference_unavailable": 0
+    },
+    {
+      "condition": "R2_V5",
+      "planned_articles": 12,
+      "complete_articles": 12,
+      "gold": 20,
+      "pred": 26,
+      "TP": 11,
+      "FP": 15,
+      "FN": 9,
+      "precision": 0.4230769230769231,
+      "recall": 0.55,
+      "f1": 0.4782608695652174,
+      "content_covered": 13,
+      "unsupported": 1,
+      "boundary": 1,
+      "context": 4,
+      "duplicates": 9,
+      "mixed": 2,
+      "severe_attribution": 1,
+      "condition_errors": 0,
+      "planned_reference_unavailable": 0
+    },
+    {
+      "condition": "R2_B",
+      "planned_articles": 12,
+      "complete_articles": 12,
+      "gold": 20,
+      "pred": 25,
+      "TP": 12,
+      "FP": 13,
+      "FN": 8,
+      "precision": 0.48,
+      "recall": 0.6,
+      "f1": 0.5333333333333333,
+      "content_covered": 14,
+      "unsupported": 1,
+      "boundary": 1,
+      "context": 3,
+      "duplicates": 8,
+      "mixed": 2,
+      "severe_attribution": 1,
+      "condition_errors": 1,
+      "planned_reference_unavailable": 0
+    }
+  ],
+  "runtime": [
+    {
+      "condition": "R2_V5",
+      "requests": 20,
+      "returned_total_tokens": 145067,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 120.114,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_E0",
+      "requests": 12,
+      "returned_total_tokens": 107573,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 76.838,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_E",
+      "requests": 13,
+      "returned_total_tokens": 111855,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 71.511,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_S0",
+      "requests": 25,
+      "returned_total_tokens": 171809,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 132.835,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_S",
+      "requests": 31,
+      "returned_total_tokens": 210647,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 188.606,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_B",
+      "requests": 17,
+      "returned_total_tokens": 125570,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 91.981,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    }
+  ],
+  "panel_runtime": [
+    {
+      "condition": "R2_V5",
+      "requests": 15,
+      "returned_total_tokens": 107964,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 101.309,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_E0",
+      "requests": 12,
+      "returned_total_tokens": 107573,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 76.838,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_E",
+      "requests": 13,
+      "returned_total_tokens": 111855,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 71.511,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_S0",
+      "requests": 25,
+      "returned_total_tokens": 171809,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 132.835,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_S",
+      "requests": 31,
+      "returned_total_tokens": 210647,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 188.606,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    {
+      "condition": "R2_B",
+      "requests": 12,
+      "returned_total_tokens": 87822,
+      "usage_missing": 0,
+      "elapsed_api_seconds": 69.641,
+      "response_models": [
+        "gpt-4o-2024-11-20"
+      ]
+    }
+  ],
+  "panel_quote_compliance": [
+    {
+      "condition": "R2_V5",
+      "first_quote_pass": 53,
+      "first_quote_total": 53,
+      "final_quote_pass": 53,
+      "final_quote_total": 53,
+      "deterministic_repairs": 0,
+      "stages": 12,
+      "first_contract_pass": 9,
+      "final_contract_pass": 12
+    },
+    {
+      "condition": "R2_E0",
+      "first_quote_pass": 63,
+      "first_quote_total": 63,
+      "final_quote_pass": 63,
+      "final_quote_total": 63,
+      "deterministic_repairs": 0,
+      "stages": 12,
+      "first_contract_pass": 12,
+      "final_contract_pass": 12
+    },
+    {
+      "condition": "R2_E",
+      "first_quote_pass": 31,
+      "first_quote_total": 31,
+      "final_quote_pass": 31,
+      "final_quote_total": 31,
+      "deterministic_repairs": 0,
+      "stages": 12,
+      "first_contract_pass": 11,
+      "final_contract_pass": 12
+    },
+    {
+      "condition": "R2_S0",
+      "first_quote_pass": 136,
+      "first_quote_total": 136,
+      "final_quote_pass": 136,
+      "final_quote_total": 136,
+      "deterministic_repairs": 0,
+      "stages": 24,
+      "first_contract_pass": 23,
+      "final_contract_pass": 24
+    },
+    {
+      "condition": "R2_S",
+      "first_quote_pass": 144,
+      "first_quote_total": 150,
+      "final_quote_pass": 150,
+      "final_quote_total": 150,
+      "deterministic_repairs": 0,
+      "stages": 24,
+      "first_contract_pass": 17,
+      "final_contract_pass": 24
+    },
+    {
+      "condition": "R2_B",
+      "first_quote_pass": 50,
+      "first_quote_total": 50,
+      "final_quote_pass": 50,
+      "final_quote_total": 50,
+      "deterministic_repairs": 0,
+      "stages": 12,
+      "first_contract_pass": 12,
+      "final_contract_pass": 12
+    }
+  ],
+  "budget_actual": {
+    "requests": 118,
+    "returned_total_tokens": 872521
+  },
+  "selected_upgrade": null,
+  "retained": "v5 as a development reference only, not production approval",
+  "stability_summary": [
+    {
+      "condition": "R2_V5",
+      "repeats": 3,
+      "first_confirmed": 0,
+      "final_confirmed": 0,
+      "separated_both_harms": null,
+      "unique_actual_message_hashes": 1,
+      "independent_paths": 3,
+      "target": "creativity"
+    },
+    {
+      "condition": "R2_V5",
+      "repeats": 3,
+      "first_confirmed": 2,
+      "final_confirmed": 2,
+      "separated_both_harms": 0,
+      "unique_actual_message_hashes": 1,
+      "independent_paths": 3,
+      "target": "misuse_two_harms"
+    },
+    {
+      "condition": "R2_B",
+      "repeats": 3,
+      "first_confirmed": 0,
+      "final_confirmed": 0,
+      "separated_both_harms": null,
+      "unique_actual_message_hashes": 1,
+      "independent_paths": 3,
+      "target": "creativity"
+    },
+    {
+      "condition": "R2_B",
+      "repeats": 3,
+      "first_confirmed": 2,
+      "final_confirmed": 2,
+      "separated_both_harms": 0,
+      "unique_actual_message_hashes": 1,
+      "independent_paths": 3,
+      "target": "misuse_two_harms"
+    }
+  ]
+}
